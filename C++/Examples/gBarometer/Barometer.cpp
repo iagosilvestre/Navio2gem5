@@ -26,11 +26,11 @@ int main()
 
     //while (true) {
         //barometer.refreshPressure();
-        usleep(10000); // Waiting for pressure data ready
+        //usleep(10000); // Waiting for pressure data ready
         //barometer.readPressure();
 
         //barometer.refreshTemperature();
-        usleep(10000); // Waiting for temperature data ready
+        //usleep(10000); // Waiting for temperature data ready
         //barometer.readTemperature();
 
         //barometer.calculatePressureAndTemperature();
@@ -38,7 +38,7 @@ int main()
         printf("Temperature(C): %f Pressure(millibar): %f\n", 
                 barometer.getTemperature(), barometer.getPressure());
                 
-        sleep(1);
+        //sleep(1);
     //}
 
     return 0;
