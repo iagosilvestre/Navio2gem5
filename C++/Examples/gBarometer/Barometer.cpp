@@ -24,7 +24,7 @@ int main()
 
     barometer.initialize();
 
-    while (true) {
+    //while (true) {
         //barometer.refreshPressure();
         usleep(10000); // Waiting for pressure data ready
         //barometer.readPressure();
@@ -39,7 +39,7 @@ int main()
                 barometer.getTemperature(), barometer.getPressure());
                 
         sleep(1);
-    }
+    //}
 
     return 0;
 }
