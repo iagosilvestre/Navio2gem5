@@ -18,17 +18,17 @@
 /* Includes ------------------------------------------------------------------*/
 
 /* FreeRTOS kernel includes */
-#include "FreeRTOS.h"
-#include "queue.h"
-#include "task.h"
+//#include "FreeRTOS.h"
+//#include "queue.h"
+//#include "task.h"
 
 /* proVANT includes */
-#include "c_common_gpio.h"
+//#include "c_common_gpio.h"
 //#include "c_common_i2c.h"
 //#include "c_io_blctrl.h"
 //#include "c_io_servos.h"
-#include "pv_module_in.h"
-#include "pv_module_do.h"
+//#include "pv_module_in.h"
+//#include "pv_module_do.h"
 
 
 /*Control includes*/
