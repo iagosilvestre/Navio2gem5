@@ -13,7 +13,7 @@
 #define PV_TYPEDEFS_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f4xx_conf.h"
+//#include "stm32f4xx_conf.h"
 
 #ifdef __cplusplus
  extern "C" {
