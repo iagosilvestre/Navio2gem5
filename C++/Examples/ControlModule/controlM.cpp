@@ -11,7 +11,6 @@ make
 
 #define _GNU_SOURCE
 #include <sched.h>
-#include <Navio2/Led_Navio2.h>
 //#include <Common/Ublox.h>
 #include <string>
 #include <stdio.h>
@@ -19,7 +18,7 @@ make
 #include <stdint.h>
 #include <unistd.h>
 #include <sys/time.h>
-#include <Common/Util.h>
+//#include <Common/Util.h>
 #include <pthread.h>
 #include <iostream>
 #include <unistd.h>
@@ -78,7 +77,7 @@ void module_co_init()
 
 void module_co_run()
 {
-	unsigned int heartBeat=0;
+//	unsigned int heartBeat=0;
 
 
 	/* Inicializa os dados da attitude*/
@@ -87,34 +86,32 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-  while(1)
-  {
+  for( int k = 0; k < 100; k += 1 ){
+//  {
 	/* Variavel para debug */
-	heartBeat+=1;
-	printf("\n Tick = %d\n",heartBeat);
+//	heartBeat+=1;
 	/* Leitura do numero de ciclos atuais */
 	//lastWakeTime = xTaskGetTickCount();
 
-	if ((heartBeat%10)==0)
-	{
-		printf("\n 10x%d = %d\n",heartBeat/10,heartBeat);
-		/*pos_ref.x += iRefData.x;
-		pos_ref.y += iRefData.y;
-		pos_ref.z += iRefData.z;*/
-		/*pos_ref.x = iRefData.x;
-		pos_ref.y = iRefData.y;
-		pos_ref.z = iRefData.z;
-		pos_ref.dotX = iRefData.dotX;
-		pos_ref.dotY = iRefData.dotY;
-		pos_ref.dotZ = iRefData.dotZ;*/
-		pos_ref.x += 1;
-		pos_ref.y += 1;
-		pos_ref.z += 1;
-		pos_ref.dotX += 1;
-		pos_ref.dotY += 1;
-		pos_ref.dotZ += 1;
-
-	}
+//	if ((heartBeat%10)==0)
+//	{
+//		/*pos_ref.x += iRefData.x;
+//		pos_ref.y += iRefData.y;
+//		pos_ref.z += iRefData.z;*/
+//		/*pos_ref.x = iRefData.x;
+//		pos_ref.y = iRefData.y;
+//		pos_ref.z = iRefData.z;
+//		pos_ref.dotX = iRefData.dotX;
+//		pos_ref.dotY = iRefData.dotY;
+//		pos_ref.dotZ = iRefData.dotZ;*/
+//		pos_ref.x += 1;
+//		pos_ref.y += 1;
+//		pos_ref.z += 1;
+//		pos_ref.dotX += 1;
+//		pos_ref.dotY += 1;
+//		pos_ref.dotZ += 1;
+//
+//	}
 
 
 	/* Passa os valores davariavel compartilha para a variavel iInputData */
@@ -133,10 +130,10 @@ void module_co_run()
 		iInputData.position.dotY = pos_ref.dotY;
 		iInputData.position.dotZ = pos_ref.dotZ;
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
-//		printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
-//		printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
-//		printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
-//		printf("\n servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
+		//printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
+		//printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
+		//printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
+		//printf("\n servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
 		//oControlOutputData.actuation = c_control_lqrArthur_controller(iInputData);
 	}
 
@@ -156,9 +153,9 @@ void module_co_run()
 int main()
 {
 	module_co_init();
-	printf("\n Modulo de Controle Iniciado\n");
+//	printf("\n Modulo de Controle Iniciado\n");
 	module_co_run();
-	printf("\n Thread de controle terminou!\n");
+//	printf("\n Thread de controle executada uma vez!\n");
 
     return 0;
 }
