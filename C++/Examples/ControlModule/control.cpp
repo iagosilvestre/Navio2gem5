@@ -143,6 +143,7 @@ void module_co_run()
 int main()
 {
 	module_co_init();
+	printf("Modulo de Controle Iniciado");
 	module_co_run();
 
 
