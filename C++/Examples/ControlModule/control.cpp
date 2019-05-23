@@ -127,6 +127,7 @@ void module_co_run()
 		iInputData.position_reference.dotY = pos_ref.dotY;
 		iInputData.position_reference.dotZ = pos_ref.dotZ;
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
+		printf("\n Actuation = %f\n",oControlOutputData.actuation);
 		//oControlOutputData.actuation = c_control_lqrArthur_controller(iInputData);
 	}
 
