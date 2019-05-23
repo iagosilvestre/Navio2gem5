@@ -39,7 +39,7 @@ make
 
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
-portTickType lastWakeTime;
+//portTickType lastWakeTime;
 pv_msg_input iInputData;
 pv_msg_controlOutput oControlOutputData;
 pv_type_datapr_position iRefData;
