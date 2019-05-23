@@ -88,7 +88,7 @@ void module_co_run()
 
   for( int k = 0; k < 100; k += 1 ){
 //  {
-	  printf("\n %d",k);
+//	  printf("\n %d",k);
 	/* Variavel para debug */
 //	heartBeat+=1;
 	/* Leitura do numero de ciclos atuais */
@@ -105,12 +105,12 @@ void module_co_run()
 //		pos_ref.dotX = iRefData.dotX;
 //		pos_ref.dotY = iRefData.dotY;
 //		pos_ref.dotZ = iRefData.dotZ;*/
-//		pos_ref.x += 1;
-//		pos_ref.y += 1;
-//		pos_ref.z += 1;
-//		pos_ref.dotX += 1;
-//		pos_ref.dotY += 1;
-//		pos_ref.dotZ += 1;
+		pos_ref.x += .1;
+		pos_ref.y += .1;
+		pos_ref.z += .1;
+		pos_ref.dotX += .1;
+		pos_ref.dotY += .1;
+		pos_ref.dotZ += .1;
 //
 //	}
 
