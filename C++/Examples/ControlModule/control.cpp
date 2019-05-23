@@ -87,7 +87,7 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-  while(heartBeat<500)
+  while(1)
   {
 	/* Variavel para debug */
 	heartBeat+=1;
