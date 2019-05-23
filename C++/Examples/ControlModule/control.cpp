@@ -87,7 +87,7 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-  while(heartBeat<50)
+  while(heartBeat<500)
   {
 	/* Variavel para debug */
 	heartBeat+=1;
@@ -95,7 +95,8 @@ void module_co_run()
 	/* Leitura do numero de ciclos atuais */
 	//lastWakeTime = xTaskGetTickCount();
 
-	if ((heartBeat%10)==0)
+	//if ((heartBeat%10)==0)
+	if (heartBeat==10)
 	{
 		printf("\n 10x%d = %d\n",heartBeat/10,heartBeat);
 		/*pos_ref.x += iRefData.x;
