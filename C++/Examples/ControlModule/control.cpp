@@ -87,7 +87,7 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-  while(heartBeat<10)
+  while(heartBeat<50)
   {
 	/* Variavel para debug */
 	heartBeat+=1;
@@ -138,7 +138,7 @@ void module_co_run()
 	/* A thread dorme ate o tempo final ser atingido */
 	//vTaskDelayUntil( &lastWakeTime, MODULE_PERIOD / portTICK_RATE_MS);
 
-		usleep(500000);
+		sleep(1);
 	}
 }
 
