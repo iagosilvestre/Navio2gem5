@@ -41,9 +41,9 @@
 /* Exported types ------------------------------------------------------------*/
 struct pv_interface_co 
 {
-  xQueueHandle iInputData;  
-  xQueueHandle oControlOutputData;
-  xQueueHandle iRefData;
+	unsigned int iInputData;
+	unsigned int oControlOutputData;
+	unsigned int iRefData;
 } pv_interface_co;
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
