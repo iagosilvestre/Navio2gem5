@@ -95,8 +95,7 @@ void module_co_run()
 	/* Leitura do numero de ciclos atuais */
 	//lastWakeTime = xTaskGetTickCount();
 
-	//if ((heartBeat%10)==0)
-	if (heartBeat==10)
+	if ((heartBeat%10)==0)
 	{
 		printf("\n 10x%d = %d\n",heartBeat/10,heartBeat);
 		/*pos_ref.x += iRefData.x;
@@ -127,6 +126,12 @@ void module_co_run()
 		iInputData.position_reference.dotX = pos_ref.dotX;
 		iInputData.position_reference.dotY = pos_ref.dotY;
 		iInputData.position_reference.dotZ = pos_ref.dotZ;
+		iInputData.position.x = pos_ref.x;
+		iInputData.position.y = pos_ref.y;
+		iInputData.position.z = pos_ref.z;
+		iInputData.position.dotX = pos_ref.dotX;
+		iInputData.position.dotY = pos_ref.dotY;
+		iInputData.position.dotZ = pos_ref.dotZ;
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
 		printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
 		printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
@@ -144,7 +149,7 @@ void module_co_run()
 	/* A thread dorme ate o tempo final ser atingido */
 	//vTaskDelayUntil( &lastWakeTime, MODULE_PERIOD / portTICK_RATE_MS);
 
-		//sleep(1);
+		sleep(1);
 	}
 }
 
