@@ -30,11 +30,10 @@ make
 #include "c_control_lqrArthur_vel.c"
 #include "c_control_lqrArthur_vel.h"
 #define ARM_MATH_CM4
-#include "arm_math.h"
 #include "lib/arm_mat_init_f32.c"
 #include "lib/arm_mat_sub_f32.c"
 #include "lib/arm_mat_mult_f32.c"
-#include "arm_math.h"
+#include "lib/arm_math.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
