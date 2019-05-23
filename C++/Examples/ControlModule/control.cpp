@@ -97,6 +97,7 @@ void module_co_run()
 
 	if ((heartBeat%10)==0)
 	{
+		printf("\n 10x%d = %d\n",heartBeat/10,heartBeat);
 		/*pos_ref.x += iRefData.x;
 		pos_ref.y += iRefData.y;
 		pos_ref.z += iRefData.z;*/
@@ -132,7 +133,7 @@ void module_co_run()
 	/* toggle pin for debug */
 	//c_common_gpio_toggle(LED5);
 
-	if(pv_interface_co.oControlOutputData != 0)
+
 	  //xQueueOverwrite(pv_interface_co.oControlOutputData, &oControlOutputData); Sending Data
 
 	/* A thread dorme ate o tempo final ser atingido */
