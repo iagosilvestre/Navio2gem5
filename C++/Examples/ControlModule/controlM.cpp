@@ -86,7 +86,7 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-  for( int k = 0; k < 100; k += 1 ){
+//  for( int k = 0; k < 100; k += 1 ){
 //  {
 //	  printf("\n %d",k);
 	/* Variavel para debug */
@@ -105,12 +105,12 @@ void module_co_run()
 //		pos_ref.dotX = iRefData.dotX;
 //		pos_ref.dotY = iRefData.dotY;
 //		pos_ref.dotZ = iRefData.dotZ;*/
-		pos_ref.x += .1;
-		pos_ref.y += .1;
-		pos_ref.z += .1;
-		pos_ref.dotX += .1;
-		pos_ref.dotY += .1;
-		pos_ref.dotZ += .1;
+//		pos_ref.x += .1;
+//		pos_ref.y += .1;
+//		pos_ref.z += .1;
+//		pos_ref.dotX += .1;
+//		pos_ref.dotY += .1;
+//		pos_ref.dotZ += .1;
 //
 //	}
 
@@ -149,13 +149,13 @@ void module_co_run()
 
 //		sleep(1);
 	}
-}
+//}
 
 int main()
 {
 	module_co_init();
 //	printf("\n Modulo de Controle Iniciado\n");
-	module_co_run();
+//	module_co_run();
 //	printf("\n Thread de controle executada uma vez!\n");
 
     return 0;
