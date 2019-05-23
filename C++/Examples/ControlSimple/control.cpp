@@ -11,7 +11,6 @@ make
 
 #define _GNU_SOURCE
 #include <sched.h>
-#include <Navio2/Led_Navio2.h>
 //#include <Common/Ublox.h>
 #include <string>
 #include <stdio.h>
@@ -154,9 +153,9 @@ void module_co_run()
 int main()
 {
 	module_co_init();
-//	printf("\n Modulo de Controle Iniciado\n");
+	printf("\n Modulo de Controle Iniciado\n");
 	module_co_run();
-
+	printf("\n Thread de controle executada uma vez!\n");
 
     return 0;
 }
