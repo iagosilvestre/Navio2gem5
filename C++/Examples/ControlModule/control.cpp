@@ -22,6 +22,7 @@ make
 #include <Common/Util.h>
 #include <pthread.h>
 #include <iostream>
+#include <unistd.h>
 #include <vector>
 
 #include "pv_module_co.h"
@@ -136,6 +137,7 @@ void module_co_run()
 
 	/* A thread dorme ate o tempo final ser atingido */
 	//vTaskDelayUntil( &lastWakeTime, MODULE_PERIOD / portTICK_RATE_MS);
+		printf("\n Tick = %d\n",heartBeat);
 		usleep(500000);
 	}
 }
@@ -143,7 +145,7 @@ void module_co_run()
 int main()
 {
 	module_co_init();
-	printf("Modulo de Controle Iniciado");
+	printf("\n Modulo de Controle Iniciado\n");
 	module_co_run();
 
 
