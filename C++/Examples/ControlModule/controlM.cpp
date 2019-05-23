@@ -88,6 +88,7 @@ void module_co_run()
 
   for( int k = 0; k < 100; k += 1 ){
 //  {
+	  printf("\n %d",k);
 	/* Variavel para debug */
 //	heartBeat+=1;
 	/* Leitura do numero de ciclos atuais */
@@ -146,7 +147,7 @@ void module_co_run()
 	/* A thread dorme ate o tempo final ser atingido */
 	//vTaskDelayUntil( &lastWakeTime, MODULE_PERIOD / portTICK_RATE_MS);
 
-		sleep(1);
+//		sleep(1);
 	}
 }
 
