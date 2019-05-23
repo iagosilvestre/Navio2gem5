@@ -87,11 +87,11 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-  while(heartBeat<200)
+  while(heartBeat<10)
   {
 	/* Variavel para debug */
 	heartBeat+=1;
-
+	printf("\n Tick = %d\n",heartBeat);
 	/* Leitura do numero de ciclos atuais */
 	//lastWakeTime = xTaskGetTickCount();
 
@@ -137,7 +137,7 @@ void module_co_run()
 
 	/* A thread dorme ate o tempo final ser atingido */
 	//vTaskDelayUntil( &lastWakeTime, MODULE_PERIOD / portTICK_RATE_MS);
-		printf("\n Tick = %d\n",heartBeat);
+
 		usleep(500000);
 	}
 }
