@@ -18,7 +18,7 @@ make
 #include <stdint.h>
 #include <unistd.h>
 #include <sys/time.h>
-#include <Common/Util.h>
+//#include <Common/Util.h>
 #include <pthread.h>
 #include <iostream>
 #include <unistd.h>
@@ -153,9 +153,9 @@ void module_co_run()
 int main()
 {
 	module_co_init();
-	printf("\n Modulo de Controle Iniciado\n");
+//	printf("\n Modulo de Controle Iniciado\n");
 	module_co_run();
-	printf("\n Thread de controle executada uma vez!\n");
+//	printf("\n Thread de controle executada uma vez!\n");
 
     return 0;
 }

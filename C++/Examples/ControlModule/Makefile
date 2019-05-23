@@ -4,7 +4,7 @@ INCLUDES = -I ../../Navio
 
 all:
 	$(MAKE) -C ../../Navio all
-	$(CXX) $(INCLUDES) control.cpp -L$(NAVIO) -lnavio -o control -static
+	$(CXX) $(INCLUDES) controlM.cpp -L$(NAVIO) -lnavio -o controlM -static
 
 clean:
-	rm -f control
+	rm -f controlM
