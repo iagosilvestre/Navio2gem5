@@ -54,10 +54,12 @@ pv_type_datapr_position pos_ref;
 pv_type_actuation    iActuation;
 /* Outboxes buffers*/
 struct timeval t0, t1;
-struct timeval dtCon;
+struct timeval dtCon,debug;
 std::vector<int> controlData;
-
-
+std::vector<int> servoRightData;
+std::vector<int> servoLeftData;
+std::vector<int> escRightNewtonsData;
+std::vector<int> escLeftNewtonsData;
 
 void module_co_init()
 {
@@ -92,7 +94,7 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-  for( int k = 0; k < 1000; k += 1 ){
+  for( int k = 0; k < 10000; k += 1 ){
 
 //  {
 	/* Variavel para debug */
@@ -140,6 +142,11 @@ void module_co_run()
 		iInputData.position.dotZ = pos_ref.dotZ;
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
 
+		servoRightData.push_back(oControlOutputData.actuation.servoRight);
+		servoLeftData.push_back(oControlOutputData.actuation.servoLeft);
+		escRightNewtonsData.push_back(oControlOutputData.actuation.escRightNewtons);
+		escLeftNewtonsData.push_back(oControlOutputData.actuation.escLeftNewtons);
+
 		//printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
 		//printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
 		//printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
@@ -174,9 +181,14 @@ int main()
 //	printf("\n Thread de controle executada uma vez!\n");
 //	gettimeofday(&t1, NULL);
 //	timersub(&t1, &t0, &dtCon);
-	//ControlData.push_back(dtCon.tv_usec);
-//	printf("tempo de execucao em us:%lu\n",dtCon.tv_usec);
+	gettimeofday(&t0, NULL);
+	usleep(200000);
+	gettimeofday(&t1, NULL);
+	timersub(&t1, &t0, &debug);
+	printf("200.000 us:%lu\n",debug.tv_usec);
 	//ProfilerStop();
+
+
 	FILE *fCON = fopen("control.txt", "w");
 	fprintf(fCON, "count;dtCon\n");
 	fclose(fCON);
@@ -186,5 +198,6 @@ int main()
 		fprintf(fCON, "%d;%lu\n",auxCount,*it);
 		fclose(fCON);
 	}
+
     return 0;
 }
