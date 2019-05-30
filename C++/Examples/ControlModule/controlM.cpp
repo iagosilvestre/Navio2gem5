@@ -158,6 +158,7 @@ void module_co_run()
 
 int main()
 {
+	ProfilerStart("ControlOneExecution.log");
 	gettimeofday(&t0, NULL);
 	module_co_init();
 //	printf("\n Modulo de Controle Iniciado\n");
@@ -166,6 +167,7 @@ int main()
 	gettimeofday(&t1, NULL);
 	timersub(&t1, &t0, &dtCon);
 	//ControlData.push_back(dtCon.tv_usec);
-	printf("tempo de execucao em us:%lu\n",dtCon.tv_usec);
+//	printf("tempo de execucao em us:%lu\n",dtCon.tv_usec);
+	ProfilerStop();
     return 0;
 }
