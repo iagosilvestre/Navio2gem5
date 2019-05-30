@@ -63,9 +63,9 @@ unsigned long int auxCount=0;
 void module_co_init()
 {
   c_control_lqrArthur_vel_init();
-  pos_ref.x = 3.0;
-  pos_ref.y = 0.0;
-  pos_ref.z = 2.0;
+	pos_ref.x = 2.0;
+	pos_ref.y = 0.0;
+	pos_ref.z = 1.5;
 }
 
 void module_co_run()
