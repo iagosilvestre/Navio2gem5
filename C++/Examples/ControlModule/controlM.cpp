@@ -56,10 +56,10 @@ pv_type_actuation    iActuation;
 struct timeval t0, t1;
 struct timeval dtCon,debug;
 std::vector<int> controlData;
-std::vector<int> servoRightData;
-std::vector<int> servoLeftData;
-std::vector<int> escRightNewtonsData;
-std::vector<int> escLeftNewtonsData;
+//std::vector<int> servoRightData;
+//std::vector<int> servoLeftData;
+//std::vector<int> escRightNewtonsData;
+//std::vector<int> escLeftNewtonsData;
 
 void module_co_init()
 {
@@ -142,10 +142,10 @@ void module_co_run()
 		iInputData.position.dotZ = pos_ref.dotZ;
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
 
-		servoRightData.push_back(oControlOutputData.actuation.servoRight);
-		servoLeftData.push_back(oControlOutputData.actuation.servoLeft);
-		escRightNewtonsData.push_back(oControlOutputData.actuation.escRightNewtons);
-		escLeftNewtonsData.push_back(oControlOutputData.actuation.escLeftNewtons);
+//		servoRightData.push_back(oControlOutputData.actuation.servoRight);
+//		servoLeftData.push_back(oControlOutputData.actuation.servoLeft);
+//		escRightNewtonsData.push_back(oControlOutputData.actuation.escRightNewtons);
+//		escLeftNewtonsData.push_back(oControlOutputData.actuation.escLeftNewtons);
 
 		//printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
 		//printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
@@ -167,6 +167,10 @@ void module_co_run()
 	gettimeofday(&t1, NULL);
 	timersub(&t1, &t0, &dtCon);
 	controlData.push_back(dtCon.tv_usec);
+	printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
+	printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
+	printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
+	printf("\n servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
 	}
 }
 
