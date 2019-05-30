@@ -94,7 +94,7 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-  for( int k = 0; k < 10000; k += 1 ){
+  for( int k = 0; k < 15; k += 1 ){
 
 //  {
 	/* Variavel para debug */
@@ -115,12 +115,12 @@ void module_co_run()
 		pos_ref.dotX = iRefData.dotX;
 		pos_ref.dotY = iRefData.dotY;
 		pos_ref.dotZ = iRefData.dotZ;*/
-		pos_ref.x += rand() % 20;
-		pos_ref.y += rand() % 20;
-		pos_ref.z += rand() % 20;
-		pos_ref.dotX += rand() % 20;
-		pos_ref.dotY += rand() % 20;
-		pos_ref.dotZ += rand() % 20;
+		pos_ref.x += .1;
+		pos_ref.y +=.1;
+		pos_ref.z += .1;
+		pos_ref.dotX += .1;
+		pos_ref.dotY += .1;
+		pos_ref.dotZ += .1;
 
 	}
 
