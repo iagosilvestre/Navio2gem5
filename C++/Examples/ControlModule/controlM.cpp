@@ -34,7 +34,7 @@ make
 #include "lib/arm_mat_sub_f32.c"
 #include "lib/arm_mat_mult_f32.c"
 #include "lib/arm_math.h"
-#include <Common/profiler.h>
+#include "lib/profiler.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
