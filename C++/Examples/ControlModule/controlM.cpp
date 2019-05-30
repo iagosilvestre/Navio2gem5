@@ -178,7 +178,7 @@ int main()
 	FILE *fCON = fopen("control.txt", "w");
 	fprintf(fCON, "count;dtCon\n");
 	fclose(fCON);
-	for (std::vector<int>::iterator it = mpuData.begin() ; it != controlData.end(); ++it){
+	for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
 		auxCount++;
 		FILE *fCON = fopen("control.txt", "a");
 		fprintf(fCON, "%d;%lu\n",auxCount,*it);
