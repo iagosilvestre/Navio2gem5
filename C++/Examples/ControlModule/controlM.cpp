@@ -161,6 +161,10 @@ int main()
 			fprintf(fCON, "%d;%lu\n",auxCount,*it);
 			fclose(fCON);
 		}
-
+	gettimeofday(&t0, NULL);
+	usleep(200000);
+	gettimeofday(&t1, NULL);
+	timersub(&t1, &t0, &debug);
+	printf("200.000 us:%lu\n",debug.tv_usec);
     return 0;
 }
