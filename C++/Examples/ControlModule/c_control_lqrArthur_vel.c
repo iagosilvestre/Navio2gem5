@@ -189,8 +189,7 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 
 	printf("control output numCols = %d\n",control_output.numCols);
 	printf("control output numRows = %d\n",control_output.numRows);
-	float *ptr;
-	  ptr = control_output.pData;
+	float *ptr=&control_output.pData;
 	printf("%f %f %f\n", **ptr, *(*(ptr + 0) + 1), *(*(ptr + 0) + 2));
 	//
 	//The result must be in a struct pv_msg_io_actuation
