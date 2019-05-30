@@ -155,6 +155,7 @@ void c_control_lqrArthur_vel_init() {
 
 	// Inicializa as matrizes estaticas
 	arm_mat_init_f32(&equilibrium_control, 4, 1, (float32_t *)equilibrium_control_f32);
+	printf("debugado vel init");
 	arm_mat_init_f32(&K, 4, 17, (float32_t *)K_f32);
 }
 
