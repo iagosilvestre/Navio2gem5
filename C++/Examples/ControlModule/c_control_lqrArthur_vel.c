@@ -193,6 +193,14 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	printf("%f\n",*(*(&control_output.pData + 0) + 1));
 	printf("%f\n",*(*(&control_output.pData + 0) + 2));
 	printf("%f\n",*(*(&control_output.pData + 0) + 3));
+
+	printf("\n----------------------------------------\n")
+	printf("equilibrium_control numCols = %d\n",equilibrium_control.numCols);
+	printf("equilibrium_control numRows = %d\n",equilibrium_control.numRows);
+//	printf("%f\n",*(*(&equilibrium_control.pData + 0) + 0));
+//	printf("%f\n",*(*(&equilibrium_control.pData + 0) + 1));
+//	printf("%f\n",*(*(&equilibrium_control.pData + 0) + 2));
+//	printf("%f\n",*(*(&equilibrium_control.pData + 0) + 3));
 	//
 	//The result must be in a struct pv_msg_io_actuation
 	actuation_signals.escRightNewtons= (float)control_output.pData[0];
