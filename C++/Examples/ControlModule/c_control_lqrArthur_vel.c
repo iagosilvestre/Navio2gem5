@@ -52,6 +52,8 @@ static float32_t K_f32[4][17] ={{-2.919664,0.003449,0.044031,-0.008393,0.008407,
 0.000009316184096 , -0.021344301330953}
 };*/
 
+#define ARRAYSIZE(a) (sizeof(a) / sizeof(a[0]))
+
 static float32_t equilibrium_point_f32[17]={0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0};
 static float32_t equilibrium_control_f32[4]={10.2751,	10.2799, 0, 0};
 static float32_t state_vector_f32[17]={0};
@@ -155,7 +157,6 @@ void c_control_lqrArthur_vel_init() {
 
 	// Inicializa as matrizes estaticas
 	arm_mat_init_f32(&equilibrium_control, 4, 1, (float32_t *)equilibrium_control_f32);
-	printf("debugado vel init");
 	arm_mat_init_f32(&K, 4, 17, (float32_t *)K_f32);
 }
 
@@ -185,6 +186,10 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	arm_mat_mult_f32(&K, &error_state_vector, &delta_control);
 	/* u = ur - delta_u */
 	arm_mat_sub_f32(&equilibrium_control, &delta_control, &control_output);
+	int num_rows = ARRAYSIZE(control_output);
+	int num_cols = ARRAYSIZE(control_output[0]);
+	printf("num rows: %d , num columns: %d\n",num_rows,num_cols);
+
 	//
 	//The result must be in a struct pv_msg_io_actuation
 	actuation_signals.escRightNewtons= (float)control_output.pData[0];

@@ -63,9 +63,9 @@ unsigned long int auxCount=0;
 void module_co_init()
 {
   c_control_lqrArthur_vel_init();
-  pos_ref.x = 2.0;
+  pos_ref.x = 3.0;
   pos_ref.y = 0.0;
-  pos_ref.z = 1.5;
+  pos_ref.z = 2.0;
 }
 
 void module_co_run()
@@ -112,10 +112,10 @@ void module_co_run()
 		gettimeofday(&t1, NULL);
 		timersub(&t1, &t0, &dtCon);
 		controlData.push_back(dtCon.tv_usec);
-//		printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
-//		printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
-//		printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
-//		printf("\n servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
+		printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
+		printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
+		printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
+		printf("\n servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
 		//oControlOutputData.actuation = c_control_lqrArthur_controller(iInputData);
 	}
 
