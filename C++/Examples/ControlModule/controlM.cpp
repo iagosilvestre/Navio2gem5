@@ -95,6 +95,7 @@ void module_co_run()
 
 //  {
 	/* Variavel para debug */
+	  int heartBeat=0;
 	  gettimeofday(&t0, NULL);
 	  heartBeat+=1;
 	/* Leitura do numero de ciclos atuais */
