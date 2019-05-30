@@ -166,6 +166,6 @@ int main()
 	gettimeofday(&t1, NULL);
 	timersub(&t1, &t0, &dtCon);
 	//ControlData.push_back(dtCon.tv_usec);
-	printf("tempo de execucao em ms:%lu\n",dtCon.tv_usec);
+	printf("tempo de execucao em us:%lu\n",dtCon.tv_usec);
     return 0;
 }
