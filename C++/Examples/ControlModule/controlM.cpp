@@ -94,32 +94,13 @@ void module_co_run()
 
   for( int k = 0; k < 100; k += 1 ){
 	  gettimeofday(&t0, NULL);
-//  {
-//	  printf("\n %d",k);
-	/* Variavel para debug */
-//	heartBeat+=1;
-	/* Leitura do numero de ciclos atuais */
-	//lastWakeTime = xTaskGetTickCount();
 
-//	if ((heartBeat%10)==0)
-//	{
-//		/*pos_ref.x += iRefData.x;
-//		pos_ref.y += iRefData.y;
-//		pos_ref.z += iRefData.z;*/
-//		/*pos_ref.x = iRefData.x;
-//		pos_ref.y = iRefData.y;
-//		pos_ref.z = iRefData.z;
-//		pos_ref.dotX = iRefData.dotX;
-//		pos_ref.dotY = iRefData.dotY;
-//		pos_ref.dotZ = iRefData.dotZ;*/
 		pos_ref.x += .1;
 		pos_ref.y += .1;
 		pos_ref.z += .1;
 		pos_ref.dotX += .1;
 		pos_ref.dotY += .1;
 		pos_ref.dotZ += .1;
-//
-//	}
 
 
 	/* Passa os valores davariavel compartilha para a variavel iInputData */
@@ -131,12 +112,12 @@ void module_co_run()
 		iInputData.position_reference.dotX = pos_ref.dotX;
 		iInputData.position_reference.dotY = pos_ref.dotY;
 		iInputData.position_reference.dotZ = pos_ref.dotZ;
-		iInputData.position.x = pos_ref.x;
-		iInputData.position.y = pos_ref.y;
-		iInputData.position.z = pos_ref.z;
-		iInputData.position.dotX = pos_ref.dotX;
-		iInputData.position.dotY = pos_ref.dotY;
-		iInputData.position.dotZ = pos_ref.dotZ;
+//		iInputData.position.x = pos_ref.x;
+//		iInputData.position.y = pos_ref.y;
+//		iInputData.position.z = pos_ref.z;
+//		iInputData.position.dotX = pos_ref.dotX;
+//		iInputData.position.dotY = pos_ref.dotY;
+//		iInputData.position.dotZ = pos_ref.dotZ;
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
 		gettimeofday(&t1, NULL);
 		timersub(&t1, &t0, &dtCon);
