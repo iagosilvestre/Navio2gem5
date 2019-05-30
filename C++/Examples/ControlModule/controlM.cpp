@@ -34,6 +34,7 @@ make
 #include "lib/arm_mat_sub_f32.c"
 #include "lib/arm_mat_mult_f32.c"
 #include "lib/arm_math.h"
+#include <Common/profiler.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -52,6 +53,11 @@ pv_type_datapr_position pos_ref;
 /* Inboxes buffers */
 pv_type_actuation    iActuation;
 /* Outboxes buffers*/
+struct timeval t0, t1;
+struct timeval dtCon;
+std::vector<int> ControlData;
+
+
 
 void module_co_init()
 {
@@ -88,7 +94,6 @@ void module_co_run()
 
 //  for( int k = 0; k < 100; k += 1 ){
 //  {
-//	  printf("\n %d",k);
 	/* Variavel para debug */
 //	heartBeat+=1;
 	/* Leitura do numero de ciclos atuais */
@@ -105,12 +110,12 @@ void module_co_run()
 //		pos_ref.dotX = iRefData.dotX;
 //		pos_ref.dotY = iRefData.dotY;
 //		pos_ref.dotZ = iRefData.dotZ;*/
-//		pos_ref.x += .1;
-//		pos_ref.y += .1;
-//		pos_ref.z += .1;
-//		pos_ref.dotX += .1;
-//		pos_ref.dotY += .1;
-//		pos_ref.dotZ += .1;
+//		pos_ref.x += 1;
+//		pos_ref.y += 1;
+//		pos_ref.z += 1;
+//		pos_ref.dotX += 1;
+//		pos_ref.dotY += 1;
+//		pos_ref.dotZ += 1;
 //
 //	}
 
@@ -147,16 +152,20 @@ void module_co_run()
 	/* A thread dorme ate o tempo final ser atingido */
 	//vTaskDelayUntil( &lastWakeTime, MODULE_PERIOD / portTICK_RATE_MS);
 
-//		sleep(1);
+		//sleep(1);
 	}
 //}
 
 int main()
 {
+	gettimeofday(&t0, NULL);
 	module_co_init();
 //	printf("\n Modulo de Controle Iniciado\n");
-//	module_co_run();
+	module_co_run();
 //	printf("\n Thread de controle executada uma vez!\n");
-
+	gettimeofday(&t1, NULL);
+	timersub(&t1, &t0, &dtCon);
+	//ControlData.push_back(dtCon.tv_usec);
+	printf("tempo de execucao em ms:%lu\n",dtCon.tv_usec);
     return 0;
 }
