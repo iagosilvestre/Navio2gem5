@@ -186,17 +186,17 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	arm_mat_mult_f32(&K, &error_state_vector, &delta_control);
 	/* u = ur - delta_u */
 	arm_mat_sub_f32(&equilibrium_control, &delta_control, &control_output);
-
+	printf("\n----------------------------------------\n");
 	printf("control output numCols = %d\n",control_output.numCols);
 	printf("control output numRows = %d\n",control_output.numRows);
-	printf("%f\n",*(*(&control_output.pData + 0) + 0));
-	printf("%f\n",*(*(&control_output.pData + 0) + 1));
-	printf("%f\n",*(*(&control_output.pData + 0) + 2));
-	printf("%f\n",*(*(&control_output.pData + 0) + 3));
+	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 0),*(*(&equilibrium_control.pData + 0) + 0),*(*(&delta_control.pData + 0) + 0));
+	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 1),*(*(&equilibrium_control.pData + 0) + 1),*(*(&delta_control.pData + 0) + 1));
+	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 2),*(*(&equilibrium_control.pData + 0) + 2),*(*(&delta_control.pData + 0) + 2));
+	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 3),*(*(&equilibrium_control.pData + 0) + 3),*(*(&delta_control.pData + 0) + 3));
 
 	printf("\n----------------------------------------\n");
-	printf("equilibrium_control numCols = %d\n",equilibrium_control.numCols);
-	printf("equilibrium_control numRows = %d\n",equilibrium_control.numRows);
+//	printf("equilibrium_control numCols = %d\n",equilibrium_control.numCols);
+//	printf("equilibrium_control numRows = %d\n",equilibrium_control.numRows);
 //	printf("%f\n",*(*(&equilibrium_control.pData + 0) + 0));
 //	printf("%f\n",*(*(&equilibrium_control.pData + 0) + 1));
 //	printf("%f\n",*(*(&equilibrium_control.pData + 0) + 2));
