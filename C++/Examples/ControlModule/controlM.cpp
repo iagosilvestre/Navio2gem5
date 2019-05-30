@@ -10,7 +10,6 @@ make
 */
 
 #define _GNU_SOURCE
-#include "lib/profiler.c"
 #include "lib/profiler.h"
 #include <sched.h>
 #include <string>
@@ -55,7 +54,7 @@ pv_type_actuation    iActuation;
 /* Outboxes buffers*/
 struct timeval t0, t1;
 struct timeval dtCon;
-std::vector<int> ControlData;
+std::vector<int> controlData;
 
 
 
@@ -92,32 +91,34 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-//  for( int k = 0; k < 100; k += 1 ){
+  for( int k = 0; k < 1000; k += 1 ){
+
 //  {
 	/* Variavel para debug */
-//	heartBeat+=1;
+	  gettimeofday(&t0, NULL);
+	  heartBeat+=1;
 	/* Leitura do numero de ciclos atuais */
 	//lastWakeTime = xTaskGetTickCount();
 
-//	if ((heartBeat%10)==0)
-//	{
-//		/*pos_ref.x += iRefData.x;
-//		pos_ref.y += iRefData.y;
-//		pos_ref.z += iRefData.z;*/
-//		/*pos_ref.x = iRefData.x;
-//		pos_ref.y = iRefData.y;
-//		pos_ref.z = iRefData.z;
-//		pos_ref.dotX = iRefData.dotX;
-//		pos_ref.dotY = iRefData.dotY;
-//		pos_ref.dotZ = iRefData.dotZ;*/
-//		pos_ref.x += 1;
-//		pos_ref.y += 1;
-//		pos_ref.z += 1;
-//		pos_ref.dotX += 1;
-//		pos_ref.dotY += 1;
-//		pos_ref.dotZ += 1;
-//
-//	}
+	if ((heartBeat%10)==0)
+	{
+		/*pos_ref.x += iRefData.x;
+		pos_ref.y += iRefData.y;
+		pos_ref.z += iRefData.z;*/
+		/*pos_ref.x = iRefData.x;
+		pos_ref.y = iRefData.y;
+		pos_ref.z = iRefData.z;
+		pos_ref.dotX = iRefData.dotX;
+		pos_ref.dotY = iRefData.dotY;
+		pos_ref.dotZ = iRefData.dotZ;*/
+		pos_ref.x += rand() % 20;
+		pos_ref.y += rand() % 20;
+		pos_ref.z += rand() % 20;
+		pos_ref.dotX += rand() % 20;
+		pos_ref.dotY += rand() % 20;
+		pos_ref.dotZ += rand() % 20;
+
+	}
 
 
 	/* Passa os valores davariavel compartilha para a variavel iInputData */
@@ -136,6 +137,7 @@ void module_co_run()
 		iInputData.position.dotY = pos_ref.dotY;
 		iInputData.position.dotZ = pos_ref.dotZ;
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
+
 		//printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
 		//printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
 		//printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
@@ -153,21 +155,34 @@ void module_co_run()
 	//vTaskDelayUntil( &lastWakeTime, MODULE_PERIOD / portTICK_RATE_MS);
 
 		//sleep(1);
+	gettimeofday(&t1, NULL);
+	timersub(&t1, &t0, &dtCon);
+	controlData.push_back(dtCon.tv_usec);
 	}
-//}
+}
 
 int main()
 {
-	ProfilerStart("ControlOneExecution.log");
-	gettimeofday(&t0, NULL);
+	unsigned long int auxCount=0;
+	//ProfilerStart("ControlOneExecution.log");
+//	gettimeofday(&t0, NULL);
 	module_co_init();
 //	printf("\n Modulo de Controle Iniciado\n");
 	module_co_run();
 //	printf("\n Thread de controle executada uma vez!\n");
-	gettimeofday(&t1, NULL);
-	timersub(&t1, &t0, &dtCon);
+//	gettimeofday(&t1, NULL);
+//	timersub(&t1, &t0, &dtCon);
 	//ControlData.push_back(dtCon.tv_usec);
 //	printf("tempo de execucao em us:%lu\n",dtCon.tv_usec);
-	ProfilerStop();
+	//ProfilerStop();
+	FILE *fCON = fopen("control.txt", "w");
+	fprintf(fCON, "count;dtCon\n");
+	fclose(fCON);
+	for (std::vector<int>::iterator it = mpuData.begin() ; it != controlData.end(); ++it){
+		auxCount++;
+		FILE *fCON = fopen("control.txt", "a");
+		fprintf(fCON, "%d;%lu\n",auxCount,*it);
+		fclose(fCON);
+	}
     return 0;
 }
