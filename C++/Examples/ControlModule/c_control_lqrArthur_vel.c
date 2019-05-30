@@ -186,9 +186,9 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	arm_mat_mult_f32(&K, &error_state_vector, &delta_control);
 	/* u = ur - delta_u */
 	arm_mat_sub_f32(&equilibrium_control, &delta_control, &control_output);
-	int num_rows = ARRAYSIZE(&control_output);
-	int num_cols = ARRAYSIZE(&control_output[0]);
-	printf("num rows: %d , num columns: %d\n",num_rows,num_cols);
+//	int num_rows = ARRAYSIZE(&control_output);
+//	int num_cols = ARRAYSIZE(&control_output[0]);
+	printf("control[0]\n",control_output[0]);
 
 	//
 	//The result must be in a struct pv_msg_io_actuation
