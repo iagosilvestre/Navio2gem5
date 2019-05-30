@@ -10,15 +10,14 @@ make
 */
 
 #define _GNU_SOURCE
+#include "lib/profiler.h"
 #include <sched.h>
-//#include <Common/Ublox.h>
 #include <string>
 #include <stdio.h>
 #include <memory>
 #include <stdint.h>
 #include <unistd.h>
 #include <sys/time.h>
-//#include <Common/Util.h>
 #include <pthread.h>
 #include <iostream>
 #include <unistd.h>
@@ -34,7 +33,7 @@ make
 #include "lib/arm_mat_sub_f32.c"
 #include "lib/arm_mat_mult_f32.c"
 #include "lib/arm_math.h"
-#include "lib/profiler.h"
+
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
