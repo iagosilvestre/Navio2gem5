@@ -109,12 +109,12 @@ void module_co_run()
 		/*pos_ref.x += iRefData.x;
 		pos_ref.y += iRefData.y;
 		pos_ref.z += iRefData.z;*/
-		/*pos_ref.x = iRefData.x;
+		pos_ref.x = iRefData.x;
 		pos_ref.y = iRefData.y;
 		pos_ref.z = iRefData.z;
 		pos_ref.dotX = iRefData.dotX;
 		pos_ref.dotY = iRefData.dotY;
-		pos_ref.dotZ = iRefData.dotZ;*/
+		pos_ref.dotZ = iRefData.dotZ;
 		pos_ref.x += .1;
 		pos_ref.y +=.1;
 		pos_ref.z += .1;
@@ -167,10 +167,10 @@ void module_co_run()
 	gettimeofday(&t1, NULL);
 	timersub(&t1, &t0, &dtCon);
 	controlData.push_back(dtCon.tv_usec);
-	printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
-	printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
-	printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
-	printf("\n servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
+	printf("\n\n\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
+	printf(" escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
+	printf(" servoRight = %f\n",oControlOutputData.actuation.servoRight);
+	printf(" servoLeft = %f",oControlOutputData.actuation.servoLeft);
 	}
 }
 
