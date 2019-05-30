@@ -6,11 +6,10 @@ To run this example navigate to the directory containing it and run following co
 make
 ./Barometer
 */
-
-
-#include <Common/profiler.h>
+#include "lib/profiler.h"
 #define _GNU_SOURCE
 #include <sched.h>
+#include "lib/profiler.h"
 #include <string>
 #include <stdio.h>
 #include <memory>
@@ -23,15 +22,16 @@ make
 #include <unistd.h>
 #include <vector>
 
-#include <Common/pv_module_co.h>
+#include "pv_module_co.h"
 //#include "c_control_lqrArthur.h"
-#include <Common/pv_typedefs.h>
-#include <Common/c_control_lqrArthur_vel.h>
+#include "pv_typedefs.h"
+#include "c_control_lqrArthur_vel.c"
+#include "c_control_lqrArthur_vel.h"
 #define ARM_MATH_CM4
-//#include "lib/arm_mat_init_f32.c"
-//#include "lib/arm_mat_sub_f32.c"
-//#include "lib/arm_mat_mult_f32.c"
-#include <Common/arm_math.h>
+#include "lib/arm_mat_init_f32.c"
+#include "lib/arm_mat_sub_f32.c"
+#include "lib/arm_mat_mult_f32.c"
+#include "lib/arm_math.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -161,10 +161,10 @@ int main()
 			fprintf(fCON, "%d;%lu\n",auxCount,*it);
 			fclose(fCON);
 		}
-	gettimeofday(&t0, NULL);
-	usleep(200000);
-	gettimeofday(&t1, NULL);
-	timersub(&t1, &t0, &debug);
-	printf("200.000 us:%lu\n",debug.tv_usec);
+		gettimeofday(&t0, NULL);
+		usleep(200000);
+		gettimeofday(&t1, NULL);
+		timersub(&t1, &t0, &debug);
+		printf("200.000 us:%lu\n",debug.tv_usec);
     return 0;
 }
