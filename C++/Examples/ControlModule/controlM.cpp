@@ -10,6 +10,7 @@ make
 */
 
 #define _GNU_SOURCE
+#include "lib/profiler.c"
 #include "lib/profiler.h"
 #include <sched.h>
 #include <string>
