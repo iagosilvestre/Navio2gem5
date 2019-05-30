@@ -23,15 +23,16 @@ make
 #include <unistd.h>
 #include <vector>
 
+
+#define ARM_MATH_CM4
 #include "pv_module_co.h"
 //#include "c_control_lqrArthur.h"
 #include "pv_typedefs.h"
-#include "c_control_lqrArthur_vel.c"
 #include "c_control_lqrArthur_vel.h"
-#define ARM_MATH_CM4
-#include "lib/arm_mat_init_f32.c"
-#include "lib/arm_mat_sub_f32.c"
-#include "lib/arm_mat_mult_f32.c"
+//#include "c_control_lqrArthur_vel.c"
+//#include "lib/arm_mat_init_f32.c"
+//#include "lib/arm_mat_sub_f32.c"
+//#include "lib/arm_mat_mult_f32.c"
 #include "lib/arm_math.h"
 
 
