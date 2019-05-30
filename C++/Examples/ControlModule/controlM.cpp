@@ -109,12 +109,12 @@ void module_co_run()
 		/*pos_ref.x += iRefData.x;
 		pos_ref.y += iRefData.y;
 		pos_ref.z += iRefData.z;*/
-		pos_ref.x = iRefData.x;
+		/*pos_ref.x = iRefData.x;
 		pos_ref.y = iRefData.y;
 		pos_ref.z = iRefData.z;
 		pos_ref.dotX = iRefData.dotX;
 		pos_ref.dotY = iRefData.dotY;
-		pos_ref.dotZ = iRefData.dotZ;
+		pos_ref.dotZ = iRefData.dotZ;*/
 		pos_ref.x += .1;
 		pos_ref.y +=.1;
 		pos_ref.z += .1;
@@ -126,7 +126,7 @@ void module_co_run()
 
 
 	/* Passa os valores davariavel compartilha para a variavel iInputData */
-	if (1)
+	if ((heartBeat%10)==9)
 	{
 		iInputData.position_reference.x = pos_ref.x;
 		iInputData.position_reference.y = pos_ref.y;
@@ -140,6 +140,7 @@ void module_co_run()
 		iInputData.position.dotX = pos_ref.dotX;
 		iInputData.position.dotY = pos_ref.dotY;
 		iInputData.position.dotZ = pos_ref.dotZ;
+	}
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
 
 //		servoRightData.push_back(oControlOutputData.actuation.servoRight);
@@ -152,7 +153,7 @@ void module_co_run()
 		//printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
 		//printf("\n servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
 		//oControlOutputData.actuation = c_control_lqrArthur_controller(iInputData);
-	}
+
 
 	/* toggle pin for debug */
 	//c_common_gpio_toggle(LED5);
@@ -170,7 +171,7 @@ void module_co_run()
 	printf("\n\n\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
 	printf(" escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
 	printf(" servoRight = %f\n",oControlOutputData.actuation.servoRight);
-	printf(" servoLeft = %f",oControlOutputData.actuation.servoLeft);
+	printf(" servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
 	}
 }
 
