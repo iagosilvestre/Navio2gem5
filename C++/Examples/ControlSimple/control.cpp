@@ -130,10 +130,10 @@ void module_co_run()
 		iInputData.position.dotY = pos_ref.dotY;
 		iInputData.position.dotZ = pos_ref.dotZ;
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
-		//printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
-		//printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
-		//printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
-		//printf("\n servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
+		printf("\n escRightNewtons = %f\n",oControlOutputData.actuation.escRightNewtons);
+		printf("\n escLeftNewtons = %f\n",oControlOutputData.actuation.escLeftNewtons);
+		printf("\n servoRight = %f\n",oControlOutputData.actuation.servoRight);
+		printf("\n servoLeft = %f\n",oControlOutputData.actuation.servoLeft);
 		//oControlOutputData.actuation = c_control_lqrArthur_controller(iInputData);
 	}
 
