@@ -6,10 +6,11 @@ To run this example navigate to the directory containing it and run following co
 make
 ./Barometer
 */
-#include "lib/profiler.h"
+
+
+#include <Common/profiler.h>
 #define _GNU_SOURCE
 #include <sched.h>
-#include "lib/profiler.h"
 #include <string>
 #include <stdio.h>
 #include <memory>
@@ -22,16 +23,15 @@ make
 #include <unistd.h>
 #include <vector>
 
-#include "pv_module_co.h"
+#include <Common/pv_module_co.h>
 //#include "c_control_lqrArthur.h"
-#include "pv_typedefs.h"
-#include "c_control_lqrArthur_vel.c"
-#include "c_control_lqrArthur_vel.h"
+#include <Common/pv_typedefs.h>
+#include <Common/c_control_lqrArthur_vel.h>
 #define ARM_MATH_CM4
-#include "lib/arm_mat_init_f32.c"
-#include "lib/arm_mat_sub_f32.c"
-#include "lib/arm_mat_mult_f32.c"
-#include "lib/arm_math.h"
+//#include "lib/arm_mat_init_f32.c"
+//#include "lib/arm_mat_sub_f32.c"
+//#include "lib/arm_mat_mult_f32.c"
+#include <Common/arm_math.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
