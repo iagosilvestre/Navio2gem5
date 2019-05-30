@@ -95,13 +95,22 @@ void module_co_run()
   for( int k = 0; k < 100; k += 1 ){
 	  gettimeofday(&t0, NULL);
 
+	  if ((k%10)==0){
 		pos_ref.x += .1;
 		pos_ref.y += .1;
 		pos_ref.z += .1;
 		pos_ref.dotX += .1;
 		pos_ref.dotY += .1;
 		pos_ref.dotZ += .1;
-
+	  }
+	  else if ((k%3)==0){
+		iInputData.position.x = pos_ref.x;
+		iInputData.position.y = pos_ref.y;
+		iInputData.position.z = pos_ref.z;
+		iInputData.position.dotX = pos_ref.dotX;
+		iInputData.position.dotY = pos_ref.dotY;
+		iInputData.position.dotZ = pos_ref.dotZ;
+	  	  }
 
 	/* Passa os valores davariavel compartilha para a variavel iInputData */
 	if (1)
@@ -112,12 +121,6 @@ void module_co_run()
 		iInputData.position_reference.dotX = pos_ref.dotX;
 		iInputData.position_reference.dotY = pos_ref.dotY;
 		iInputData.position_reference.dotZ = pos_ref.dotZ;
-//		iInputData.position.x = pos_ref.x;
-//		iInputData.position.y = pos_ref.y;
-//		iInputData.position.z = pos_ref.z;
-//		iInputData.position.dotX = pos_ref.dotX;
-//		iInputData.position.dotY = pos_ref.dotY;
-//		iInputData.position.dotZ = pos_ref.dotZ;
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
 		gettimeofday(&t1, NULL);
 		timersub(&t1, &t0, &dtCon);
