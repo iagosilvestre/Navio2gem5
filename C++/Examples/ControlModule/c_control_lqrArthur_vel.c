@@ -194,10 +194,10 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	printf("\n----------------------------------------\n");
 	printf("K numCols = %d\n",K.numCols);
 	printf("K numRows = %d\n",K.numRows);
-		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 0),*(*(&K.pData + 1) + 0),*(*(&K.pData + 2) + 0),*(*(&K.pData + 3) + 0));
-		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 1),*(*(&K.pData + 1) + 0),*(*(&K.pData + 2) + 0),*(*(&K.pData + 3) + 0));
-		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 2),*(*(&K.pData + 1) + 0),*(*(&K.pData + 2) + 0),*(*(&K.pData + 3) + 0));
-		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 3),*(*(&K.pData + 1) + 0),*(*(&K.pData + 2) + 0),*(*(&K.pData + 3) + 0));
+		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 0),*(*(&K.pData + 0) + 0),*(*(&K.pData + 0) + 0),*(*(&K.pData + 0) + 0));
+		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 1),*(*(&K.pData + 0) + 1),*(*(&K.pData + 0) + 1),*(*(&K.pData + 0) + 1));
+		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 2),*(*(&K.pData + 0) + 2),*(*(&K.pData + 0) + 2),*(*(&K.pData + 0) + 2));
+		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 3),*(*(&K.pData + 0) + 3),*(*(&K.pData + 0) + 3),*(*(&K.pData + 0) + 3));
 	printf("\n----------------------------------------\n");
 	printf("error numCols= %d\n",error_state_vector.numCols);
 	printf("error numRows= %d\n",error_state_vector.numRows);
