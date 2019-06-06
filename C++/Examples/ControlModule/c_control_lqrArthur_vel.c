@@ -203,6 +203,18 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 2));
 			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 3));
 			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 4));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 5));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 6));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 7));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 8));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 9));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 10));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 11));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 12));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 13));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 14));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 15));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 16));
 	printf("\n----------------------------------------\n");
 	printf("error numCols= %d\n",error_state_vector.numCols);
 	printf("error numRows= %d\n",error_state_vector.numRows);
