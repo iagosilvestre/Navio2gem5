@@ -199,10 +199,10 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	printf("%f\n", *(K.pData + 2 * 17 + 0));
 	printf("%f\n", *(K.pData + 3 * 17 + 0));
 	printf("%f\n", *(K.pData + 4 * 17 + 0));
-	printf("%f\n", *(K.pData + 5 * 17 + 0));
-	printf("%f\n", *(K.pData + 6 * 17 + 0));
-	printf("%f\n", *(K.pData + 7 * 17 + 0));
-	printf("%f\n", *(K.pData + 8 * 17 + 0));
+	printf("%f\n", *(K.pData + 4 * 17 + 1));
+	printf("%f\n", *(K.pData + 4 * 17 + 2));
+	printf("%f\n", *(K.pData + 4 * 17 + 3));
+	printf("%f\n", *(K.pData + 4 * 17 + 4));
 		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 0),*(*(&K.pData + 0) + 1),*(*(&K.pData + 0) + 2),*(*(&K.pData + 0) + 3),*(*(&K.pData + 0) + 4),*(*(&K.pData + 0) + 5),*(*(&K.pData + 0) + 6),*(*(&K.pData + 0) + 7),*(*(&K.pData + 0) + 8),*(*(&K.pData + 0) + 9),*(*(&K.pData + 0) + 10),*(*(&K.pData + 0) + 11),*(*(&K.pData + 0) + 12),*(*(&K.pData + 0) + 13),*(*(&K.pData + 0) + 14),*(*(&K.pData + 0) + 15),*(*(&K.pData + 0) + 16));
 		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 17),*(*(&K.pData + 0) + 18),*(*(&K.pData + 0) + 19),*(*(&K.pData + 0) + 20),*(*(&K.pData + 0) + 21),*(*(&K.pData + 0) + 22),*(*(&K.pData + 0) + 23),*(*(&K.pData + 0) + 24),*(*(&K.pData + 0) + 25),*(*(&K.pData + 0) + 26),*(*(&K.pData + 0) + 27),*(*(&K.pData + 0) + 28),*(*(&K.pData + 0) + 29),*(*(&K.pData + 0) + 30),*(*(&K.pData + 0) + 31),*(*(&K.pData + 0) + 32),*(*(&K.pData + 0) + 33));
 		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 34),*(*(&K.pData + 0) + 35),*(*(&K.pData + 0) + 36),*(*(&K.pData + 0) + 37),*(*(&K.pData + 0) + 38),*(*(&K.pData + 0) + 39),*(*(&K.pData + 0) + 40),*(*(&K.pData + 0) + 41),*(*(&K.pData + 0) + 42),*(*(&K.pData + 0) + 43),*(*(&K.pData + 0) + 44),*(*(&K.pData + 0) + 45),*(*(&K.pData + 0) + 46),*(*(&K.pData + 0) + 47),*(*(&K.pData + 0) + 48),*(*(&K.pData + 0) + 49),*(*(&K.pData + 0) + 50));
