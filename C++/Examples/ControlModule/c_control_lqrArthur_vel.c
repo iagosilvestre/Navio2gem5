@@ -202,7 +202,25 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	printf("\n----------------------------------------\n");
 	printf("error numCols= %d\n",error_state_vector.numCols);
 	printf("error numRows= %d\n",error_state_vector.numRows);
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 0));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 1));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 2));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 3));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 4));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 5));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 6));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 7));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 8));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 9));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 10));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 11));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 12));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 13));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 14));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 15));
+		printf("%f\n",*(*(&error_state_vector.pData + 0) + 16));
 	arm_mat_mult_f32(&K, &error_state_vector, &delta_control);
+
 	/* u = ur - delta_u */
 	arm_mat_sub_f32(&equilibrium_control, &delta_control, &control_output);
 	printf("\n----------------------------------------\n");
