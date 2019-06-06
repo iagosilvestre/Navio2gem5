@@ -79,7 +79,7 @@ void module_co_run()
 	oControlOutputData.actuation.escRightNewtons = 10.2751;
 	oControlOutputData.actuation.escLeftNewtons = 10.2799;
 
-  for( int k = 0; k < 1; k += 1 ){
+  for( int k = 0; k < 100; k += 1 ){
 	  gettimeofday(&t0, NULL);
 
 	  if ((k%10)==0){
