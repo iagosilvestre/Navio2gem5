@@ -214,7 +214,7 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 13));
 			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 14));
 			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 15));
-			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 16));
+			printf("%f | %f | %f | %f |\n",*(*(&K.pData + 1) + 16));
 	printf("\n----------------------------------------\n");
 	printf("error numCols= %d\n",error_state_vector.numCols);
 	printf("error numRows= %d\n",error_state_vector.numRows);
