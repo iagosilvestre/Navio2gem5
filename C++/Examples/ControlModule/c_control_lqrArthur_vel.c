@@ -186,6 +186,11 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	printf("\n----------------------------------------\n");
 	printf("control output numCols = %d\n",delta_control.numCols);
 	printf("control output numRows = %d\n",delta_control.numRows);
+		printf("%f\n",*(*(&control_output.pData + 0) + 0));
+		printf("%f\n",*(*(&control_output.pData + 0) + 1));
+		printf("%f\n",*(*(&control_output.pData + 0) + 2));
+		printf("%f\n",*(*(&control_output.pData + 0) + 3));
+
 	printf("\n----------------------------------------\n");
 	printf("control output numCols = %d\n",K.numCols);
 	printf("control output numRows = %d\n",K.numRows);
