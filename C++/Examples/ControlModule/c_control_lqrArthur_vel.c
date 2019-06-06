@@ -193,10 +193,14 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 
 	printf("\n----------------------------------------\n");
 	printf("K numCols = %d\n",K.numCols);
-	printf("K = %d\n",K.numRows);
+	printf("K numRows = %d\n",K.numRows);
+		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 0),*(*(&K.pData + 1) + 0),*(*(&K.pData + 2) + 0),*(*(&K.pData + 3) + 0));
+		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 1));
+		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 2));
+		printf("%f | %f | %f | %f |\n",*(*(&K.pData + 0) + 3));
 	printf("\n----------------------------------------\n");
-	printf("error = %d\n",error_state_vector.numCols);
-	printf("error = %d\n",error_state_vector.numRows);
+	printf("error numCols= %d\n",error_state_vector.numCols);
+	printf("error numRows= %d\n",error_state_vector.numRows);
 	arm_mat_mult_f32(&K, &error_state_vector, &delta_control);
 	/* u = ur - delta_u */
 	arm_mat_sub_f32(&equilibrium_control, &delta_control, &control_output);
