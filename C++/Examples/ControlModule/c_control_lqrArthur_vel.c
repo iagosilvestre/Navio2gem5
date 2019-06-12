@@ -186,10 +186,10 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	printf("\n----------------------------------------\n");
 	printf("deltaU numCols = %d\n",delta_control.numCols);
 	printf("deltaU numRows = %d\n",delta_control.numRows);
-		printf("%.4f\n",*(*(&control_output.pData + 0) + 0));
-		printf("%.4f\n",*(*(&control_output.pData + 0) + 1));
-		printf("%.4f\n",*(*(&control_output.pData + 0) + 2));
-		printf("%.4f\n",*(*(&control_output.pData + 0) + 3));
+		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 0));
+		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 1));
+		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 2));
+		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 3));
 
 	printf("\n----------------------------------------\n");
 	printf("K numCols = %d\n",K.numCols);
@@ -207,23 +207,24 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	printf("\n----------------------------------------\n");
 	printf("error numCols= %d\n",error_state_vector.numCols);
 	printf("error numRows= %d\n",error_state_vector.numRows);
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 0));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 1));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 2));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 3));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 4));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 5));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 6));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 7));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 8));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 9));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 10));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 11));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 12));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 13));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 14));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 15));
-		printf("%.4f\n",*(*(&error_state_vector.pData + 0) + 16));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 0));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 1));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 2));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 3));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 4));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 5));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 6));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 7));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 8));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 9));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 10));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 11));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 12));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 13));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 14));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 15));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 16));
+
 	arm_mat_mult_f32(&K, &error_state_vector, &delta_control);
 
 	/* u = ur - delta_u */
