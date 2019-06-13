@@ -183,61 +183,61 @@ pv_type_actuation c_control_lqrArthur_vel_controller(pv_msg_input inputData){
 	error_state_vector = c_control_lqrArthur_vel_calcErrorStateVector(inputData);
 
 	/* -delta_u = K*delta_x */
-//	printf("\n----------------------------------------\n");
-//	printf("deltaU numCols = %d\n",delta_control.numCols);
-//	printf("deltaU numRows = %d\n",delta_control.numRows);
-//		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 0));
-//		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 1));
-//		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 2));
-//		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 3));
-//
-//	printf("\n----------------------------------------\n");
-//	printf("K numCols = %d\n",K.numCols);
-//	printf("K numRows = %d\n",K.numRows);// i *column + j -- i row -- j column  matrix m(rows) by n(columns)
-//	printf(" %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f ,\n\n", *(K.pData + 0 * 17 + 0),*(K.pData + 0 * 17 + 1),*(K.pData + 0 * 17 + 2),*(K.pData + 0 * 17 + 3),*(K.pData + 0 * 17 + 4),*(K.pData + 0 * 17 + 5),*(K.pData + 0 * 17 + 6),*(K.pData + 0 * 17 + 7),*(K.pData + 0 * 17 + 8),*(K.pData + 0 * 17 + 9),*(K.pData + 0 * 17 + 10),*(K.pData + 0 * 17 + 11),*(K.pData + 0 * 17 + 12),*(K.pData + 0 * 17 + 13),*(K.pData + 0 * 17 + 14),*(K.pData + 0 * 17 + 15),*(K.pData + 0 * 17 + 16));
-//	printf(" %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f ,\n\n", *(K.pData + 1 * 17 + 0),*(K.pData + 1 * 17 + 1),*(K.pData + 1 * 17 + 2),*(K.pData + 1 * 17 + 3),*(K.pData + 1 * 17 + 4),*(K.pData + 1 * 17 + 5),*(K.pData + 1 * 17 + 6),*(K.pData + 1 * 17 + 7),*(K.pData + 1 * 17 + 8),*(K.pData + 1 * 17 + 9),*(K.pData + 1 * 17 + 10),*(K.pData + 1 * 17 + 11),*(K.pData + 1 * 17 + 12),*(K.pData + 1 * 17 + 13),*(K.pData + 1 * 17 + 14),*(K.pData + 1 * 17 + 15),*(K.pData + 1 * 17 + 16));
-//	printf(" %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f ,\n\n", *(K.pData + 2 * 17 + 0),*(K.pData + 2 * 17 + 1),*(K.pData + 2 * 17 + 2),*(K.pData + 2 * 17 + 3),*(K.pData + 2 * 17 + 4),*(K.pData + 2 * 17 + 5),*(K.pData + 2 * 17 + 6),*(K.pData + 2 * 17 + 7),*(K.pData + 2 * 17 + 8),*(K.pData + 2 * 17 + 9),*(K.pData + 2 * 17 + 10),*(K.pData + 2 * 17 + 11),*(K.pData + 2 * 17 + 12),*(K.pData + 2 * 17 + 13),*(K.pData + 2 * 17 + 14),*(K.pData + 2 * 17 + 15),*(K.pData + 2 * 17 + 16));
-//	printf(" %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f ,\n\n", *(K.pData + 3 * 17 + 0),*(K.pData + 3 * 17 + 1),*(K.pData + 3 * 17 + 2),*(K.pData + 3 * 17 + 3),*(K.pData + 3 * 17 + 4),*(K.pData + 3 * 17 + 5),*(K.pData + 3 * 17 + 6),*(K.pData + 3 * 17 + 7),*(K.pData + 3 * 17 + 8),*(K.pData + 3 * 17 + 9),*(K.pData + 3 * 17 + 10),*(K.pData + 3 * 17 + 11),*(K.pData + 3 * 17 + 12),*(K.pData + 3 * 17 + 13),*(K.pData + 3 * 17 + 14),*(K.pData + 3 * 17 + 15),*(K.pData + 3 * 17 + 16));
-//
-//		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 0),*(*(&K.pData + 0) + 1),*(*(&K.pData + 0) + 2),*(*(&K.pData + 0) + 3),*(*(&K.pData + 0) + 4),*(*(&K.pData + 0) + 5),*(*(&K.pData + 0) + 6),*(*(&K.pData + 0) + 7),*(*(&K.pData + 0) + 8),*(*(&K.pData + 0) + 9),*(*(&K.pData + 0) + 10),*(*(&K.pData + 0) + 11),*(*(&K.pData + 0) + 12),*(*(&K.pData + 0) + 13),*(*(&K.pData + 0) + 14),*(*(&K.pData + 0) + 15),*(*(&K.pData + 0) + 16));
-//		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 17),*(*(&K.pData + 0) + 18),*(*(&K.pData + 0) + 19),*(*(&K.pData + 0) + 20),*(*(&K.pData + 0) + 21),*(*(&K.pData + 0) + 22),*(*(&K.pData + 0) + 23),*(*(&K.pData + 0) + 24),*(*(&K.pData + 0) + 25),*(*(&K.pData + 0) + 26),*(*(&K.pData + 0) + 27),*(*(&K.pData + 0) + 28),*(*(&K.pData + 0) + 29),*(*(&K.pData + 0) + 30),*(*(&K.pData + 0) + 31),*(*(&K.pData + 0) + 32),*(*(&K.pData + 0) + 33));
-//		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 34),*(*(&K.pData + 0) + 35),*(*(&K.pData + 0) + 36),*(*(&K.pData + 0) + 37),*(*(&K.pData + 0) + 38),*(*(&K.pData + 0) + 39),*(*(&K.pData + 0) + 40),*(*(&K.pData + 0) + 41),*(*(&K.pData + 0) + 42),*(*(&K.pData + 0) + 43),*(*(&K.pData + 0) + 44),*(*(&K.pData + 0) + 45),*(*(&K.pData + 0) + 46),*(*(&K.pData + 0) + 47),*(*(&K.pData + 0) + 48),*(*(&K.pData + 0) + 49),*(*(&K.pData + 0) + 50));
-//		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 51),*(*(&K.pData + 0) + 52),*(*(&K.pData + 0) + 53),*(*(&K.pData + 0) + 54),*(*(&K.pData + 0) + 55),*(*(&K.pData + 0) + 56),*(*(&K.pData + 0) + 57),*(*(&K.pData + 0) + 58),*(*(&K.pData + 0) + 59),*(*(&K.pData + 0) + 60),*(*(&K.pData + 0) + 61),*(*(&K.pData + 0) + 62),*(*(&K.pData + 0) + 63),*(*(&K.pData + 0) + 64),*(*(&K.pData + 0) + 65),*(*(&K.pData + 0) + 66),*(*(&K.pData + 0) + 67));
-//
-//	printf("\n----------------------------------------\n");
-//	printf("error numCols= %d\n",error_state_vector.numCols);
-//	printf("error numRows= %d\n",error_state_vector.numRows);
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 0));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 1));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 2));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 3));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 4));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 5));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 6));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 7));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 8));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 9));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 10));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 11));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 12));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 13));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 14));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 15));
-//	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 16));
+	printf("\n----------------------------------------\n");
+	printf("deltaU numCols = %d\n",delta_control.numCols);
+	printf("deltaU numRows = %d\n",delta_control.numRows);
+		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 0));
+		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 1));
+		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 2));
+		printf("%.4f\n",*(delta_control.pData + 0 * delta_control.numCols + 3));
+
+	printf("\n----------------------------------------\n");
+	printf("K numCols = %d\n",K.numCols);
+	printf("K numRows = %d\n",K.numRows);// i *column + j -- i row -- j column  matrix m(rows) by n(columns)
+	printf(" %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f ,\n\n", *(K.pData + 0 * 17 + 0),*(K.pData + 0 * 17 + 1),*(K.pData + 0 * 17 + 2),*(K.pData + 0 * 17 + 3),*(K.pData + 0 * 17 + 4),*(K.pData + 0 * 17 + 5),*(K.pData + 0 * 17 + 6),*(K.pData + 0 * 17 + 7),*(K.pData + 0 * 17 + 8),*(K.pData + 0 * 17 + 9),*(K.pData + 0 * 17 + 10),*(K.pData + 0 * 17 + 11),*(K.pData + 0 * 17 + 12),*(K.pData + 0 * 17 + 13),*(K.pData + 0 * 17 + 14),*(K.pData + 0 * 17 + 15),*(K.pData + 0 * 17 + 16));
+	printf(" %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f ,\n\n", *(K.pData + 1 * 17 + 0),*(K.pData + 1 * 17 + 1),*(K.pData + 1 * 17 + 2),*(K.pData + 1 * 17 + 3),*(K.pData + 1 * 17 + 4),*(K.pData + 1 * 17 + 5),*(K.pData + 1 * 17 + 6),*(K.pData + 1 * 17 + 7),*(K.pData + 1 * 17 + 8),*(K.pData + 1 * 17 + 9),*(K.pData + 1 * 17 + 10),*(K.pData + 1 * 17 + 11),*(K.pData + 1 * 17 + 12),*(K.pData + 1 * 17 + 13),*(K.pData + 1 * 17 + 14),*(K.pData + 1 * 17 + 15),*(K.pData + 1 * 17 + 16));
+	printf(" %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f ,\n\n", *(K.pData + 2 * 17 + 0),*(K.pData + 2 * 17 + 1),*(K.pData + 2 * 17 + 2),*(K.pData + 2 * 17 + 3),*(K.pData + 2 * 17 + 4),*(K.pData + 2 * 17 + 5),*(K.pData + 2 * 17 + 6),*(K.pData + 2 * 17 + 7),*(K.pData + 2 * 17 + 8),*(K.pData + 2 * 17 + 9),*(K.pData + 2 * 17 + 10),*(K.pData + 2 * 17 + 11),*(K.pData + 2 * 17 + 12),*(K.pData + 2 * 17 + 13),*(K.pData + 2 * 17 + 14),*(K.pData + 2 * 17 + 15),*(K.pData + 2 * 17 + 16));
+	printf(" %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f , %.4f ,\n\n", *(K.pData + 3 * 17 + 0),*(K.pData + 3 * 17 + 1),*(K.pData + 3 * 17 + 2),*(K.pData + 3 * 17 + 3),*(K.pData + 3 * 17 + 4),*(K.pData + 3 * 17 + 5),*(K.pData + 3 * 17 + 6),*(K.pData + 3 * 17 + 7),*(K.pData + 3 * 17 + 8),*(K.pData + 3 * 17 + 9),*(K.pData + 3 * 17 + 10),*(K.pData + 3 * 17 + 11),*(K.pData + 3 * 17 + 12),*(K.pData + 3 * 17 + 13),*(K.pData + 3 * 17 + 14),*(K.pData + 3 * 17 + 15),*(K.pData + 3 * 17 + 16));
+
+		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 0),*(*(&K.pData + 0) + 1),*(*(&K.pData + 0) + 2),*(*(&K.pData + 0) + 3),*(*(&K.pData + 0) + 4),*(*(&K.pData + 0) + 5),*(*(&K.pData + 0) + 6),*(*(&K.pData + 0) + 7),*(*(&K.pData + 0) + 8),*(*(&K.pData + 0) + 9),*(*(&K.pData + 0) + 10),*(*(&K.pData + 0) + 11),*(*(&K.pData + 0) + 12),*(*(&K.pData + 0) + 13),*(*(&K.pData + 0) + 14),*(*(&K.pData + 0) + 15),*(*(&K.pData + 0) + 16));
+		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 17),*(*(&K.pData + 0) + 18),*(*(&K.pData + 0) + 19),*(*(&K.pData + 0) + 20),*(*(&K.pData + 0) + 21),*(*(&K.pData + 0) + 22),*(*(&K.pData + 0) + 23),*(*(&K.pData + 0) + 24),*(*(&K.pData + 0) + 25),*(*(&K.pData + 0) + 26),*(*(&K.pData + 0) + 27),*(*(&K.pData + 0) + 28),*(*(&K.pData + 0) + 29),*(*(&K.pData + 0) + 30),*(*(&K.pData + 0) + 31),*(*(&K.pData + 0) + 32),*(*(&K.pData + 0) + 33));
+		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 34),*(*(&K.pData + 0) + 35),*(*(&K.pData + 0) + 36),*(*(&K.pData + 0) + 37),*(*(&K.pData + 0) + 38),*(*(&K.pData + 0) + 39),*(*(&K.pData + 0) + 40),*(*(&K.pData + 0) + 41),*(*(&K.pData + 0) + 42),*(*(&K.pData + 0) + 43),*(*(&K.pData + 0) + 44),*(*(&K.pData + 0) + 45),*(*(&K.pData + 0) + 46),*(*(&K.pData + 0) + 47),*(*(&K.pData + 0) + 48),*(*(&K.pData + 0) + 49),*(*(&K.pData + 0) + 50));
+		printf(" %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f , %f ,\n",*(*(&K.pData + 0) + 51),*(*(&K.pData + 0) + 52),*(*(&K.pData + 0) + 53),*(*(&K.pData + 0) + 54),*(*(&K.pData + 0) + 55),*(*(&K.pData + 0) + 56),*(*(&K.pData + 0) + 57),*(*(&K.pData + 0) + 58),*(*(&K.pData + 0) + 59),*(*(&K.pData + 0) + 60),*(*(&K.pData + 0) + 61),*(*(&K.pData + 0) + 62),*(*(&K.pData + 0) + 63),*(*(&K.pData + 0) + 64),*(*(&K.pData + 0) + 65),*(*(&K.pData + 0) + 66),*(*(&K.pData + 0) + 67));
+
+	printf("\n----------------------------------------\n");
+	printf("error numCols= %d\n",error_state_vector.numCols);
+	printf("error numRows= %d\n",error_state_vector.numRows);
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 0));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 1));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 2));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 3));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 4));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 5));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 6));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 7));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 8));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 9));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 10));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 11));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 12));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 13));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 14));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 15));
+	printf("%.4f\n",*(error_state_vector.pData + 0 * error_state_vector.numCols + 16));
 
 	arm_mat_mult_f32(&K, &error_state_vector, &delta_control);
 
 	/* u = ur - delta_u */
 	arm_mat_sub_f32(&equilibrium_control, &delta_control, &control_output);
-//	printf("\n----------------------------------------\n");
-//	printf("control output numCols = %d\n",control_output.numCols);
-//	printf("control output numRows = %d\n",control_output.numRows);
-//	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 0),*(*(&equilibrium_control.pData + 0) + 0),*(*(&delta_control.pData + 0) + 0));
-//	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 1),*(*(&equilibrium_control.pData + 0) + 1),*(*(&delta_control.pData + 0) + 1));
-//	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 2),*(*(&equilibrium_control.pData + 0) + 2),*(*(&delta_control.pData + 0) + 2));
-//	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 3),*(*(&equilibrium_control.pData + 0) + 3),*(*(&delta_control.pData + 0) + 3));
+	printf("\n----------------------------------------\n");
+	printf("control output numCols = %d\n",control_output.numCols);
+	printf("control output numRows = %d\n",control_output.numRows);
+	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 0),*(*(&equilibrium_control.pData + 0) + 0),*(*(&delta_control.pData + 0) + 0));
+	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 1),*(*(&equilibrium_control.pData + 0) + 1),*(*(&delta_control.pData + 0) + 1));
+	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 2),*(*(&equilibrium_control.pData + 0) + 2),*(*(&delta_control.pData + 0) + 2));
+	printf("%f=%f-%f\n",*(*(&control_output.pData + 0) + 3),*(*(&equilibrium_control.pData + 0) + 3),*(*(&delta_control.pData + 0) + 3));
 //
-//	printf("\n----------------------------------------\n");
+	printf("\n----------------------------------------\n");
 
 	//
 	//The result must be in a struct pv_msg_io_actuation
