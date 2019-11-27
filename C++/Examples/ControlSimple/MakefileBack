@@ -1,11 +1,10 @@
-CXX ?= aarch64-linux-gnu-gcc
+CXX ?= g++
 NAVIO = ../../Navio
 INCLUDES = -I ../../Navio
 
 all:
-	$(MAKE) -mcpu=cortex-a53 -C ../../Navio all
+	$(MAKE) -C ../../Navio all
 	$(CXX) $(INCLUDES) control.cpp -L$(NAVIO) -lnavio -o control -static
 
 clean:
 	rm -f control
-
