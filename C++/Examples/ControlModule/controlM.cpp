@@ -94,7 +94,7 @@ void module_co_run()
 	pos_ref.dotY = rand() % 10 + 1;
 	pos_ref.dotZ = rand() % 10 + 1;
 
-	  gettimeofday(&t0, NULL);
+	  
 	/* Passa os valores davariavel compartilha para a variavel iInputData */
 	if (1)
 	{
@@ -104,6 +104,7 @@ void module_co_run()
 		iInputData.position_reference.dotX = pos_ref.dotX;
 		iInputData.position_reference.dotY = pos_ref.dotY;
 		iInputData.position_reference.dotZ = pos_ref.dotZ;
+		gettimeofday(&t0, NULL);
 		oControlOutputData.actuation = c_control_lqrArthur_vel_controller(iInputData);
 		gettimeofday(&t1, NULL);
 		timersub(&t1, &t0, &dtCon);
@@ -148,6 +149,6 @@ int main()
 		usleep(200000);
 		gettimeofday(&t1, NULL);
 		timersub(&t1, &t0, &debug);
-		printf("\n200.000 us:%lu\n",debug.tv_usec);
+		//printf("\n200.000 us:%lu\n",debug.tv_usec);
     return 0;
 }
