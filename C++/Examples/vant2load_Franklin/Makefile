@@ -3,7 +3,7 @@ CC = arm-linux-gnueabi-g++ -I /usr/include/eigen3/
 # compiler flags:
 #  -g    adds debugging information to the executable file
 #  -Wall turns on most, but not all, compiler warnings
-CFLAGS  = -g -Wall -static ${GEM5_PATH}/util/m5/m5op_arm.S
+CFLAGS  = -g -Wall -static 
 
 # the build target executable:
 TARGET = vant2loadFranklin
