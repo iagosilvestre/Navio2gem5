@@ -7,7 +7,6 @@
 #include "include/routines.cpp"
 #include "include/linear_kalman_filter.cpp"
 #include "include/zonotopic_state_estimator.cpp"
-double auxDeb=2;
 class vant2load_Franklin : public Icontroller
 {
 	
