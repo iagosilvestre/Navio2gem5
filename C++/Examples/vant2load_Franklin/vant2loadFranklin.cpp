@@ -11,10 +11,12 @@
 #include <vector>
 #include <memory>
 #include <string>
+#include <algorithm>
+#include <chrono>
 #include <unistd.h>
 
-struct timeval t0, t1;
-struct timeval dtCon,debug;
+//struct timeval t0, t1;
+//struct timeval dtCon,debug;
 std::vector<int> controlData;
 unsigned long int auxCount=0;
 int main()
@@ -44,12 +46,14 @@ int main()
 //		msgstates = arraymsg.values.at(0);
 
 		while(k<50){
-		
-		gettimeofday(&t0, NULL);
+		auto start = std::chrono::high_resolution_clock::now();
+//		gettimeofday(&t0, NULL);
 		out=control->execute(arraymsg);
-		gettimeofday(&t1, NULL);
-		timersub(&t1, &t0, &dtCon);
-		controlData.push_back(dtCon.tv_usec);
+//		gettimeofday(&t1, NULL);
+//		timersub(&t1, &t0, &dtCon);
+		auto elapsed = std::chrono::high_resolution_clock::now() - start;
+		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+		controlData.push_back(microseconds);
 		
 		k++;
 		}
