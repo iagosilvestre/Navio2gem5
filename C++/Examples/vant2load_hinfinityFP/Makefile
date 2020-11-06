@@ -6,7 +6,7 @@ CC = arm-linux-gnueabi-g++ -I /usr/include/eigen3/ -I /opt/ros/melodic/include
 CFLAGS  = -g -Wall -static -mcpu=cortex-a53 -mfloat-abi=softfp -mfpu=neon-fp-armv8 -mneon-for-64bits -mtune=cortex-a53
 
 # the build target executable:
-TARGET = vant2loadHinfinity
+TARGET = vant2loadHinfinityFP
 
 all: $(TARGET)
 
