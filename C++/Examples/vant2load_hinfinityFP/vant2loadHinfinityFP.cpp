@@ -44,8 +44,8 @@ int main()
 //		simulator_msgs::Sensor msgstates;
 //		arraymsg.header;
 //		msgstates = arraymsg.values.at(0);
-
-		while(k<50){
+		auto all = std::chrono::high_resolution_clock::now();
+		while(k<100){
 		auto start = std::chrono::high_resolution_clock::now();
 //		m5_reset_stats(0,0);
 
@@ -56,7 +56,9 @@ int main()
 //		m5_dump_stats(0,0);
 		k++;
 		}
-
+		auto elapsed = std::chrono::high_resolution_clock::now() - all;
+		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+		controlData.push_back(microseconds);
 		FILE *fCON = fopen("control.txt", "w");
 				fprintf(fCON, "count;dtCon\n");
 				fclose(fCON);
