@@ -205,9 +205,9 @@ class feedforward
 		0,0,0,0,0,0,0,mugamma,0,0,
 		0,0,0,0,0,0,0,0,0,0,
 		0,0,0,0,0,0,0,0,0,0;
-
-		Linplus = (Lin.transpose()*Lin).inverse()*Lin.transpose();
 		__builtin_prefetch (&M, 0, 1);
+		Linplus = (Lin.transpose()*Lin).inverse()*Lin.transpose();
+		
 		uref = Linplus*(M*qrefddot + (C + Lfr)*qrefdot + G);	
 		
 		return uref;
