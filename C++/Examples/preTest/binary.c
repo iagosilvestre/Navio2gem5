@@ -23,12 +23,12 @@
          return -1;
  }
  int main() {
-     int SIZE = 1024*1024*512;
+     int SIZE = 1024*512;
      int *array =  malloc(SIZE*sizeof(int));
      for (int i=0;i<SIZE;i++){
        array[i] = i;
      }
-     int NUM_LOOKUPS = 1024*1024*8;
+     int NUM_LOOKUPS = 1024*8;
      srand(time(NULL));
      int *lookups = malloc(NUM_LOOKUPS * sizeof(int));
      for (int i=0;i<NUM_LOOKUPS;i++){
