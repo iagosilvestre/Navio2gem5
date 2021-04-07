@@ -14,10 +14,12 @@ class hinfinity : public Icontroller
 	private: Eigen::MatrixXd K;
 	private: Eigen::VectorXd X;
 	private: double T;
+	private: double notrandom;
 
 	public: hinfinity(): Xref(24), K(4,24), X(24), Erro(24), Input(4)
 	{ 
 		T = 0.012;
+		notrandom=1;
 	}
 	public: ~hinfinity()
 	{
@@ -101,7 +103,6 @@ class hinfinity : public Icontroller
 	public: std::vector<double> execute(simulator_msgs::SensorArray arraymsg)
 	{
 		static float count = 0;
-
                 static float xint, x_ant = 0;
                 static float yint, y_ant = 0;
                 static float zint, z_ant = 0;
@@ -134,50 +135,50 @@ class hinfinity : public Icontroller
 			
 		//Xref << 2,0,1,0,0,0,0.00002965,0.004885,0.004893,0.00484,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
 		Xref << x,y,z,0,0,0,0.00002965,0.004885,0.004893,0.00484,xdot,ydot,zdot,0,0,0,0,0,0,0,0,0,0,0;
-
+		//(rand() % 10 )
 		//Convertendo velocidade angular
-                std::vector<double> etadot = pqr2EtaDot((rand() % 10),
-                		(rand() % 10),
-						(rand() % 10),
-						(rand() % 10),
-						(rand() % 10),
-						(rand() % 10));
+                std::vector<double> etadot = pqr2EtaDot((notrandom),
+                		(notrandom),
+						(notrandom),
+						(notrandom),
+						(notrandom),
+						(notrandom));
 
                 // Integrador Trapezoidal
-		float x_atual = (rand() % 10) - Xref(0);
+		float x_atual = (notrandom) - Xref(0);
                 xint = xint + (T/2)*(x_atual + x_ant);
                 x_ant = x_atual;
-                float y_atual = (rand() % 10) - Xref(1);
+                float y_atual = (notrandom) - Xref(1);
                 yint = yint + (T/2)*(y_atual + y_ant);
                 y_ant = y_atual;
-                float z_atual = (rand() % 10) - Xref(2);
+                float z_atual = (notrandom) - Xref(2);
                 zint = zint + (T/2)*(z_atual + z_ant);
                 z_ant = z_atual;
-                float yaw_atual = (rand() % 10) - Xref(5);
+                float yaw_atual = (notrandom) - Xref(5);
                 yawint = yawint + (T/2)*(yaw_atual + yaw_ant);
                 yaw_ant = yaw_atual;
 
 		// vetor de estados aumentado
-                X << (rand() % 10),//x
-        				(rand() % 10),//y
-        				(rand() % 10),//z
-        				(rand() % 10),//roll
-        				(rand() % 10),//pitch
-        				(rand() % 10),//yaw
-        				(rand() % 10),//g1 x
-        				(rand() % 10),//g2 y
-        				(rand() % 10),//aR
-        				(rand() % 10),//aL
-        				(rand() % 10),//vx
-        				(rand() % 10),//vy
-        				(rand() % 10),//vz
+                X << (notrandom),//x
+        				(notrandom),//y
+        				(notrandom),//z
+        				(notrandom),//roll
+        				(notrandom),//pitch
+        				(notrandom),//yaw
+        				(notrandom),//g1 x
+        				(notrandom),//g2 y
+        				(notrandom),//aR
+        				(notrandom),//aL
+        				(notrandom),//vx
+        				(notrandom),//vy
+        				(notrandom),//vz
         			 etadot.at(0),//droll
         			 etadot.at(1),//pitch
         			 etadot.at(2),//yaw
-        			 (rand() % 10),//g1dot
-        			 (rand() % 10),//g2dot
-        			 (rand() % 10),//aRdot
-        			 (rand() % 10),//aLdot
+        			 (notrandom),//g1dot
+        			 (notrandom),//g2dot
+        			 (notrandom),//aRdot
+        			 (notrandom),//aLdot
         			 xint,
         			 yint,
         			 zint,
@@ -205,7 +206,7 @@ class hinfinity : public Icontroller
 		Input(2) = Input(2) + varfeedforward(2,0);
 		Input(3) = Input(3) + varfeedforward(3,0);
 		count++; 
-
+		__builtin_prefetch (&Input, 0, 0);
 		std::vector<float> out2(Input.data(), Input.data() + Input.rows() * Input.cols());
 
 		std::vector<double> out(out2.size());
