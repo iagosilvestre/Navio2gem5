@@ -56,14 +56,14 @@ int main()
 		auto elapsed = std::chrono::high_resolution_clock::now() - all;
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 		controlData.push_back(microseconds);
-			FILE *fCON = fopen("control.txt", "w");
-				fprintf(fCON, "count;dtCon\n");
-				fclose(fCON);
-				for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
-					auxCount++;
-					FILE *fCON = fopen("control.txt", "a");
-					fprintf(fCON, "%d;%lu\n",auxCount,*it);
-					fclose(fCON);
-				}
+			//FILE *fCON = fopen("control.txt", "w");
+			//	fprintf(fCON, "count;dtCon\n");
+			//	fclose(fCON);
+			//	for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
+			//		auxCount++;
+			//		FILE *fCON = fopen("control.txt", "a");
+			//		fprintf(fCON, "%d;%lu\n",auxCount,*it);
+			//		fclose(fCON);
+			//	}
 		return 0;
 	}
