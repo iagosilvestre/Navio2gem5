@@ -66,31 +66,35 @@ class teste : public Icontroller
 //		}
 	
 		// Integrador Trapezoidal
-		__builtin_prefetch (&xint, 0, 1);
-		__builtin_prefetch (&x_ant, 0, 1);
+		__builtin_prefetch (&xint, 0, 0);
+		__builtin_prefetch (&x_ant, 0, 0);
+		__builtin_prefetch (&yint, 0, 0);
+		__builtin_prefetch (&y_ant, 0, 0);
+		__builtin_prefetch (&zint, 0, 0);
+		__builtin_prefetch (&z_ant, 0, 0);
+		__builtin_prefetch (&yawint, 0, 0);
+		__builtin_prefetch (&yaw_ant, 0, 0);
+
 		double x_atual = (notrandom) - Xref(0);
 		xint = xint + (T/2)*(x_atual + x_ant);
 		x_ant = x_atual;
-		__builtin_prefetch (&yint, 0, 1);
-		__builtin_prefetch (&y_ant, 0, 1);
+		
 		double y_atual = (notrandom) - Xref(1);
 		yint = yint + (T/2)*(y_atual + y_ant);
 		y_ant = y_atual;
-		__builtin_prefetch (&zint, 0, 1);
-		__builtin_prefetch (&z_ant, 0, 1);
+		
 		double z_atual = (notrandom) - Xref(2);
 		zint = zint + (T/2)*(z_atual + z_ant);
 		z_ant = z_atual;
-		__builtin_prefetch (&yawint, 0, 1);
-		__builtin_prefetch (&yaw_ant, 0, 1);
+		
 		double yaw_atual = (notrandom) - Xref(5);
 		yawint = yawint + (T/2)*(yaw_atual + yaw_ant);
 		yaw_ant = yaw_atual;
-		
+		__builtin_prefetch (&K, 0, 0);
+		__builtin_prefetch (&Xref, 0, 0);
+		__builtin_prefetch (&Erro, 0, 0);
 		X << (notrandom),(notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom),xint,yint,zint,yawint;
-		__builtin_prefetch (&K, 0, 1);
-		__builtin_prefetch (&Xref, 0, 1);
-		__builtin_prefetch (&Erro, 0, 1);
+		
 		Erro = X-Xref;
 		Input = -K*Erro;
 		__builtin_prefetch (&Input, 0, 1);
