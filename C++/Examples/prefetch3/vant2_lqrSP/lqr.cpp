@@ -66,10 +66,10 @@ class teste : public Icontroller
 //		}
 	
 		// Integrador Trapezoidal
-		__builtin_prefetch (&Xref, 0, 3);
-		__builtin_prefetch (&K, 0, 3);
-		__builtin_prefetch (&Erro, 0, 3);
-		__builtin_prefetch (&notrandom, 0, 3);
+		__builtin_prefetch (&Xref, 0, 1);
+		__builtin_prefetch (&K, 0, 1);
+		__builtin_prefetch (&Erro, 0, 1);
+		__builtin_prefetch (&notrandom, 0, 1);
 
 		double x_atual = (notrandom) - Xref(0);
 		xint = xint + (T/2)*(x_atual + x_ant);
