@@ -1,0 +1,1893 @@
+perf_4.9  3365 16976.4089413192:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768ed4bc [unknown] ([unknown])
+
+perf_4.9  3365 16976.4089413221:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768ed4bc [unknown] ([unknown])
+
+perf_4.9  3365 16976.4089413230:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768ed4bc [unknown] ([unknown])
+
+perf_4.9  3365 16976.4089413238:         45 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768ed4bc [unknown] ([unknown])
+
+perf_4.9  3365 16976.4089413247:       5751 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768ed4bc [unknown] ([unknown])
+
+vant4winf  3365 16976.4089413841:     834903 cycles:ppp: 
+	        8028bf0c lock_page_memcg+0x0 ([kernel.kallsyms])
+	           59964 std::__cxx11::messages<char>::messages+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               c [unknown] ([unknown])
+
+vant4winf  3365 16976.4089505153:  127236055 cycles:ppp: 
+	           2582c Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0060 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16976.4089594353:  124301024 cycles:ppp: 
+	          113ce8 malloc_consolidate+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16976.4089628199:   47215407 cycles:ppp: 
+	           f5010 __aeabi_dmul+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16976.4089652238:   33509618 cycles:ppp: 
+	           1766c Eigen::internal::call_assignment<Eigen::Matrix<double, -1, 1, 0, -1, 1>, Eigen::Product<Eigen::Product<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, Eigen::internal::assign_op<double, double> >+0xffff0354 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16976.4089673019:   28955088 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16976.4089691299:   25469002 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16976.4089707640:   22797607 cycles:ppp: 
+	           2582c Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0060 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16976.4089722416:   20592099 cycles:ppp: 
+	        8029867c vfs_write+0x178 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16976.4089735550:   18314678 cycles:ppp: 
+	            122c Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,+0xfffe000c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               8 [unknown] ([unknown])
+
+vant4winf  3365 16976.4089747838:   17151857 cycles:ppp: 
+	           1b080 InputCouplingMatrix+0xffff2c0c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16976.4089759571:   16335417 cycles:ppp: 
+	        807aca70 _raw_spin_unlock_irqrestore+0x50 ([kernel.kallsyms])
+	        80161e64 remove_wait_queue+0x4c ([kernel.kallsyms])
+	        8050f478 n_tty_write+0x260 ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16976.4089770717:   15528968 cycles:ppp: 
+	           f4c54 __aeabi_dsub+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16976.4089781561:   15111895 cycles:ppp: 
+	           f4df4 __aeabi_dsub+0xffff01a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16976.4089792185:   14825981 cycles:ppp: 
+	           25800 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0034 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16976.4089802675:   14623383 cycles:ppp: 
+	        8078d3cc __copy_from_user_std+0x104 ([kernel.kallsyms])
+	        804a39e8 arm_copy_from_user+0x28 ([kernel.kallsyms])
+	        8050b868 tty_write+0x1a0 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4088813058:   14476256 cycles:ppp: 
+	           293d8 Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff0760 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088823354:   14368006 cycles:ppp: 
+	           2d2c0 Eigen::internal::triangular_solve_matrix<double, int, 1, 2, false, 0, 0>::run+0xffff0168 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4088833596:   14290864 cycles:ppp: 
+	           f5010 __aeabi_dmul+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088843808:   14236992 cycles:ppp: 
+	           25a94 Eigen::Matrix<double, -1, -1, 0, -1, -1>::Matrix<Eigen::Product<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >+0xffff0218 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088853989:   14197906 cycles:ppp: 
+	           29118 Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff04a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088864159:   14166408 cycles:ppp: 
+	           f531c __aeabi_ddiv+0xffff00a4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088874305:   14144081 cycles:ppp: 
+	        8016d6ac up_read+0x4 ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4088884456:   14124358 cycles:ppp: 
+	           f4da8 __aeabi_dsub+0xffff0154 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088894608:   14109805 cycles:ppp: 
+	           29ac8 Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff0e50 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        bf92aea5 __initramfs_size+0x3edb13bd ([kernel.kallsyms])
+
+vant4winf  3365 16977.4088904720:   14095941 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4088914822:   14082726 cycles:ppp: 
+	           f4d00 __aeabi_dsub+0xffff00ac (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088924927:   14080030 cycles:ppp: 
+	           f4d78 __aeabi_dsub+0xffff0124 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088935027:   14080377 cycles:ppp: 
+	           d69b8 __sincosl+0xffff20dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088945128:   14078793 cycles:ppp: 
+	           2c604 Eigen::internal::partial_lu_impl<double, 0, int>::blocked_lu+0xffff077c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16977.4088955229:   14079933 cycles:ppp: 
+	           f50b4 __aeabi_dmul+0xffff00a8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088965333:   14080259 cycles:ppp: 
+	          11871c malloc+0xffff0028 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16977.4088975460:   14079117 cycles:ppp: 
+	           1de40 InputCouplingMatrixAero+0xffff1c0c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4088985552:   14078968 cycles:ppp: 
+	           f4d4c __aeabi_dsub+0xffff00f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4088995637:   14070626 cycles:ppp: 
+	           15700 coriolisMatrix+0xfffffea0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089005739:   14073577 cycles:ppp: 
+	           14200 coriolisMatrix+0xffffe9a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089015839:   14077790 cycles:ppp: 
+	           f5058 __aeabi_dmul+0xffff004c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089025929:   14078650 cycles:ppp: 
+	           f4cb4 __aeabi_dsub+0xffff0060 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089036023:   14077811 cycles:ppp: 
+	           3b40c __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::overflow+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089046127:   14082401 cycles:ppp: 
+	          118728 malloc+0xffff0034 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089056224:   14083579 cycles:ppp: 
+	           20308 InputCouplingMatrixAero+0xffff40d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089066325:   14081441 cycles:ppp: 
+	            1c40 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0438 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089076431:   14082686 cycles:ppp: 
+	          1152c0 _int_free+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089086528:   14083107 cycles:ppp: 
+	           f5060 __aeabi_dmul+0xffff0054 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089096647:   14081712 cycles:ppp: 
+	           16a28 SkewSymmetricMatrix+0xffff00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089106746:   14083462 cycles:ppp: 
+	           16b90 Eigen::internal::generic_product_impl<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::DenseShape, Eigen::DenseShape, 8>::evalTo<Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff00bc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089116849:   14076473 cycles:ppp: 
+	           293ac Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff0734 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089126954:   14079245 cycles:ppp: 
+	           2ac38 Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff0138 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089137051:   14077587 cycles:ppp: 
+	           f4c74 __aeabi_dsub+0xffff0020 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089147152:   14076772 cycles:ppp: 
+	           f50b8 __aeabi_dmul+0xffff00ac (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089157250:   14078691 cycles:ppp: 
+	        80298818 sys_write+0x70 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089167345:   14077934 cycles:ppp: 
+	           f5034 __aeabi_dmul+0xffff0028 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089177455:   14079189 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089187546:   14080737 cycles:ppp: 
+	           240a4 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> > >+0xffff0030 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089197639:   14078271 cycles:ppp: 
+	          11bb50 memset+0xffff0070 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089207744:   14081246 cycles:ppp: 
+	            f940 coriolisMatrix+0xfffea0e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089217843:   14082902 cycles:ppp: 
+	           d69bc __sincosl+0xffff20e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089227938:   14081345 cycles:ppp: 
+	           d6a1c __sincosl+0xffff2140 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089238046:   14082736 cycles:ppp: 
+	           e60a4 __ieee754_atan2+0xffff2e34 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089248148:   14084295 cycles:ppp: 
+	           d8934 __sincosl+0xffff4058 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089258249:   14083038 cycles:ppp: 
+	           f5550 __aeabi_dcmpeq+0xffff000c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089268341:   14082875 cycles:ppp: 
+	           2ee00 vant4_Winf::execute+0xffff0a60 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               5 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089278444:   14084741 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089288552:   14085232 cycles:ppp: 
+	           6bbc0 std::ostream::sentry::sentry+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089298657:   14084182 cycles:ppp: 
+	           f4d70 __aeabi_dsub+0xffff011c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089308762:   14082446 cycles:ppp: 
+	           f4cb8 __aeabi_dsub+0xffff0064 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089318865:   14080612 cycles:ppp: 
+	           2d4f0 Eigen::internal::triangular_solve_matrix<double, int, 1, 2, false, 0, 0>::run+0xffff0398 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089328970:   14080059 cycles:ppp: 
+	           176b8 Eigen::internal::call_assignment<Eigen::Matrix<double, -1, 1, 0, -1, 1>, Eigen::Product<Eigen::Product<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, Eigen::internal::assign_op<double, double> >+0xffff03a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089339079:   14079904 cycles:ppp: 
+	           edd88 __ieee754_pow+0xffff05e8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089349170:   14077063 cycles:ppp: 
+	           f86f4 __aeabi_read_tp+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16977.4089359268:   14077513 cycles:ppp: 
+	           f54a0 __ltdf2+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089369370:   14080198 cycles:ppp: 
+	        80513c64 tty_buffer_space_avail+0x0 ([kernel.kallsyms])
+	        80511b70 tty_write_room+0x28 ([kernel.kallsyms])
+	        8050f368 n_tty_write+0x150 ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089379470:   14079955 cycles:ppp: 
+	           f4ce8 __aeabi_dsub+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089389572:   14080451 cycles:ppp: 
+	           29abc Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff0e44 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089399666:   14080453 cycles:ppp: 
+	            bec0 coriolisMatrix+0xfffe6660 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089409759:   14080241 cycles:ppp: 
+	           f4df8 __aeabi_dsub+0xffff01a4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089419877:   14083899 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089429978:   14082902 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089440079:   14078844 cycles:ppp: 
+	            4840 InertiaMatrix+0xfffe1298 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089450181:   14079893 cycles:ppp: 
+	           f4c74 __aeabi_dsub+0xffff0020 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089460276:   14079286 cycles:ppp: 
+	        80148738 preempt_count_sub+0x48 ([kernel.kallsyms])
+	        807aca78 _raw_spin_unlock_irqrestore+0x58 ([kernel.kallsyms])
+	        80161dbc add_wait_queue+0x54 ([kernel.kallsyms])
+	        8050f2d4 n_tty_write+0xbc ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089470380:   14079475 cycles:ppp: 
+	           d48f0 __sincosl+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089480482:   14080277 cycles:ppp: 
+	           21bc0 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::operator,+0xffff006c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3feea05b [unknown] ([unknown])
+
+vant4winf  3365 16977.4089490587:   14079516 cycles:ppp: 
+	           f4cd0 __aeabi_dsub+0xffff007c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089500692:   14078885 cycles:ppp: 
+	           1c79c InputCouplingMatrixAero+0xffff0568 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089510786:   14077762 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089520882:   14078521 cycles:ppp: 
+	           23c50 Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1>, -1, -1, false>::Block+0xffff004c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089530970:   14079409 cycles:ppp: 
+	          113d3c malloc_consolidate+0xffff0070 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089541083:   14083217 cycles:ppp: 
+	           19380 InputCouplingMatrix+0xffff0f0c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089551189:   14084317 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089561281:   14081305 cycles:ppp: 
+	           f4d14 __aeabi_dsub+0xffff00c0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089571373:   14080415 cycles:ppp: 
+	           293d4 Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff075c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089581482:   14083632 cycles:ppp: 
+	            4240 InertiaMatrix+0xfffe0c98 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089591586:   14084667 cycles:ppp: 
+	           278f4 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::CommaInitializer<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::Product<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0> const, Eigen::Matrix<double, -1, 1, 0, -1, 1> const> >+0xffff08a4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               1 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089601694:   14081674 cycles:ppp: 
+	           f4d70 __aeabi_dsub+0xffff011c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089611794:   14081204 cycles:ppp: 
+	          115358 _int_free+0xffff009c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089621891:   14078785 cycles:ppp: 
+	            8df8 coriolisMatrix+0xfffe3598 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089631981:   14081020 cycles:ppp: 
+	           f4d44 __aeabi_dsub+0xffff00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089642077:   14081188 cycles:ppp: 
+	           f4c6c __aeabi_dsub+0xffff0018 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089652192:   14085138 cycles:ppp: 
+	           17f44 Eigen::internal::Assignment<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::internal::assign_op<double, double>, Eigen::internal::Dense2Dense, void>::run+0xffff0218 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089662298:   14084558 cycles:ppp: 
+	           f548c __ltdf2+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089672406:   14080507 cycles:ppp: 
+	          11697c _int_malloc+0xffff02b8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089682511:   14078964 cycles:ppp: 
+	           f4c90 __aeabi_dsub+0xffff003c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089692610:   14077730 cycles:ppp: 
+	           22870 Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>::Product+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef71114 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089702706:   14076691 cycles:ppp: 
+	            ccd8 coriolisMatrix+0xfffe7478 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089712809:   14077920 cycles:ppp: 
+	           1c9a0 InputCouplingMatrixAero+0xffff076c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16977.4089722911:   14078976 cycles:ppp: 
+	        80297130 rw_verify_area+0x28 ([kernel.kallsyms])
+	        80298578 vfs_write+0x74 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089733012:   14078365 cycles:ppp: 
+	           24990 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xffff017c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089743110:   14077321 cycles:ppp: 
+	            9930 coriolisMatrix+0xfffe40d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089753210:   14078841 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16977.4089763314:   14078198 cycles:ppp: 
+	           f5060 __aeabi_dmul+0xffff0054 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089773444:   14078560 cycles:ppp: 
+	           25804 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0038 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089783535:   14077459 cycles:ppp: 
+	           f4ce8 __aeabi_dsub+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089793623:   14069401 cycles:ppp: 
+	           1aaf8 InputCouplingMatrix+0xffff2684 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16977.4089803712:   14073892 cycles:ppp: 
+	        802987a8 sys_write+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4088813810:   14076972 cycles:ppp: 
+	            11cc Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::operator,+0xfffe0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3feea05b [unknown] ([unknown])
+
+vant4winf  3365 16978.4088823909:   14079615 cycles:ppp: 
+	           2fbc4 vant4_Winf::execute+0xffff1824 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088834012:   14081072 cycles:ppp: 
+	           da8cc __sincosl+0xffff5ff0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088844103:   14080736 cycles:ppp: 
+	           27898 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::CommaInitializer<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::Product<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0> const, Eigen::Matrix<double, -1, 1, 0, -1, 1> const> >+0xffff0848 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               1 [unknown] ([unknown])
+
+vant4winf  3365 16978.4088854215:   14081342 cycles:ppp: 
+	           1e700 InputCouplingMatrixAero+0xffff24cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4088864308:   14083453 cycles:ppp: 
+	           f4d4c __aeabi_dsub+0xffff00f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088874401:   14081207 cycles:ppp: 
+	           f4d78 __aeabi_dsub+0xffff0124 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088884507:   14084076 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4088894610:   14086101 cycles:ppp: 
+	           f509c __aeabi_dmul+0xffff0090 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088904721:   14083165 cycles:ppp: 
+	          115b38 _int_free+0xffff087c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4088914837:   14082098 cycles:ppp: 
+	           141c0 coriolisMatrix+0xffffe960 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088924936:   14080547 cycles:ppp: 
+	           f5304 __aeabi_ddiv+0xffff008c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088935031:   14074711 cycles:ppp: 
+	           f4ce8 __aeabi_dsub+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088945134:   14076079 cycles:ppp: 
+	          11873c malloc+0xffff0048 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16978.4088955234:   14077637 cycles:ppp: 
+	           d4a1c __sincosl+0xffff0140 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088965334:   14077570 cycles:ppp: 
+	           16c48 Eigen::internal::generic_product_impl<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::DenseShape, Eigen::DenseShape, 8>::evalTo<Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff0174 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088975431:   14077642 cycles:ppp: 
+	          11882c malloc+0xffff0138 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16978.4088985532:   14078467 cycles:ppp: 
+	           f5060 __aeabi_dmul+0xffff0054 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4088995640:   14080361 cycles:ppp: 
+	           257f8 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff002c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               1 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089005726:   14079174 cycles:ppp: 
+	           f2e70 __exp1+0xffff022c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089015831:   14076943 cycles:ppp: 
+	           f5018 __aeabi_dmul+0xffff000c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089025936:   14082184 cycles:ppp: 
+	          11875c malloc+0xffff0068 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089036031:   14079364 cycles:ppp: 
+	        805131e8 tty_ldisc_deref+0xc ([kernel.kallsyms])
+	        8050b828 tty_write+0x160 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089046132:   14079297 cycles:ppp: 
+	            1ccc Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe04c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089056235:   14080548 cycles:ppp: 
+	        8050b760 tty_write+0x98 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089066344:   14080831 cycles:ppp: 
+	           f4c5c __aeabi_dsub+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089076441:   14079899 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089086531:   14078961 cycles:ppp: 
+	          115b40 _int_free+0xffff0884 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089096631:   14079588 cycles:ppp: 
+	        807ac60c _raw_spin_lock_irqsave+0x0 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089106736:   14082031 cycles:ppp: 
+	            1a80 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0278 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089116848:   14082246 cycles:ppp: 
+	        8050b804 tty_write+0x13c ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089126953:   14082561 cycles:ppp: 
+	           f5020 __aeabi_dmul+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089137048:   14077899 cycles:ppp: 
+	           6bebc std::ostream::put+0xffff00a8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089147158:   14076916 cycles:ppp: 
+	           f5064 __aeabi_dmul+0xffff0058 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089157253:   14078555 cycles:ppp: 
+	        ffff0fc0 __initramfs_size+0x7f4774d8 ([kernel.kallsyms])
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089167357:   14076572 cycles:ppp: 
+	            6000 coriolisMatrix+0xfffe07a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089177462:   14077761 cycles:ppp: 
+	           29354 Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff06dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089187546:   14077538 cycles:ppp: 
+	           f502c __aeabi_dmul+0xffff0020 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089197649:   14075748 cycles:ppp: 
+	           17f94 Eigen::internal::Assignment<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::internal::assign_op<double, double>, Eigen::internal::Dense2Dense, void>::run+0xffff0268 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089207750:   14081187 cycles:ppp: 
+	           d4a04 __sincosl+0xffff0128 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089217851:   14079731 cycles:ppp: 
+	           2d900 Eigen::TriangularViewImpl<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 2u, Eigen::Dense>::solveInPlace<1, Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089227955:   14079790 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089238059:   14080122 cycles:ppp: 
+	           f4d04 __aeabi_dsub+0xffff00b0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089248147:   14079869 cycles:ppp: 
+	           f4d38 __aeabi_dsub+0xffff00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089258247:   14080992 cycles:ppp: 
+	           241b8 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::CwiseNullaryOp<Eigen::internal::scalar_identity_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> > >+0xffff0144 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089268350:   14083520 cycles:ppp: 
+	          116b8c _int_malloc+0xffff04c8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089278449:   14083379 cycles:ppp: 
+	           f4c54 __aeabi_dsub+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089288546:   14083808 cycles:ppp: 
+	           f4cc8 __aeabi_dsub+0xffff0074 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089298665:   14085069 cycles:ppp: 
+	           f4ce8 __aeabi_dsub+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089308772:   14082375 cycles:ppp: 
+	            95c0 coriolisMatrix+0xfffe3d60 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089318894:   14079164 cycles:ppp: 
+	        807aa04c down_read+0x8 ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089329005:   14074618 cycles:ppp: 
+	           23c78 Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1>, -1, -1, false>::Block+0xffff0074 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16978.4089339101:   14069152 cycles:ppp: 
+	           27800 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::CommaInitializer<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::Product<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0> const, Eigen::Matrix<double, -1, 1, 0, -1, 1> const> >+0xffff07b0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               1 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089349183:   14068287 cycles:ppp: 
+	          113ccc malloc_consolidate+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089359286:   14072686 cycles:ppp: 
+	          1186f8 malloc+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089369385:   14074572 cycles:ppp: 
+	           21b5c Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::operator,+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               5 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089379483:   14075153 cycles:ppp: 
+	           f4c54 __aeabi_dsub+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089389579:   14075642 cycles:ppp: 
+	           da758 __sincosl+0xffff5e7c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089399675:   14077176 cycles:ppp: 
+	           f4cd0 __aeabi_dsub+0xffff007c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089409775:   14078385 cycles:ppp: 
+	           17f80 Eigen::internal::Assignment<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::internal::assign_op<double, double>, Eigen::internal::Dense2Dense, void>::run+0xffff0254 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089419872:   14079624 cycles:ppp: 
+	          118e44 free+0xffff0060 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089429971:   14081240 cycles:ppp: 
+	           25834 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0068 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089440078:   14081357 cycles:ppp: 
+	           f5030 __aeabi_dmul+0xffff0024 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089450174:   14081753 cycles:ppp: 
+	          11bc80 memcpy+0xffff0050 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef71114 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089460274:   14080158 cycles:ppp: 
+	          118774 malloc+0xffff0080 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089470374:   14082386 cycles:ppp: 
+	          1166c8 _int_malloc+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               3 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089480477:   14082276 cycles:ppp: 
+	           d4c88 __sincosl+0xffff03ac (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089490571:   14081371 cycles:ppp: 
+	           f4d84 __aeabi_dsub+0xffff0130 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089500667:   14083419 cycles:ppp: 
+	           d48e0 __sincosl+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089510784:   14085147 cycles:ppp: 
+	          115320 _int_free+0xffff0064 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089520885:   14082795 cycles:ppp: 
+	           f4d20 __aeabi_dsub+0xffff00cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089530984:   14079593 cycles:ppp: 
+	           24dc0 Eigen::internal::general_matrix_matrix_product<int, double, 0, false, double, 0, false, 0>::run+0xffff0020 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	         16b2000 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16978.4089541072:   14079640 cycles:ppp: 
+	           f5018 __aeabi_dmul+0xffff000c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089551176:   14082888 cycles:ppp: 
+	            3d00 InertiaMatrix+0xfffe0758 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089561283:   14083831 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089571397:   14083750 cycles:ppp: 
+	            d980 coriolisMatrix+0xfffe8120 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089581503:   14080828 cycles:ppp: 
+	        ffff0fe4 __initramfs_size+0x7f4774fc ([kernel.kallsyms])
+	               3 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089591596:   14077250 cycles:ppp: 
+	           f5094 __aeabi_dmul+0xffff0088 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089601692:   14077126 cycles:ppp: 
+	        8050e338 do_output_char+0x11c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089611804:   14080781 cycles:ppp: 
+	          115354 _int_free+0xffff0098 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089621909:   14079886 cycles:ppp: 
+	        807a9c18 mutex_lock+0x8 ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089632011:   14076763 cycles:ppp: 
+	           2b208 Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff0708 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089642105:   14076259 cycles:ppp: 
+	        8050f440 n_tty_write+0x228 ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089652213:   14076045 cycles:ppp: 
+	          1156c0 _int_free+0xffff0404 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089662319:   14076854 cycles:ppp: 
+	        807aca70 _raw_spin_unlock_irqrestore+0x50 ([kernel.kallsyms])
+	        80161dbc add_wait_queue+0x54 ([kernel.kallsyms])
+	        8050f2d4 n_tty_write+0xbc ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089672425:   14075526 cycles:ppp: 
+	           f4de8 __aeabi_dsub+0xffff0194 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089682527:   14073166 cycles:ppp: 
+	        807aca88 _raw_spin_unlock_irqrestore+0x68 ([kernel.kallsyms])
+	        80161dbc add_wait_queue+0x54 ([kernel.kallsyms])
+	        8050f2d4 n_tty_write+0xbc ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089692624:   14071667 cycles:ppp: 
+	          11bb14 memset+0xffff0034 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16978.4089702723:   14073460 cycles:ppp: 
+	           1d5c0 InputCouplingMatrixAero+0xffff138c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089712801:   14073127 cycles:ppp: 
+	            14e4 Eigen::internal::gemm_pack_rhs<double, int, Eigen::internal::const_blas_data_mapper<double, int, 0>, 4, 0, false, false>::operator()+0xfffe009c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089722899:   14075516 cycles:ppp: 
+	           e3850 __ieee754_atan2+0xffff05e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089733012:   14081484 cycles:ppp: 
+	           2ce00 Eigen::TriangularViewImpl<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 5u, Eigen::Dense>::solveInPlace<1, Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff0040 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089743116:   14080847 cycles:ppp: 
+	           6be18 std::ostream::put+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089753237:   14078586 cycles:ppp: 
+	          1153c0 _int_free+0xffff0104 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16978.4089763336:   14074059 cycles:ppp: 
+	          11870c malloc+0xffff0018 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16978.4089773433:   14071138 cycles:ppp: 
+	           25838 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff006c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089783527:   14072837 cycles:ppp: 
+	           edb40 __ieee754_pow+0xffff03a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089793632:   14075047 cycles:ppp: 
+	            1a10 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0208 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16978.4089803719:   14075612 cycles:ppp: 
+	           f537c __aeabi_ddiv+0xffff0104 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093108786:   14073710 cycles:ppp: 
+	           f5090 __aeabi_dmul+0xffff0084 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093118885:   14079132 cycles:ppp: 
+	           27080 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::CommaInitializer<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::Product<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0> const, Eigen::Matrix<double, -1, 1, 0, -1, 1> const> >+0xffff0030 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093128979:   14077217 cycles:ppp: 
+	           21c80 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::operator,<Eigen::Matrix<double, -1, 1, 0, -1, 1> >+0xffff0054 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               5 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093139077:   14079457 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093149183:   14081051 cycles:ppp: 
+	           259cc Eigen::Matrix<double, -1, -1, 0, -1, -1>::Matrix<Eigen::Product<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >+0xffff0150 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16979.4093159281:   14082295 cycles:ppp: 
+	           27730 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::CommaInitializer<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::Product<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0> const, Eigen::Matrix<double, -1, 1, 0, -1, 1> const> >+0xffff06e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               3 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093169386:   14079429 cycles:ppp: 
+	           293f8 Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff0780 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093179481:   14082154 cycles:ppp: 
+	           6be40 std::ostream::put+0xffff002c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093189581:   14080421 cycles:ppp: 
+	           293e8 Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff0770 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093199687:   14083144 cycles:ppp: 
+	           1b480 InputCouplingMatrix+0xffff300c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093209786:   14082233 cycles:ppp: 
+	           f5058 __aeabi_dmul+0xffff004c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093219879:   14080742 cycles:ppp: 
+	           21a24 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,+0xffff004c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093229981:   14082248 cycles:ppp: 
+	          118e1c free+0xffff0038 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093240080:   14083920 cycles:ppp: 
+	           f4d4c __aeabi_dsub+0xffff00f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093250182:   14082869 cycles:ppp: 
+	           1fd20 InputCouplingMatrixAero+0xffff3aec (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093260292:   14084381 cycles:ppp: 
+	           f5038 __aeabi_dmul+0xffff002c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093270401:   14083823 cycles:ppp: 
+	        805172d0 pty_write_room+0x14 ([kernel.kallsyms])
+	        80511b70 tty_write_room+0x28 ([kernel.kallsyms])
+	        8050f368 n_tty_write+0x150 ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093280486:   14080111 cycles:ppp: 
+	           25834 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0068 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093290582:   14080346 cycles:ppp: 
+	           f4d8c __aeabi_dsub+0xffff0138 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093300688:   14084456 cycles:ppp: 
+	           26a10 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >+0xffff0670 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093310792:   14085205 cycles:ppp: 
+	           f4cf0 __aeabi_dsub+0xffff009c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093320897:   14084396 cycles:ppp: 
+	           f505c __aeabi_dmul+0xffff0050 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093330991:   14083044 cycles:ppp: 
+	           21a18 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,+0xffff0040 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093341083:   14081286 cycles:ppp: 
+	          116b90 _int_malloc+0xffff04cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093351186:   14084267 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093361280:   14084715 cycles:ppp: 
+	           f505c __aeabi_dmul+0xffff0050 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093371386:   14084450 cycles:ppp: 
+	           249a4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xffff0190 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               3 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093381494:   14088683 cycles:ppp: 
+	           257e0 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093391588:   14086575 cycles:ppp: 
+	            2f78 Eigen::internal::gemm_pack_lhs<double, int, Eigen::internal::const_blas_data_mapper<double, int, 0>, 2, 1, 0, false, false>::operator()+0xfffe0024 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093401675:   14084042 cycles:ppp: 
+	            ccf0 coriolisMatrix+0xfffe7490 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093411763:   14086845 cycles:ppp: 
+	           21a10 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,+0xffff0038 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093421861:   14091828 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093431962:   14094789 cycles:ppp: 
+	           24914 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xffff0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093442065:   14094808 cycles:ppp: 
+	           f5010 __aeabi_dmul+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093452159:   14094842 cycles:ppp: 
+	           f4c68 __aeabi_dsub+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093462264:   14093989 cycles:ppp: 
+	           f50c0 __aeabi_dmul+0xffff00b4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093472370:   14096739 cycles:ppp: 
+	           21cdc Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::operator,<Eigen::Matrix<double, -1, 1, 0, -1, 1> >+0xffff00b0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               5 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093482459:   14095433 cycles:ppp: 
+	           141e8 coriolisMatrix+0xffffe988 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093492562:   14093405 cycles:ppp: 
+	           f4d48 __aeabi_dsub+0xffff00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093502658:   14097698 cycles:ppp: 
+	           f5010 __aeabi_dmul+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093512772:   14096689 cycles:ppp: 
+	           24914 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xffff0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093522881:   14098574 cycles:ppp: 
+	            f278 coriolisMatrix+0xfffe9a18 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093532985:   14094177 cycles:ppp: 
+	           d6808 __sincosl+0xffff1f2c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093543086:   14092710 cycles:ppp: 
+	           e4c00 __ieee754_atan2+0xffff1990 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093553198:   14092282 cycles:ppp: 
+	          11bc5c memcpy+0xffff002c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093563306:   14090915 cycles:ppp: 
+	           260f0 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::Product<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >+0xffff03dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093573403:   14087711 cycles:ppp: 
+	           f4c5c __aeabi_dsub+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093583504:   14087899 cycles:ppp: 
+	           f4de8 __aeabi_dsub+0xffff0194 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093593603:   14088287 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093603710:   14089054 cycles:ppp: 
+	           f4d28 __aeabi_dsub+0xffff00d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093613814:   14089089 cycles:ppp: 
+	          118730 malloc+0xffff003c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16979.4093623922:   14086496 cycles:ppp: 
+	           28bd4 Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff00d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093634023:   14084576 cycles:ppp: 
+	           e3598 __ieee754_atan2+0xffff0328 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093644124:   14084435 cycles:ppp: 
+	           e3400 __ieee754_atan2+0xffff0190 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093654221:   14083622 cycles:ppp: 
+	           f502c __aeabi_dmul+0xffff0020 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093664315:   14084703 cycles:ppp: 
+	           2b884 Eigen::internal::partial_lu_impl<double, 0, int>::unblocked_lu+0xffff00dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093674421:   14086319 cycles:ppp: 
+	           15400 coriolisMatrix+0xfffffba0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093684524:   14086466 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093694617:   14085517 cycles:ppp: 
+	           f4cf0 __aeabi_dsub+0xffff009c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093704717:   14084954 cycles:ppp: 
+	            6700 coriolisMatrix+0xfffe0ea0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093714815:   14087277 cycles:ppp: 
+	          115348 _int_free+0xffff008c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093724909:   14088555 cycles:ppp: 
+	           f4c84 __aeabi_dsub+0xffff0030 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093735005:   14090908 cycles:ppp: 
+	           26000 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::Product<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >+0xffff02ec (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16979.4093745108:   14091523 cycles:ppp: 
+	          11874c malloc+0xffff0058 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093755208:   14091421 cycles:ppp: 
+	        807a8b74 mutex_unlock+0x30 ([kernel.kallsyms])
+	        8050f440 n_tty_write+0x228 ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093765326:   14091473 cycles:ppp: 
+	           2935c Eigen::internal::product_evaluator<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, 7, Eigen::DenseShape, Eigen::DenseShape, double, double>::product_evaluator+0xffff06e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093775421:   14090439 cycles:ppp: 
+	           d7e08 __sincosl+0xffff352c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093785521:   14087268 cycles:ppp: 
+	           f4c58 __aeabi_dsub+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093795632:   14088769 cycles:ppp: 
+	           f500c __aeabi_dmul+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093805730:   14087714 cycles:ppp: 
+	          118824 malloc+0xffff0130 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16979.4093815823:   14086087 cycles:ppp: 
+	            63b8 coriolisMatrix+0xfffe0b58 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093825914:   14087500 cycles:ppp: 
+	           f4d70 __aeabi_dsub+0xffff011c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093836017:   14089696 cycles:ppp: 
+	           f4d50 __aeabi_dsub+0xffff00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093846123:   14092853 cycles:ppp: 
+	          1152cc _int_free+0xffff0010 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093856233:   14090652 cycles:ppp: 
+	           f4ca0 __aeabi_dsub+0xffff004c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093866334:   14089220 cycles:ppp: 
+	           f4c70 __aeabi_dsub+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093876452:   14087469 cycles:ppp: 
+	            5f00 coriolisMatrix+0xfffe06a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093886545:   14084758 cycles:ppp: 
+	           f5060 __aeabi_dmul+0xffff0054 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093896651:   14082625 cycles:ppp: 
+	          108efc _IO_fflush+0xffff0028 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093906750:   14082821 cycles:ppp: 
+	           f4d08 __aeabi_dsub+0xffff00b4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093916840:   14083757 cycles:ppp: 
+	            6458 coriolisMatrix+0xfffe0bf8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093926944:   14085833 cycles:ppp: 
+	          10f634 _IO_new_file_write+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093937038:   14087069 cycles:ppp: 
+	           d5e70 __sincosl+0xffff1594 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093947141:   14087076 cycles:ppp: 
+	          117168 _int_malloc+0xffff0aa4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093957234:   14088250 cycles:ppp: 
+	           1c280 InputCouplingMatrixAero+0xffff004c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               5 [unknown] ([unknown])
+
+vant4winf  3365 16979.4093967327:   14088582 cycles:ppp: 
+	          1107b0 _IO_new_file_overflow+0xffff0070 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4093977413:   14090274 cycles:ppp: 
+	           257f0 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0024 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093987520:   14093657 cycles:ppp: 
+	           21b98 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::operator,+0xffff0044 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4093997620:   14097591 cycles:ppp: 
+	           1bd40 InputCouplingMatrix+0xffff38cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4094007727:   14093856 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4094017821:   14094217 cycles:ppp: 
+	           f4c90 __aeabi_dsub+0xffff003c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4094027922:   14093854 cycles:ppp: 
+	           2f990 vant4_Winf::execute+0xffff15f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4094038023:   14096160 cycles:ppp: 
+	           1a4b8 InputCouplingMatrix+0xffff2044 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        b98039d6 __initramfs_size+0x38c89eee ([kernel.kallsyms])
+
+vant4winf  3365 16979.4094048122:   14096385 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4094058231:   14095707 cycles:ppp: 
+	           26610 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >+0xffff0270 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4094068330:   14096324 cycles:ppp: 
+	            a280 coriolisMatrix+0xfffe4a20 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4094078436:   14093945 cycles:ppp: 
+	           6c0c4 std::endl<char, std::char_traits<char> >+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16979.4094088548:   14094634 cycles:ppp: 
+	           f4cd8 __aeabi_dsub+0xffff0084 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16979.4094098659:   14091236 cycles:ppp: 
+	           2503c Eigen::internal::general_matrix_matrix_product<int, double, 0, false, double, 0, false, 0>::run+0xffff029c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	         16b17d0 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16980.4093108751:   14090562 cycles:ppp: 
+	           16100 coriolisMatrix+0x8a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093118854:   14086691 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093128958:   14087916 cycles:ppp: 
+	          11bc58 memcpy+0xffff0028 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093139060:   14089814 cycles:ppp: 
+	           f4c64 __aeabi_dsub+0xffff0010 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093149165:   14088735 cycles:ppp: 
+	            423c InertiaMatrix+0xfffe0c94 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093159261:   14085317 cycles:ppp: 
+	          117240 _int_malloc+0xffff0b7c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093169367:   14087351 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093179487:   14087701 cycles:ppp: 
+	           2582c Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0060 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093189579:   14083655 cycles:ppp: 
+	           f4c58 __aeabi_dsub+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093199668:   14081217 cycles:ppp: 
+	           f4c7c __aeabi_dsub+0xffff0028 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093209759:   14082954 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093219860:   14088015 cycles:ppp: 
+	           f4cb4 __aeabi_dsub+0xffff0060 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093229960:   14090582 cycles:ppp: 
+	           23d2c Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff0048 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16980.4093240049:   14089403 cycles:ppp: 
+	           dcc84 __sincosl+0xffff83a8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093250145:   14091281 cycles:ppp: 
+	          116b8c _int_malloc+0xffff04c8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093260238:   14094952 cycles:ppp: 
+	           f51ec __aeabi_dmul+0xffff01e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093270335:   14095895 cycles:ppp: 
+	           2f4c8 vant4_Winf::execute+0xffff1128 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16980.4093280443:   14097510 cycles:ppp: 
+	           18980 InputCouplingMatrix+0xffff050c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               8 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093290554:   14098896 cycles:ppp: 
+	           f4cb4 __aeabi_dsub+0xffff0060 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093300651:   14095656 cycles:ppp: 
+	           f4c5c __aeabi_dsub+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093310748:   14093355 cycles:ppp: 
+	           d62e8 __sincosl+0xffff1a0c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093320846:   14095406 cycles:ppp: 
+	           115c0 coriolisMatrix+0xffffbd60 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093330950:   14096162 cycles:ppp: 
+	          1100b4 _IO_new_do_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093341042:   14096769 cycles:ppp: 
+	           16c60 Eigen::internal::generic_product_impl<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::DenseShape, Eigen::DenseShape, 8>::evalTo<Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff018c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093351148:   14096488 cycles:ppp: 
+	          118824 malloc+0xffff0130 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093361247:   14098772 cycles:ppp: 
+	           f5074 __aeabi_dmul+0xffff0068 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093371359:   14097009 cycles:ppp: 
+	           27894 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::CommaInitializer<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::Product<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0> const, Eigen::Matrix<double, -1, 1, 0, -1, 1> const> >+0xffff0844 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               1 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093381455:   14095611 cycles:ppp: 
+	           17990 Eigen::internal::call_assignment<Eigen::Matrix<double, -1, 1, 0, -1, 1>, Eigen::Product<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0>, Eigen::internal::assign_op<double, double> >+0xffff0028 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093391573:   14094713 cycles:ppp: 
+	           265d0 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >+0xffff0230 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093401675:   14094994 cycles:ppp: 
+	            88d0 coriolisMatrix+0xfffe3070 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093411765:   14089997 cycles:ppp: 
+	           22be4 Eigen::PlainObjectBase<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::resize+0xffff0030 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093421862:   14090988 cycles:ppp: 
+	          108fb8 _IO_fflush+0xffff00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093431976:   14094692 cycles:ppp: 
+	            1a8c Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0284 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093442068:   14092897 cycles:ppp: 
+	           da818 __sincosl+0xffff5f3c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093452173:   14091183 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093462271:   14094081 cycles:ppp: 
+	           f4de0 __aeabi_dsub+0xffff018c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093472377:   14092707 cycles:ppp: 
+	           2df28 Eigen::internal::Assignment<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Inverse<Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >, Eigen::internal::assign_op<double, double>, Eigen::internal::Dense2Dense, void>::run+0xffff0294 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16980.4093482477:   14094261 cycles:ppp: 
+	           da908 __sincosl+0xffff602c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093492573:   14091912 cycles:ppp: 
+	           2bcf0 Eigen::internal::partial_lu_impl<double, 0, int>::unblocked_lu+0xffff0548 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093502678:   14093415 cycles:ppp: 
+	           f4c7c __aeabi_dsub+0xffff0028 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093512772:   14093229 cycles:ppp: 
+	           27850 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::CommaInitializer<Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::Product<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, 1, 0, -1, 1>, 0> const, Eigen::Matrix<double, -1, 1, 0, -1, 1> const> >+0xffff0800 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               1 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093522876:   14093106 cycles:ppp: 
+	           f5084 __aeabi_dmul+0xffff0078 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093532978:   14094453 cycles:ppp: 
+	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
+	        80125648 irq_exit+0xec ([kernel.kallsyms])
+	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
+	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
+	        807ad3ec __irq_usr+0x4c ([kernel.kallsyms])
+	           21a38 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,+0xffff0060 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3fef9d28 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093543076:   14094777 cycles:ppp: 
+	           f5024 __aeabi_dmul+0xffff0018 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093553174:   14095181 cycles:ppp: 
+	          118e4c free+0xffff0068 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093563285:   14096457 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093573387:   14095619 cycles:ppp: 
+	           16c64 Eigen::internal::generic_product_impl<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::DenseShape, Eigen::DenseShape, 8>::evalTo<Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff0190 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093583480:   14093705 cycles:ppp: 
+	           257e4 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0018 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093593577:   14095112 cycles:ppp: 
+	            dfac coriolisMatrix+0xfffe874c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093603683:   14097012 cycles:ppp: 
+	           1d280 InputCouplingMatrixAero+0xffff104c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093613786:   14096779 cycles:ppp: 
+	           16bd4 Eigen::internal::generic_product_impl<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::DenseShape, Eigen::DenseShape, 8>::evalTo<Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093623896:   14095392 cycles:ppp: 
+	           243f8 Eigen::internal::gemm_blocking_space<0, double, double, -1, -1, -1, 1, false>::~gemm_blocking_space+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               4 [unknown] ([unknown])
+	         16add08 [unknown] (/tmp/perf-3365.map)
+
+vant4winf  3365 16980.4093634001:   14093599 cycles:ppp: 
+	           f500c __aeabi_dmul+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093644097:   14091805 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093654198:   14091456 cycles:ppp: 
+	           f4ce4 __aeabi_dsub+0xffff0090 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093664307:   14092789 cycles:ppp: 
+	           f5094 __aeabi_dmul+0xffff0088 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093674400:   14091437 cycles:ppp: 
+	           17e9c Eigen::internal::Assignment<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::internal::assign_op<double, double>, Eigen::internal::Dense2Dense, void>::run+0xffff0170 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093684496:   14091688 cycles:ppp: 
+	           6bc30 std::ostream::sentry::~sentry+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093694600:   14093848 cycles:ppp: 
+	           f4d3c __aeabi_dsub+0xffff00e8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093704696:   14093945 cycles:ppp: 
+	           260d8 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::Product<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >+0xffff03c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093714800:   14093745 cycles:ppp: 
+	           22c6c Eigen::Matrix<double, -1, -1, 0, -1, -1>::Matrix<int, int>+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093724906:   14095670 cycles:ppp: 
+	           e6190 __ieee754_atan2+0xffff2f20 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	           cae0c std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093734998:   14093161 cycles:ppp: 
+	           f4df8 __aeabi_dsub+0xffff01a4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093745106:   14093672 cycles:ppp: 
+	          115320 _int_free+0xffff0064 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093755213:   14093810 cycles:ppp: 
+	           f4d30 __aeabi_dsub+0xffff00dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093765309:   14092585 cycles:ppp: 
+	           f4de0 __aeabi_dsub+0xffff018c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093775417:   14092810 cycles:ppp: 
+	           d4980 __sincosl+0xffff00a4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093785535:   14091405 cycles:ppp: 
+	           2fc18 vant4_Winf::execute+0xffff1878 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093795633:   14087843 cycles:ppp: 
+	           2499c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xffff0188 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093805722:   14085997 cycles:ppp: 
+	        80516dbc pty_write+0x8 ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093815823:   14087603 cycles:ppp: 
+	           f4ce8 __aeabi_dsub+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093825925:   14090325 cycles:ppp: 
+	           22248 vant4_Winf::TrajetoriaReferenciaCompleta+0xffff0248 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093836013:   14089512 cycles:ppp: 
+	           21a18 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,+0xffff0040 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093846111:   14091093 cycles:ppp: 
+	        80148790 preempt_count_sub+0xa0 ([kernel.kallsyms])
+	        807aca78 _raw_spin_unlock_irqrestore+0x58 ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093856223:   14094769 cycles:ppp: 
+	        807a8b74 mutex_unlock+0x30 ([kernel.kallsyms])
+	        8050a330 tty_write_unlock+0x20 ([kernel.kallsyms])
+	        8050b820 tty_write+0x158 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093866327:   14094220 cycles:ppp: 
+	           f5090 __aeabi_dmul+0xffff0084 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093876421:   14089613 cycles:ppp: 
+	           f548c __ltdf2+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093886514:   14090559 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093896614:   14093277 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093906713:   14095094 cycles:ppp: 
+	           26b84 Eigen::CommaInitializer<Eigen::Matrix<double, -1, -1, 0, -1, -1> >::operator,<Eigen::Product<Eigen::Product<Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0> >+0xffff07e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093916807:   14095307 cycles:ppp: 
+	           17f88 Eigen::internal::Assignment<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::internal::assign_op<double, double>, Eigen::internal::Dense2Dense, void>::run+0xffff025c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        bfe2594f __initramfs_size+0x3f2abe67 ([kernel.kallsyms])
+
+vant4winf  3365 16980.4093926919:   14096705 cycles:ppp: 
+	           23c40 Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1>, -1, -1, false>::Block+0xffff003c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	            34c0 GravitationVector+0xfffe0310 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093937018:   14096060 cycles:ppp: 
+	        807ac614 _raw_spin_lock_irqsave+0x8 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093947122:   14094736 cycles:ppp: 
+	           d8aa0 __sincosl+0xffff41c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093957214:   14094090 cycles:ppp: 
+	            a920 coriolisMatrix+0xfffe50c0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4093967322:   14095429 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4093977429:   14096612 cycles:ppp: 
+	           20390 InputCouplingMatrixAero+0xffff415c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093987526:   14093705 cycles:ppp: 
+	           17edc Eigen::internal::Assignment<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::internal::assign_op<double, double>, Eigen::internal::Dense2Dense, void>::run+0xffff01b0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	               0 [unknown] ([unknown])
+
+vant4winf  3365 16980.4093997632:   14091898 cycles:ppp: 
+	          1186f4 malloc+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        3ef50d78 [unknown] ([unknown])
+
+vant4winf  3365 16980.4094007738:   14093058 cycles:ppp: 
+	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
+	        80516e28 pty_write+0x74 ([kernel.kallsyms])
+	        8050e388 do_output_char+0x16c ([kernel.kallsyms])
+	        8050f434 n_tty_write+0x21c ([kernel.kallsyms])
+	        8050b88c tty_write+0x1c4 ([kernel.kallsyms])
+	        802982f4 __vfs_write+0x3c ([kernel.kallsyms])
+	        802985b8 vfs_write+0xb4 ([kernel.kallsyms])
+	        802987f4 sys_write+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	          1295c0 __libc_write+0xffff001c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+	        7ef7109c [unknown] ([unknown])
+
+vant4winf  3365 16980.4094017846:   14092247 cycles:ppp: 
+	           25804 Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::Transpose<Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, 1, -1, false> const> const, Eigen::Block<Eigen::Matrix<double, -1, -1, 0, -1, -1> const, -1, 1, true> const> >::redux<Eigen::internal::scalar_sum_op<double, double> >+0xffff0038 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
+vant4winf  3365 16980.4094027947:   14091594 cycles:ppp: 
+	           21b98 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::operator,+0xffff0044 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant4_winf/vant4winf)
+
