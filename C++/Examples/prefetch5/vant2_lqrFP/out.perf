@@ -1,2713 +1,468 @@
-swapper     0 [000]  2595.2594932563:          1 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        807a61dc rest_init+0xd8 ([kernel.kallsyms])
-	        80b00e38 start_kernel+0x3d4 ([kernel.kallsyms])
-
-swapper     0 [001]  2595.2594932574:          1 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2595.2594932585:          1 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-perf_4.9  1273 [003]  2595.2594932591:          1 cycles:ppp: 
-	        801a2d98 generic_exec_single+0x134 ([kernel.kallsyms])
-	        801a2e90 smp_call_function_single+0xa8 ([kernel.kallsyms])
-	        80212e24 event_function_call+0xf0 ([kernel.kallsyms])
-	        80212ed4 _perf_event_enable+0x58 ([kernel.kallsyms])
-	        80212bb4 perf_event_for_each_child+0x38 ([kernel.kallsyms])
-	        8021bcdc perf_ioctl+0xc8 ([kernel.kallsyms])
-	        802ab384 do_vfs_ioctl+0xb0 ([kernel.kallsyms])
-	        802abad4 sys_ioctl+0x44 ([kernel.kallsyms])
-	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           c9c7c __GI___ioctl+0x1300000c (/lib/arm-linux-gnueabihf/libc-2.24.so)
-	        7e9e9dbc [unknown] (/tmp/perf-1273.map)
-
-swapper     0 [000]  2595.2594932593:          1 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        807a61dc rest_init+0xd8 ([kernel.kallsyms])
-	        80b00e38 start_kernel+0x3d4 ([kernel.kallsyms])
-
-swapper     0 [001]  2595.2594932593:          1 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2595.2594932596:          1 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [000]  2595.2594932601:          1 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        807a61dc rest_init+0xd8 ([kernel.kallsyms])
-	        80b00e38 start_kernel+0x3d4 ([kernel.kallsyms])
-
-swapper     0 [002]  2595.2594932604:          1 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [001]  2595.2594932606:          1 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-perf_4.9  1273 [003]  2595.2594932608:          1 cycles:ppp: 
-	        801a2d98 generic_exec_single+0x134 ([kernel.kallsyms])
-	        801a2e90 smp_call_function_single+0xa8 ([kernel.kallsyms])
-	        80212e24 event_function_call+0xf0 ([kernel.kallsyms])
-	        80212ed4 _perf_event_enable+0x58 ([kernel.kallsyms])
-	        80212bb4 perf_event_for_each_child+0x38 ([kernel.kallsyms])
-	        8021bcdc perf_ioctl+0xc8 ([kernel.kallsyms])
-	        802ab384 do_vfs_ioctl+0xb0 ([kernel.kallsyms])
-	        802abad4 sys_ioctl+0x44 ([kernel.kallsyms])
-	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           c9c7c __GI___ioctl+0x1300000c (/lib/arm-linux-gnueabihf/libc-2.24.so)
-	        7e9e9dbc [unknown] (/tmp/perf-1273.map)
-
-swapper     0 [000]  2595.2594932609:         42 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        807a61dc rest_init+0xd8 ([kernel.kallsyms])
-	        80b00e38 start_kernel+0x3d4 ([kernel.kallsyms])
-
-swapper     0 [002]  2595.2594932612:        105 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [001]  2595.2594932614:         71 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [000]  2595.2594932617:       5889 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        807a61dc rest_init+0xd8 ([kernel.kallsyms])
-	        80b00e38 start_kernel+0x3d4 ([kernel.kallsyms])
-
-perf_4.9  1273 [003]  2595.2594932617:          1 cycles:ppp: 
-	        801a2d98 generic_exec_single+0x134 ([kernel.kallsyms])
-	        801a2e90 smp_call_function_single+0xa8 ([kernel.kallsyms])
-	        80212e24 event_function_call+0xf0 ([kernel.kallsyms])
-	        80212ed4 _perf_event_enable+0x58 ([kernel.kallsyms])
-	        80212bb4 perf_event_for_each_child+0x38 ([kernel.kallsyms])
-	        8021bcdc perf_ioctl+0xc8 ([kernel.kallsyms])
-	        802ab384 do_vfs_ioctl+0xb0 ([kernel.kallsyms])
-	        802abad4 sys_ioctl+0x44 ([kernel.kallsyms])
-	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           c9c7c __GI___ioctl+0x1300000c (/lib/arm-linux-gnueabihf/libc-2.24.so)
-	        7e9e9dbc [unknown] (/tmp/perf-1273.map)
-
-swapper     0 [002]  2595.2594932619:      16949 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [001]  2595.2594932622:       6299 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-perf_4.9  1273 [003]  2595.2594932626:         75 cycles:ppp: 
-	        801a2d98 generic_exec_single+0x134 ([kernel.kallsyms])
-	        801a2e90 smp_call_function_single+0xa8 ([kernel.kallsyms])
-	        80212e24 event_function_call+0xf0 ([kernel.kallsyms])
-	        80212ed4 _perf_event_enable+0x58 ([kernel.kallsyms])
-	        80212bb4 perf_event_for_each_child+0x38 ([kernel.kallsyms])
-	        8021bcdc perf_ioctl+0xc8 ([kernel.kallsyms])
-	        802ab384 do_vfs_ioctl+0xb0 ([kernel.kallsyms])
-	        802abad4 sys_ioctl+0x44 ([kernel.kallsyms])
-	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           c9c7c __GI___ioctl+0x1300000c (/lib/arm-linux-gnueabihf/libc-2.24.so)
-	        7e9e9dbc [unknown] (/tmp/perf-1273.map)
-
-perf_4.9  1273 [003]  2595.2594932635:      10576 cycles:ppp: 
-	        801a2d98 generic_exec_single+0x134 ([kernel.kallsyms])
-	        801a2e90 smp_call_function_single+0xa8 ([kernel.kallsyms])
-	        80212e24 event_function_call+0xf0 ([kernel.kallsyms])
-	        80212ed4 _perf_event_enable+0x58 ([kernel.kallsyms])
-	        80212bb4 perf_event_for_each_child+0x38 ([kernel.kallsyms])
-	        8021bcdc perf_ioctl+0xc8 ([kernel.kallsyms])
-	        802ab384 do_vfs_ioctl+0xb0 ([kernel.kallsyms])
-	        802abad4 sys_ioctl+0x44 ([kernel.kallsyms])
-	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           c9c7c __GI___ioctl+0x1300000c (/lib/arm-linux-gnueabihf/libc-2.24.so)
-	        7e9e9dbc [unknown] (/tmp/perf-1273.map)
-
-perf_4.9  1275 [000]  2595.2594933354:     938220 cycles:ppp: 
-	        80148594 preempt_count_add+0x8 ([kernel.kallsyms])
-	        80262fc8 unmap_page_range+0x178 ([kernel.kallsyms])
-	        80263530 unmap_single_vma+0x8c ([kernel.kallsyms])
-	        802637e4 unmap_vmas+0x64 ([kernel.kallsyms])
-	        80269d1c exit_mmap+0xc0 ([kernel.kallsyms])
-	        8011c718 mmput+0x58 ([kernel.kallsyms])
-	        8029f228 flush_old_exec+0x52c ([kernel.kallsyms])
-	        802f3618 load_elf_binary+0x2e4 ([kernel.kallsyms])
+perf_4.9  1772  6208.1911830737:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
 	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
 	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
 	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
 	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           9c4bc __GI___execve+0x1300000c (/lib/arm-linux-gnueabihf/libc-2.24.so)
+	        7689d4bc [unknown] ([unknown])
 
-spi1   187 [001]  2595.2594938697:     997070 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        8013fba8 kthread_worker_fn+0x134 ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
+perf_4.9  1772  6208.1911830765:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        7689d4bc [unknown] ([unknown])
 
-vant2lqrFP  1275 [000]  2595.2595042277:  152462163 cycles:ppp: 
-	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+perf_4.9  1772  6208.1911830773:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        7689d4bc [unknown] ([unknown])
 
-vant2lqrFP  1275 [000]  2595.2595114849:  101580714 cycles:ppp: 
+perf_4.9  1772  6208.1911830782:         45 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        7689d4bc [unknown] ([unknown])
+
+perf_4.9  1772  6208.1911830790:       6067 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        7689d4bc [unknown] ([unknown])
+
+vant2lqrFP  1772  6208.1911831427:     891309 cycles:ppp: 
+	        80229488 filemap_map_pages+0x80 ([kernel.kallsyms])
+	        802654a0 handle_mm_fault+0x5c8 ([kernel.kallsyms])
+	        807adb60 do_page_fault+0x358 ([kernel.kallsyms])
+	        801012b8 do_PrefetchAbort+0x44 ([kernel.kallsyms])
+	        807ad5e4 ret_from_exception+0x0 ([kernel.kallsyms])
+	           33ce0 std::ctype<wchar_t>::ctype+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               c [unknown] ([unknown])
+
+vant2lqrFP  1772  6208.1911930309:  138408629 cycles:ppp: 
+	            38c4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912011963:  114294563 cycles:ppp: 
+	             6fc main+0xfffe0430 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912046651:   48553241 cycles:ppp: 
+	            38b4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912071164:   34311896 cycles:ppp: 
+	            3898 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912092299:   29583824 cycles:ppp: 
+	            38b4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912110849:   25963897 cycles:ppp: 
+	            389c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912127419:   23192390 cycles:ppp: 
+	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912141749:   20059468 cycles:ppp: 
+	            3e18 teste::execute+0xfffe0490 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6208.1912154938:   18462887 cycles:ppp: 
+	            38c4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912167318:   17326353 cycles:ppp: 
 	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-vant2lqrFP  1275 [000]  2595.2595149487:   48476862 cycles:ppp: 
-	             454 main+0xfffe0188 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+vant2lqrFP  1772  6208.1912178885:   16190931 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-vant2lqrFP  1275 [000]  2596.2594173964:   34266961 cycles:ppp: 
-	           c2ba8 free+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+vant2lqrFP  1772  6208.1912190036:   15608452 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-vant2lqrFP  1275 [000]  2596.2594195075:   29549402 cycles:ppp: 
+vant2lqrFP  1772  6208.1912200901:   15208377 cycles:ppp: 
+	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912211559:   14918079 cycles:ppp: 
 	            3c54 teste::execute+0xfffe02cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-vant2lqrFP  1275 [000]  2596.2594213606:   25937439 cycles:ppp: 
-	            3c58 teste::execute+0xfffe02d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+vant2lqrFP  1772  6208.1912222065:   14705860 cycles:ppp: 
+	             464 main+0xfffe0198 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6208.1912232460:   14550990 cycles:ppp: 
+	           c58e0 memset+0xffff0040 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-vant2lqrFP  1275 [000]  2596.2594230161:   23172058 cycles:ppp: 
-	           c5a1c memcpy+0xffff002c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594244482:   20046037 cycles:ppp: 
-	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-vant2lqrFP  1275 [000]  2596.2594257665:   18452799 cycles:ppp: 
-	            3d5c teste::execute+0xfffe03d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594262121:   15134090 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594270039:   17318846 cycles:ppp: 
-	            38c0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0104 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-vant2lqrFP  1275 [000]  2596.2594281603:   16185910 cycles:ppp: 
-	             434 main+0xfffe0168 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [003]  2596.2594288003:    1526357 cycles:ppp: 
-	        8078f9e4 __memzero+0x4 ([kernel.kallsyms])
-	        80157320 find_busiest_group+0x11c ([kernel.kallsyms])
-	        80157d78 load_balance+0x188 ([kernel.kallsyms])
-	        80158d1c run_rebalance_domains+0x198 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594292751:   15604724 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594292801:    3221743 cycles:ppp: 
-	        8059a6f8 spi_complete+0x0 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594303614:   15205573 cycles:ppp: 
-	           c5908 memset+0xffff0068 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594314271:   14915914 cycles:ppp: 
-	            3e48 teste::execute+0xfffe04c0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594315780:    2502733 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        807ab830 schedule_hrtimeout_range_clock+0xd8 ([kernel.kallsyms])
-	        807ab8cc schedule_hrtimeout_range+0x28 ([kernel.kallsyms])
-	        807ab544 usleep_range+0x6c ([kernel.kallsyms])
-	             1e8 wait_complete+0x15a60d8 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594324776:   14704284 cycles:ppp: 
-	           c5a20 memcpy+0xffff0030 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594335171:   14549820 cycles:ppp: 
-	            389c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594335459:    2179555 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594345485:   14437123 cycles:ppp: 
-	            3c5c teste::execute+0xfffe02d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594352571:    1931124 cycles:ppp: 
-	        801f1b88 trace_hardirqs_off+0x1c ([kernel.kallsyms])
-	        801f1ca8 start_critical_timings+0x10 ([kernel.kallsyms])
-	        807ac418 default_idle_call+0x38 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594355741:   14355108 cycles:ppp: 
-	            388c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-vant2lqrFP  1275 [000]  2596.2594365954:   14295577 cycles:ppp: 
-	           a24b4 __aeabi_read_tp+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594367698:    1650136 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594376136:   14252362 cycles:ppp: 
-	           bf0c0 _int_free+0xffff0044 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594381493:    1510723 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594386296:   14220981 cycles:ppp: 
+vant2lqrFP  1772  6208.1912242796:   14438056 cycles:ppp: 
 	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-spi1   187 [001]  2596.2594393127:    1369901 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        8013fb8c kthread_worker_fn+0x118 ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594396440:   14198240 cycles:ppp: 
+vant2lqrFP  1772  6208.1912253052:   14355924 cycles:ppp: 
 	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-swapper     0 [001]  2596.2594405197:    1298950 cycles:ppp: 
-	        807ac93c _raw_read_unlock+0x54 ([kernel.kallsyms])
-	        8063f51c led_trigger_event+0x64 ([kernel.kallsyms])
-	        80641468 ledtrig_cpu+0xd4 ([kernel.kallsyms])
-	        801093a8 arch_cpu_idle_exit+0x1c ([kernel.kallsyms])
-	        80163000 do_idle+0xec ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594406572:   14181774 cycles:ppp: 
-	           c58ec memset+0xffff004c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594416697:   14169852 cycles:ppp: 
-	            3d7c teste::execute+0xfffe03f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594416714:    1258038 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594426813:   14161170 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594427800:    1231081 cycles:ppp: 
-	        80148728 preempt_count_sub+0x38 ([kernel.kallsyms])
-	        807acafc _raw_spin_unlock_irq+0x3c ([kernel.kallsyms])
-	        807a86a0 wait_for_common+0x134 ([kernel.kallsyms])
-	        807a86dc wait_for_completion+0x20 ([kernel.kallsyms])
-	        8059ca7c __spi_sync+0xf0 ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594436926:   14154743 cycles:ppp: 
-	            3c68 teste::execute+0xfffe02e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594438570:    1198387 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        807ab2a8 schedule_timeout+0x17c ([kernel.kallsyms])
-	        807a8608 wait_for_common+0x9c ([kernel.kallsyms])
-	        807a86fc wait_for_completion_timeout+0x1c ([kernel.kallsyms])
-	        8059be00 spi_transfer_one_message+0x170 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594447035:   14150382 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594449036:    1158180 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594457143:   14147105 cycles:ppp: 
+vant2lqrFP  1772  6209.1911263261:   14289639 cycles:ppp: 
 	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-swapper     0 [001]  2596.2594459620:    1139140 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
+vant2lqrFP  1772  6209.1911273439:   14246999 cycles:ppp: 
+	           c25e8 malloc+0xffff0134 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
 
-vant2lqrFP  1275 [000]  2596.2594467248:   14144671 cycles:ppp: 
+vant2lqrFP  1772  6209.1911283596:   14216958 cycles:ppp: 
+	            38c4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911293738:   14195355 cycles:ppp: 
 	            3c50 teste::execute+0xfffe02c8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-swapper     0 [001]  2596.2594469818:    1127801 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594477352:   14143001 cycles:ppp: 
-	            5ca4 operator new+0xfffe0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594479971:    1118070 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594487455:   14141727 cycles:ppp: 
-	            3c58 teste::execute+0xfffe02d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594489974:    1116994 cycles:ppp: 
-	              f0 bcm2835aux_spi_unprepare_message+0x1dc6084 ([spi_bcm2835aux])
-	        8059bb1c spi_finalize_current_message+0xec ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594497558:   14140776 cycles:ppp: 
-	           c58d8 memset+0xffff0038 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594499971:    1116872 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594507660:   14140146 cycles:ppp: 
-	            3894 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00d8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594509977:    1120135 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594517762:   14139714 cycles:ppp: 
-	            39bc teste::execute+0xfffe0034 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594519977:    1121866 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594527864:   14139420 cycles:ppp: 
-	            3c48 teste::execute+0xfffe02c0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594529976:    1124444 cycles:ppp: 
-	        80148720 preempt_count_sub+0x30 ([kernel.kallsyms])
-	        807aca78 _raw_spin_unlock_irqrestore+0x58 ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594537965:   14139143 cycles:ppp: 
-	             fe0 [unknown] ([vectors])
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594539981:    1126916 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7b48 preempt_schedule_common+0x3c ([kernel.kallsyms])
-	        807a7bb4 preempt_schedule.part.19+0x1c ([kernel.kallsyms])
-	        807a7be0 preempt_schedule+0x28 ([kernel.kallsyms])
-	        807acaa0 _raw_spin_unlock_irqrestore+0x80 ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594548068:   14139017 cycles:ppp: 
-	            3c5c teste::execute+0xfffe02d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594549981:    1129034 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7b48 preempt_schedule_common+0x3c ([kernel.kallsyms])
-	        807a7bb4 preempt_schedule.part.19+0x1c ([kernel.kallsyms])
-	        807a7be0 preempt_schedule+0x28 ([kernel.kallsyms])
-	        807acaa0 _raw_spin_unlock_irqrestore+0x80 ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594558005:     187014 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594558170:   14138795 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594559982:    1131618 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7b48 preempt_schedule_common+0x3c ([kernel.kallsyms])
-	        807a7bb4 preempt_schedule.part.19+0x1c ([kernel.kallsyms])
-	        807a7be0 preempt_schedule+0x28 ([kernel.kallsyms])
-	        807acaa0 _raw_spin_unlock_irqrestore+0x80 ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594568271:   14138401 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594569986:    1134092 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594578372:   14138355 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594581073:    1136140 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [003]  2596.2594588003:      69861 cycles:ppp: 
-	        801573a8 find_busiest_group+0x1a4 ([kernel.kallsyms])
-	        80157d78 load_balance+0x188 ([kernel.kallsyms])
-	        80158d1c run_rebalance_domains+0x198 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594588473:   14138427 cycles:ppp: 
-	             45c main+0xfffe0190 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594591494:    1135737 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594598574:   14138411 cycles:ppp: 
-	            3988 teste::execute+0xfffe0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594600448:    1123030 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [003]  2596.2594608002:      54738 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594608675:   14138414 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594610744:    1119264 cycles:ppp: 
-	        80642190 arch_counter_read+0x0 ([kernel.kallsyms])
-	        807ab4fc usleep_range+0x24 ([kernel.kallsyms])
-	             214 wait_complete+0x15a6104 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [002]  2596.2594617997:     154814 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594618776:   14138427 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594621347:    1147409 cycles:ppp: 
-	        805982d8 __spi_validate+0x150 ([kernel.kallsyms])
-	        8059c9cc __spi_sync+0x40 ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594628877:   14139069 cycles:ppp: 
-	            3c4c teste::execute+0xfffe02c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594631816:    1139843 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2596.2594638003:      66013 cycles:ppp: 
-	        80157610 find_busiest_group+0x40c ([kernel.kallsyms])
-	        80157d78 load_balance+0x188 ([kernel.kallsyms])
-	        80158d1c run_rebalance_domains+0x198 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594638978:   14138373 cycles:ppp: 
-	            398c teste::execute+0xfffe0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594642322:    1127257 cycles:ppp: 
-	        80185dc0 rcu_idle_exit+0x7c ([kernel.kallsyms])
-	        80162ffc do_idle+0xe8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [003]  2596.2594647997:      41613 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594649079:   14138300 cycles:ppp: 
-	            37d0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594652676:    1114580 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059cacc __spi_sync+0x140 ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594657998:      36438 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2596.2594658003:      57050 cycles:ppp: 
-	        801573b4 find_busiest_group+0x1b0 ([kernel.kallsyms])
-	        80157d78 load_balance+0x188 ([kernel.kallsyms])
-	        80158d1c run_rebalance_domains+0x198 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594659180:   14138343 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-spi1   187 [001]  2596.2594662970:    1102448 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        8013fba8 kthread_worker_fn+0x134 ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594668002:      36357 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594669281:   14138379 cycles:ppp: 
-	            3dc4 teste::execute+0xfffe043c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594672963:    1095385 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059bd10 spi_transfer_one_message+0x80 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [002]  2596.2594677997:      50351 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [003]  2596.2594677998:      36297 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594679382:   14138402 cycles:ppp: 
-	            5ca8 operator new+0xfffe0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594682801:    1094849 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7b48 preempt_schedule_common+0x3c ([kernel.kallsyms])
-	        807a7bb4 preempt_schedule.part.19+0x1c ([kernel.kallsyms])
-	        807a7be0 preempt_schedule+0x28 ([kernel.kallsyms])
-	        807acaa0 _raw_spin_unlock_irqrestore+0x80 ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594688002:      36566 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2596.2594688003:      42872 cycles:ppp: 
-	        80790ae0 cpumask_next_and+0x30 ([kernel.kallsyms])
-	        80157344 find_busiest_group+0x140 ([kernel.kallsyms])
-	        80157d78 load_balance+0x188 ([kernel.kallsyms])
-	        80158d1c run_rebalance_domains+0x198 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594689483:   14138368 cycles:ppp: 
+vant2lqrFP  1772  6209.1911303868:   14179749 cycles:ppp: 
 	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-rcio_worker   232 [001]  2596.2594692635:    1101058 cycles:ppp: 
-	        804f1eec clk_prepare_lock+0x8 ([kernel.kallsyms])
-	        804f44f4 clk_get_rate+0x24 ([kernel.kallsyms])
-	             4e0 bcm2835aux_spi_transfer_one+0x1dc608c ([spi_bcm2835aux])
-	        8059bd80 spi_transfer_one_message+0xf0 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594697998:      36474 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2596.2594698004:      39634 cycles:ppp: 
-	        80157470 find_busiest_group+0x26c ([kernel.kallsyms])
-	        80157d78 load_balance+0x188 ([kernel.kallsyms])
-	        80158d1c run_rebalance_domains+0x198 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594699584:   14138480 cycles:ppp: 
-	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594702479:    1108975 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [003]  2596.2594708002:      36711 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2596.2594708005:      39665 cycles:ppp: 
-	        80185dc0 rcu_idle_exit+0x7c ([kernel.kallsyms])
-	        80162ffc do_idle+0xe8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594709685:   14138461 cycles:ppp: 
-	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594712630:    1115971 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-thd   352 [002]  2596.2594713037:      39501 cycles:ppp: 
-	        8078d7e8 __copy_to_user_std+0xd8 ([kernel.kallsyms])
-	        804a39bc arm_copy_to_user+0x28 ([kernel.kallsyms])
-	        802ad750 core_sys_select+0x22c ([kernel.kallsyms])
-	        802ad96c sys_select+0xdc ([kernel.kallsyms])
-	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           ca650 __select+0x1261c020 (/lib/arm-linux-gnueabihf/libc-2.24.so)
-
-swapper     0 [002]  2596.2594713071:      39550 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [003]  2596.2594717998:      36579 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        8018ce00 run_timer_softirq+0x2b0 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2596.2594718008:      44531 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594719786:   14138425 cycles:ppp: 
-	            3c58 teste::execute+0xfffe02d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+vant2lqrFP  1772  6209.1911313990:   14168389 cycles:ppp: 
+	           c24fc malloc+0xffff0048 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-rcio_worker   232 [001]  2596.2594722632:    1120024 cycles:ppp: 
-	        8059830c __spi_validate+0x184 ([kernel.kallsyms])
-	        8059c9cc __spi_sync+0x40 ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594727998:      36788 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594729887:   14138469 cycles:ppp: 
-	            3c58 teste::execute+0xfffe02d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594732636:    1119662 cycles:ppp: 
-	        8059cb88 __spi_sync+0x1fc ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594737998:      37014 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594739988:   14138444 cycles:ppp: 
-	            38ac Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594742635:    1122034 cycles:ppp: 
-	             5d0 bcm2835aux_spi_transfer_one+0x1dc617c ([spi_bcm2835aux])
-	        8059bd80 spi_transfer_one_message+0xf0 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594748002:      37049 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594750089:   14138505 cycles:ppp: 
-	            3b74 teste::execute+0xfffe01ec (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594752639:    1124282 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [003]  2596.2594758002:      36942 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594760190:   14138366 cycles:ppp: 
-	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594762797:    1126396 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594767998:      37081 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        8018ce00 run_timer_softirq+0x2b0 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594770291:   14138388 cycles:ppp: 
-	            3aa4 teste::execute+0xfffe011c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-spi1   187 [001]  2596.2594772800:    1127209 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        8013fba8 kthread_worker_fn+0x134 ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594778002:      37224 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594780392:   14138371 cycles:ppp: 
-	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594782807:    1127212 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [003]  2596.2594788003:      37271 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594790493:   14138396 cycles:ppp: 
-	            3ddc teste::execute+0xfffe0454 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594792959:    1128630 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        807ab830 schedule_hrtimeout_range_clock+0xd8 ([kernel.kallsyms])
-	        807ab8cc schedule_hrtimeout_range+0x28 ([kernel.kallsyms])
-	        807ab544 usleep_range+0x6c ([kernel.kallsyms])
-	             1e8 wait_complete+0x15a60d8 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594797998:      37356 cycles:ppp: 
-	        8014870c preempt_count_sub+0x1c ([kernel.kallsyms])
-	        807acafc _raw_spin_unlock_irq+0x3c ([kernel.kallsyms])
-	        8018ce00 run_timer_softirq+0x2b0 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594800596:   14138403 cycles:ppp: 
+vant2lqrFP  1772  6209.1911324107:   14160238 cycles:ppp: 
 	            3c54 teste::execute+0xfffe02cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-rcio_worker   232 [001]  2596.2594802963:    1129265 cycles:ppp: 
-	        807aca70 _raw_spin_unlock_irqrestore+0x50 ([kernel.kallsyms])
-	        8059cba8 __spi_sync+0x21c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594807998:      37485 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594810695:   14138423 cycles:ppp: 
-	            37e4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0028 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+vant2lqrFP  1772  6209.1911334219:   14154293 cycles:ppp: 
+	            3d60 teste::execute+0xfffe03d8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-swapper     0 [001]  2596.2594813406:    1129363 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
+vant2lqrFP  1772  6209.1911344328:   14149941 cycles:ppp: 
+	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-swapper     0 [003]  2596.2594818003:      37650 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594820796:   14138188 cycles:ppp: 
+vant2lqrFP  1772  6209.1911354435:   14146829 cycles:ppp: 
 	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-swapper     0 [001]  2596.2594823947:    1143118 cycles:ppp: 
-	        8064139c ledtrig_cpu+0x8 ([kernel.kallsyms])
-	        80163000 do_idle+0xec ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
+vant2lqrFP  1772  6209.1911364540:   14144630 cycles:ppp: 
+	            3858 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe009c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-swapper     0 [003]  2596.2594828003:      37390 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594830897:   14138489 cycles:ppp: 
-	            3890 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594834446:    1134311 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        807ab2a8 schedule_timeout+0x17c ([kernel.kallsyms])
-	        807a8608 wait_for_common+0x9c ([kernel.kallsyms])
-	        807a86fc wait_for_completion_timeout+0x1c ([kernel.kallsyms])
-	        8059be00 spi_transfer_one_message+0x170 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594838002:      37479 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594840999:   14138489 cycles:ppp: 
-	            3890 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594844740:    1122091 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059854c spi_statistics_add_transfer_stats+0xd4 ([kernel.kallsyms])
-	        8059bec8 spi_transfer_one_message+0x238 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594848003:      37518 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594851100:   14138563 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594855029:    1111491 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7b48 preempt_schedule_common+0x3c ([kernel.kallsyms])
-	        807a7bb4 preempt_schedule.part.19+0x1c ([kernel.kallsyms])
-	        807a7be0 preempt_schedule+0x28 ([kernel.kallsyms])
-	        807acaa0 _raw_spin_unlock_irqrestore+0x80 ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [003]  2596.2594858002:      37676 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594861200:   14138424 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2594865296:    1103528 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        807ab830 schedule_hrtimeout_range_clock+0xd8 ([kernel.kallsyms])
-	        807ab8cc schedule_hrtimeout_range+0x28 ([kernel.kallsyms])
-	        807ab544 usleep_range+0x6c ([kernel.kallsyms])
-	             214 wait_complete+0x15a6104 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594871301:   14138406 cycles:ppp: 
-	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594875285:    1098099 cycles:ppp: 
-	        8014b958 sched_ttwu_pending+0x50 ([kernel.kallsyms])
-	        80163014 do_idle+0x100 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594881402:   14138434 cycles:ppp: 
-	            3aa8 teste::execute+0xfffe0120 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+vant2lqrFP  1772  6209.1911374644:   14143038 cycles:ppp: 
+	            3d0c teste::execute+0xfffe0384 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-rcio_worker   232 [001]  2596.2594885126:    1099257 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059ca24 __spi_sync+0x98 ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-kworker/3:2   123 [003]  2596.2594888018:      34518 cycles:ppp: 
-	        801bf11c stop_cpus+0x0 ([kernel.kallsyms])
-	        807ad800 patch_text+0x2c ([kernel.kallsyms])
-	        8010fe38 arch_jump_label_transform+0x30 ([kernel.kallsyms])
-	        80225bec __jump_label_update+0x9c ([kernel.kallsyms])
-	        802262a8 jump_label_update+0x90 ([kernel.kallsyms])
-	        8022651c static_key_disable_cpuslocked+0xe0 ([kernel.kallsyms])
-	        80226540 static_key_disable+0x18 ([kernel.kallsyms])
-	        80213fbc perf_sched_delayed+0x54 ([kernel.kallsyms])
-	        80139374 process_one_work+0x158 ([kernel.kallsyms])
-	        801397fc worker_thread+0x60 ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-kworker/3:2   123 [003]  2596.2594888044:      34518 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8014b144 try_to_wake_up+0x204 ([kernel.kallsyms])
-	        8014b42c wake_up_q+0x68 ([kernel.kallsyms])
-	        801be8d4 cpu_stop_queue_work+0x94 ([kernel.kallsyms])
-	        801beb3c queue_stop_cpus_work+0x9c ([kernel.kallsyms])
-	        801bec08 __stop_cpus+0x50 ([kernel.kallsyms])
-	        801bf158 stop_cpus+0x3c ([kernel.kallsyms])
-	        801bf354 stop_machine_cpuslocked+0x104 ([kernel.kallsyms])
-	        807ad800 patch_text+0x2c ([kernel.kallsyms])
-	        8010fe38 arch_jump_label_transform+0x30 ([kernel.kallsyms])
-	        80225bec __jump_label_update+0x9c ([kernel.kallsyms])
-	        802262a8 jump_label_update+0x90 ([kernel.kallsyms])
-	        8022651c static_key_disable_cpuslocked+0xe0 ([kernel.kallsyms])
-	        80226540 static_key_disable+0x18 ([kernel.kallsyms])
-	        80213fbc perf_sched_delayed+0x54 ([kernel.kallsyms])
-	        80139374 process_one_work+0x158 ([kernel.kallsyms])
-	        801397fc worker_thread+0x60 ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-migration/3    24 [003]  2596.2594888070:      34518 cycles:ppp: 
-	        801bea44 multi_cpu_stop+0xfc ([kernel.kallsyms])
-	        801bed14 cpu_stopper_thread+0xb4 ([kernel.kallsyms])
-	        80143fec smpboot_thread_fn+0x16c ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594891504:   14138434 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594893457:    1103895 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594901605:   14138435 cycles:ppp: 
-	            3898 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594904955:    1110797 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594911708:   14138409 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594915438:    1142681 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594921807:   14138357 cycles:ppp: 
-	             fe0 [unknown] ([vectors])
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2594925613:    1120587 cycles:ppp: 
-	        807a6e4c __sched_text_start+0x4c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        807ab830 schedule_hrtimeout_range_clock+0xd8 ([kernel.kallsyms])
-	        807ab8cc schedule_hrtimeout_range+0x28 ([kernel.kallsyms])
-	        807ab544 usleep_range+0x6c ([kernel.kallsyms])
-	             1e8 wait_complete+0x15a60d8 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594931907:   14137920 cycles:ppp: 
-	            3c54 teste::execute+0xfffe02cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594935776:    1111863 cycles:ppp: 
-	        80162f58 do_idle+0x44 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594942008:   14138418 cycles:ppp: 
-	           c25c8 malloc+0xffff0114 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594945947:    1109161 cycles:ppp: 
-	        8063f4ec led_trigger_event+0x34 ([kernel.kallsyms])
-	        80641468 ledtrig_cpu+0xd4 ([kernel.kallsyms])
-	        801093a8 arch_cpu_idle_exit+0x1c ([kernel.kallsyms])
-	        80163000 do_idle+0xec ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594952109:   14138566 cycles:ppp: 
-	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594956254:    1105827 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594962210:   14138533 cycles:ppp: 
-	            3c48 teste::execute+0xfffe02c0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594966322:    1103516 cycles:ppp: 
-	        807ac4a8 _raw_read_lock+0x20 ([kernel.kallsyms])
-	        8063f4e8 led_trigger_event+0x30 ([kernel.kallsyms])
-	        80641468 ledtrig_cpu+0xd4 ([kernel.kallsyms])
-	        801093a8 arch_cpu_idle_exit+0x1c ([kernel.kallsyms])
-	        80163000 do_idle+0xec ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594972312:   14138461 cycles:ppp: 
-	           bf128 _int_free+0xffff00ac (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2594976431:    1099212 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2594982413:   14138728 cycles:ppp: 
-	             6e0 main+0xfffe0414 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-spi1   187 [001]  2596.2594986588:    1098452 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        8013fba8 kthread_worker_fn+0x134 ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2594992514:   14138458 cycles:ppp: 
-	            3c4c teste::execute+0xfffe02c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2594996748:    1097660 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595002615:   14138295 cycles:ppp: 
-	            38ac Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2595006821:    1095726 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595012716:   14138325 cycles:ppp: 
-	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2595017322:    1094119 cycles:ppp: 
-	        80185dc0 rcu_idle_exit+0x7c ([kernel.kallsyms])
-	        80162ffc do_idle+0xe8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595022817:   14138349 cycles:ppp: 
-	            3c60 teste::execute+0xfffe02d8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2595027775:    1104911 cycles:ppp: 
-	        802849ec kfree+0x98 ([kernel.kallsyms])
-	        8059cd28 spi_write_then_read+0x100 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-swapper     0 [002]  2596.2595027998:      61914 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595032917:   14138415 cycles:ppp: 
-	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [002]  2596.2595038007:      47886 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [001]  2596.2595038043:    1097103 cycles:ppp: 
-	        807a7180 __sched_text_start+0x380 ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595043019:   14138949 cycles:ppp: 
-	            38ac Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2595048452:    1077326 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595053120:   14138360 cycles:ppp: 
-	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [002]  2596.2595058003:      46339 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        80151d20 update_blocked_averages+0x51c ([kernel.kallsyms])
-	        80158bf0 run_rebalance_domains+0x6c ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-rcio_worker   232 [001]  2596.2595058714:    1071858 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        807ab2a8 schedule_timeout+0x17c ([kernel.kallsyms])
-	        807a8608 wait_for_common+0x9c ([kernel.kallsyms])
-	        807a86fc wait_for_completion_timeout+0x1c ([kernel.kallsyms])
-	        8059be00 spi_transfer_one_message+0x170 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2595063221:   14138359 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [002]  2596.2595068006:      41779 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [001]  2596.2595068671:    1063166 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595073322:   14138353 cycles:ppp: 
-	            38ac Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2595078657:    1062622 cycles:ppp: 
-	        80185dc0 rcu_idle_exit+0x7c ([kernel.kallsyms])
-	        80162ffc do_idle+0xe8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595083423:   14138397 cycles:ppp: 
-	            3bdc teste::execute+0xfffe0254 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2596.2595088504:    1067850 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595093523:   14138411 cycles:ppp: 
-	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2595098498:    1071634 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059cba8 __spi_sync+0x21c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2595103624:   14138427 cycles:ppp: 
-	            38e0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0124 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2595108495:    1076963 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595113725:   14138413 cycles:ppp: 
-	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [002]  2596.2595118003:      32071 cycles:ppp: 
-	        8078f93c mmioset+0x3c ([kernel.kallsyms])
-	        80157c60 load_balance+0x70 ([kernel.kallsyms])
-	        80158d1c run_rebalance_domains+0x198 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [001]  2596.2595118496:    1080829 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595123826:   14138476 cycles:ppp: 
-	           c2ba8 free+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [002]  2596.2595127999:      30522 cycles:ppp: 
-	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2596.2595128021:      31431 cycles:ppp: 
-	        801580e0 load_balance+0x4f0 ([kernel.kallsyms])
-	        80158d1c run_rebalance_domains+0x198 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [002]  2596.2595128047:      31473 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-swapper     0 [001]  2596.2595128346:    1083343 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595133928:   14138449 cycles:ppp: 
-	             788 main+0xfffe04bc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2596.2595138447:    1085452 cycles:ppp: 
-	        801f1ca0 start_critical_timings+0x8 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2596.2595144029:   14138447 cycles:ppp: 
-	             44c main+0xfffe0180 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2595148499:    1090683 cycles:ppp: 
-	        807a9c38 mutex_lock+0x28 ([kernel.kallsyms])
-	        8059cc04 spi_sync+0x28 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2596.2595154130:   14138575 cycles:ppp: 
-	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2596.2595158499:    1090445 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        804d23ec gpio_to_desc+0x98 ([kernel.kallsyms])
-	        8059aae0 spi_set_cs+0x80 ([kernel.kallsyms])
-	        8059bcd0 spi_transfer_one_message+0x40 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594164231:   14138439 cycles:ppp: 
-	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594168501:    1092347 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059854c spi_statistics_add_transfer_stats+0xd4 ([kernel.kallsyms])
-	        8059bed8 spi_transfer_one_message+0x248 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594174332:   14138470 cycles:ppp: 
-	            3c70 teste::execute+0xfffe02e8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2597.2594178572:    1094621 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594184433:   14138405 cycles:ppp: 
-	            3b54 teste::execute+0xfffe01cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2597.2594188667:    1096444 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7b48 preempt_schedule_common+0x3c ([kernel.kallsyms])
-	        807a7bb4 preempt_schedule.part.19+0x1c ([kernel.kallsyms])
-	        807a7be0 preempt_schedule+0x28 ([kernel.kallsyms])
-	        807acaa0 _raw_spin_unlock_irqrestore+0x80 ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594194534:   14138401 cycles:ppp: 
-	           c5a98 memcpy+0xffff00a8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2597.2594198670:    1095763 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8018dd98 hrtimer_start_range_ns+0x2d4 ([kernel.kallsyms])
-	        807ab820 schedule_hrtimeout_range_clock+0xc8 ([kernel.kallsyms])
-	        807ab8cc schedule_hrtimeout_range+0x28 ([kernel.kallsyms])
-	        807ab544 usleep_range+0x6c ([kernel.kallsyms])
-	             1e8 wait_complete+0x15a60d8 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594204635:   14138401 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2597.2594209083:    1096776 cycles:ppp: 
-	        8063f4e8 led_trigger_event+0x30 ([kernel.kallsyms])
-	        80641468 ledtrig_cpu+0xd4 ([kernel.kallsyms])
-	        801093a8 arch_cpu_idle_exit+0x1c ([kernel.kallsyms])
-	        80163000 do_idle+0xec ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594214736:   14138451 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594219683:    1109161 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059cacc __spi_sync+0x140 ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594224837:   14138440 cycles:ppp: 
-	            38c4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594230121:    1101278 cycles:ppp: 
-	        80148748 preempt_count_sub+0x58 ([kernel.kallsyms])
-	        807aca78 _raw_spin_unlock_irqrestore+0x58 ([kernel.kallsyms])
-	        804d23ec gpio_to_desc+0x98 ([kernel.kallsyms])
-	        8059aae0 spi_set_cs+0x80 ([kernel.kallsyms])
-	        8059bcd0 spi_transfer_one_message+0x40 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594234938:   14138458 cycles:ppp: 
-	            3898 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2597.2594240399:    1088944 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594245039:   14138434 cycles:ppp: 
+vant2lqrFP  1772  6209.1911384748:   14141774 cycles:ppp: 
 	            3bec teste::execute+0xfffe0264 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-swapper     0 [001]  2597.2594250826:    1079068 cycles:ppp: 
-	        807ac4ac _raw_read_lock+0x24 ([kernel.kallsyms])
-	        8063f4e8 led_trigger_event+0x30 ([kernel.kallsyms])
-	        8064144c ledtrig_cpu+0xb8 ([kernel.kallsyms])
-	        801093a8 arch_cpu_idle_exit+0x1c ([kernel.kallsyms])
-	        80163000 do_idle+0xec ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
+vant2lqrFP  1772  6209.1911394850:   14140870 cycles:ppp: 
+	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-vant2lqrFP  1275 [000]  2597.2594255140:   14138509 cycles:ppp: 
-	            38c4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2597.2594260697:    1072895 cycles:ppp: 
-	        806413c8 ledtrig_cpu+0x34 ([kernel.kallsyms])
-	        801093a8 arch_cpu_idle_exit+0x1c ([kernel.kallsyms])
-	        80163000 do_idle+0xec ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594265241:   14138451 cycles:ppp: 
-	            38b4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2597.2594270071:    1062879 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594275342:   14138416 cycles:ppp: 
-	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594279973:    1064858 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594285443:   14138432 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2597.2594289948:    1077288 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594295544:   14138498 cycles:ppp: 
-	           c24f0 malloc+0xffff003c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2597.2594299968:    1082212 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594305645:   14138446 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594309970:    1085087 cycles:ppp: 
-	        8018c8bc del_timer_sync+0x0 ([kernel.kallsyms])
-	        807a8608 wait_for_common+0x9c ([kernel.kallsyms])
-	        807a86fc wait_for_completion_timeout+0x1c ([kernel.kallsyms])
-	        8059be00 spi_transfer_one_message+0x170 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594315746:   14138428 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2597.2594319968:    1086633 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594325847:   14138405 cycles:ppp: 
-	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594329973:    1089733 cycles:ppp: 
-	        807a7bc8 preempt_schedule+0x10 ([kernel.kallsyms])
-	        807acaa0 _raw_spin_unlock_irqrestore+0x80 ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594335948:   14138433 cycles:ppp: 
-	            3e1c teste::execute+0xfffe0494 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-spi1   187 [001]  2597.2594339975:    1091092 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        8013fba8 kthread_worker_fn+0x134 ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594346049:   14138407 cycles:ppp: 
-	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2597.2594350072:    1093403 cycles:ppp: 
-	        8063f4d4 led_trigger_event+0x1c ([kernel.kallsyms])
-	        80641468 ledtrig_cpu+0xd4 ([kernel.kallsyms])
-	        801093a8 arch_cpu_idle_exit+0x1c ([kernel.kallsyms])
-	        80163000 do_idle+0xec ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594356150:   14138429 cycles:ppp: 
+vant2lqrFP  1772  6209.1911404952:   14140262 cycles:ppp: 
 	            3c58 teste::execute+0xfffe02d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-swapper     0 [001]  2597.2594360573:    1094314 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
+vant2lqrFP  1772  6209.1911415054:   14139845 cycles:ppp: 
+	            3898 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-vant2lqrFP  1275 [000]  2597.2594366251:   14138433 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+vant2lqrFP  1772  6209.1911425156:   14139469 cycles:ppp: 
+	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-swapper     0 [001]  2597.2594371321:    1094154 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
+vant2lqrFP  1772  6209.1911435257:   14139306 cycles:ppp: 
+	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-vant2lqrFP  1275 [000]  2597.2594376352:   14138449 cycles:ppp: 
-	           c5910 memset+0xffff0070 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2597.2594381483:    1089513 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594386453:   14138484 cycles:ppp: 
-	            39ac teste::execute+0xfffe0024 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594391487:    1082637 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8018dd98 hrtimer_start_range_ns+0x2d4 ([kernel.kallsyms])
-	        807ab820 schedule_hrtimeout_range_clock+0xc8 ([kernel.kallsyms])
-	        807ab8cc schedule_hrtimeout_range+0x28 ([kernel.kallsyms])
-	        807ab544 usleep_range+0x6c ([kernel.kallsyms])
-	             1e8 wait_complete+0x15a60d8 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	             644 rcio_adc_update+0x15c20b0 ([rcio_core])
-	             1d4 worker+0x15c2080 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594396554:   14138419 cycles:ppp: 
-	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594400302:    1082506 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             3e4 rcio_spi_write+0x15a60fc ([rcio_spi])
-	              84 register_set+0x15c2084 ([rcio_core])
-	            1b48 rcio_safety_update+0x15c20dc ([rcio_core])
-	             1f4 worker+0x15c20a0 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594406655:   14138443 cycles:ppp: 
-	            388c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594410568:    1085543 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        807ab830 schedule_hrtimeout_range_clock+0xd8 ([kernel.kallsyms])
-	        807ab8cc schedule_hrtimeout_range+0x28 ([kernel.kallsyms])
-	        807ab544 usleep_range+0x6c ([kernel.kallsyms])
-	             1e8 wait_complete+0x15a60d8 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594416756:   14138574 cycles:ppp: 
-	           c25cc malloc+0xffff0118 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-swapper     0 [001]  2597.2594421073:    1115601 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594426857:   14138393 cycles:ppp: 
-	           bf07c _int_free+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-	               0 [unknown] ([unknown])
-
-spi1   187 [001]  2597.2594431587:    1110177 cycles:ppp: 
-	        801486f8 preempt_count_sub+0x8 ([kernel.kallsyms])
-	        8013fba8 kthread_worker_fn+0x134 ([kernel.kallsyms])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594436958:   14138386 cycles:ppp: 
-	             fe0 [unknown] ([vectors])
-	               0 [unknown] ([unknown])
-
-rcio_worker   232 [001]  2597.2594441848:    1098696 cycles:ppp: 
-	             5d4 bcm2835aux_spi_transfer_one+0x1dc6180 ([spi_bcm2835aux])
-	        8059bd80 spi_transfer_one_message+0xf0 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1a28 rcio_status_update+0x15c20b8 ([rcio_core])
-	             1ec worker+0x15c2098 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594447060:   14138754 cycles:ppp: 
+vant2lqrFP  1772  6209.1911445359:   14139135 cycles:ppp: 
 	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-swapper     0 [001]  2597.2594452273:    1085116 cycles:ppp: 
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
+vant2lqrFP  1772  6209.1911455460:   14139003 cycles:ppp: 
+	            38ac Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-vant2lqrFP  1275 [000]  2597.2594457160:   14138372 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [001]  2597.2594462550:    1083422 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7d58 schedule_idle+0x44 ([kernel.kallsyms])
-	        80163018 do_idle+0x104 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-vant2lqrFP  1275 [000]  2597.2594467261:   14138381 cycles:ppp: 
-	            38a8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00ec (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-rcio_worker   232 [001]  2597.2594472789:    1072154 cycles:ppp: 
-	        807acabc _raw_spin_unlock_irqrestore+0x9c ([kernel.kallsyms])
-	        8059bb54 spi_finalize_current_message+0x124 ([kernel.kallsyms])
-	        8059c098 spi_transfer_one_message+0x408 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594477362:   14138326 cycles:ppp: 
-	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
-
-swapper     0 [003]  2597.2594478005:      68855 cycles:ppp: 
-	        801573fc find_busiest_group+0x1f8 ([kernel.kallsyms])
-	        80157d78 load_balance+0x188 ([kernel.kallsyms])
-	        80158d1c run_rebalance_domains+0x198 ([kernel.kallsyms])
-	        801016d8 __softirqentry_text_start+0x198 ([kernel.kallsyms])
-	        80125648 irq_exit+0xec ([kernel.kallsyms])
-	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
-	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
-	        807ad07c __irq_svc+0x5c ([kernel.kallsyms])
-	        80109338 arch_cpu_idle+0x34 ([kernel.kallsyms])
-	        807ac414 default_idle_call+0x34 ([kernel.kallsyms])
-	        80162fec do_idle+0xd8 ([kernel.kallsyms])
-	        8016333c cpu_startup_entry+0x28 ([kernel.kallsyms])
-	        8010e8fc secondary_start_kernel+0x170 ([kernel.kallsyms])
-	          101a0c [unknown] ([unknown])
-
-rcio_worker   232 [001]  2597.2594482628:    1068611 cycles:ppp: 
-	        80148724 preempt_count_sub+0x34 ([kernel.kallsyms])
-	        807aca78 _raw_spin_unlock_irqrestore+0x58 ([kernel.kallsyms])
-	        804d23ec gpio_to_desc+0x98 ([kernel.kallsyms])
-	        8059aae0 spi_set_cs+0x80 ([kernel.kallsyms])
-	        8059bcd0 spi_transfer_one_message+0x40 ([kernel.kallsyms])
-	        8059c678 __spi_pump_messages+0x484 ([kernel.kallsyms])
-	        8059cbd8 __spi_sync+0x24c ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             230 wait_complete+0x15a6120 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
-
-vant2lqrFP  1275 [000]  2597.2594487463:   14138375 cycles:ppp: 
-	           c25ec malloc+0xffff0138 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+vant2lqrFP  1772  6209.1911465561:   14138916 cycles:ppp: 
+	            3aa8 teste::execute+0xfffe0120 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 	               0 [unknown] ([unknown])
 
-rcio_worker   232 [001]  2597.2594492468:    1070889 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        807a86a0 wait_for_common+0x134 ([kernel.kallsyms])
-	        807a86dc wait_for_completion+0x20 ([kernel.kallsyms])
-	        8059ca7c __spi_sync+0xf0 ([kernel.kallsyms])
-	        8059cc10 spi_sync+0x34 ([kernel.kallsyms])
-	        8059cd08 spi_write_then_read+0xe0 ([kernel.kallsyms])
-	             200 wait_complete+0x15a60f0 ([rcio_spi])
-	             298 rcio_spi_read+0x15a60b4 ([rcio_spi])
-	              b4 register_get+0x15c2084 ([rcio_core])
-	            1608 rcio_rcin_update+0x15c20b4 ([rcio_core])
-	             1dc worker+0x15c2088 ([rcio_core])
-	        8013fa00 kthread+0x144 ([kernel.kallsyms])
-	        801089ec ret_from_fork+0x14 ([kernel.kallsyms])
+vant2lqrFP  1772  6209.1911475662:   14138883 cycles:ppp: 
+	           c58c4 memset+0xffff0024 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
 
-perf_4.9  1273 [003]  2597.2594495227:      52624 cycles:ppp: 
-	        807acaf4 _raw_spin_unlock_irq+0x34 ([kernel.kallsyms])
-	        80147f58 finish_task_switch+0x90 ([kernel.kallsyms])
-	        807a717c __sched_text_start+0x37c ([kernel.kallsyms])
-	        807a7824 schedule+0x58 ([kernel.kallsyms])
-	        807ab89c schedule_hrtimeout_range_clock+0x144 ([kernel.kallsyms])
-	        807ab8cc schedule_hrtimeout_range+0x28 ([kernel.kallsyms])
-	        802ac4dc poll_schedule_timeout+0x54 ([kernel.kallsyms])
-	        802ad294 do_sys_poll+0x3cc ([kernel.kallsyms])
-	        802ade1c sys_poll+0xd0 ([kernel.kallsyms])
-	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           c80fc __GI___libc_poll+0x1300001c (/lib/arm-linux-gnueabihf/libc-2.24.so)
-	        7e9ec3a4 [unknown] (/tmp/perf-1273.map)
+vant2lqrFP  1772  6209.1911485765:   14138802 cycles:ppp: 
+	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
 
-perf_4.9  1273 [003]  2597.2594495262:      50939 cycles:ppp: 
-	        8010b708 restore_vfp_context+0x0 ([kernel.kallsyms])
-	        8010c030 sys_sigreturn+0x74 ([kernel.kallsyms])
-	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           c80fc __GI___libc_poll+0x1300001c (/lib/arm-linux-gnueabihf/libc-2.24.so)
-	        7e9ec3a4 [unknown] (/tmp/perf-1273.map)
+vant2lqrFP  1772  6209.1911495866:   14138766 cycles:ppp: 
+	            3cb4 teste::execute+0xfffe032c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
 
-perf_4.9  1273 [003]  2597.2594495297:      48307 cycles:ppp: 
-	        801a2ea0 smp_call_function_single+0xb8 ([kernel.kallsyms])
-	        80212e24 event_function_call+0xf0 ([kernel.kallsyms])
-	        80212e70 _perf_event_disable+0x48 ([kernel.kallsyms])
-	        80212bb4 perf_event_for_each_child+0x38 ([kernel.kallsyms])
-	        8021bcdc perf_ioctl+0xc8 ([kernel.kallsyms])
-	        802ab384 do_vfs_ioctl+0xb0 ([kernel.kallsyms])
-	        802abad4 sys_ioctl+0x44 ([kernel.kallsyms])
-	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
-	           c9c7c __GI___ioctl+0x1300000c (/lib/arm-linux-gnueabihf/libc-2.24.so)
-	        7e9e9dbc [unknown] (/tmp/perf-1273.map)
+vant2lqrFP  1772  6209.1911505967:   14138497 cycles:ppp: 
+	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911516068:   14138547 cycles:ppp: 
+	           c24e8 malloc+0xffff0034 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911526169:   14138621 cycles:ppp: 
+	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911536270:   14138609 cycles:ppp: 
+	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911546371:   14138647 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911556472:   14138665 cycles:ppp: 
+	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911566573:   14138650 cycles:ppp: 
+	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911576674:   14138663 cycles:ppp: 
+	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911586775:   14138663 cycles:ppp: 
+	            3e04 teste::execute+0xfffe047c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911596876:   14138644 cycles:ppp: 
+	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911606977:   14138638 cycles:ppp: 
+	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911617078:   14138682 cycles:ppp: 
+	             638 main+0xfffe036c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911627179:   14138727 cycles:ppp: 
+	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911637280:   14138647 cycles:ppp: 
+	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911647381:   14138701 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911657482:   14138695 cycles:ppp: 
+	            38d8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe011c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911667583:   14138688 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911677684:   14138712 cycles:ppp: 
+	            3894 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00d8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911687785:   14138685 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911697886:   14138715 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911707987:   14138708 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911718088:   14138701 cycles:ppp: 
+	            3c50 teste::execute+0xfffe02c8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911728189:   14138711 cycles:ppp: 
+	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911738290:   14138675 cycles:ppp: 
+	            3898 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911748391:   14138698 cycles:ppp: 
+	           c2bc8 free+0xffff0024 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911758492:   14138696 cycles:ppp: 
+	            3d7c teste::execute+0xfffe03f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911768593:   14138750 cycles:ppp: 
+	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911778694:   14138709 cycles:ppp: 
+	            38c4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911788795:   14138704 cycles:ppp: 
+	            3bac teste::execute+0xfffe0224 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911798896:   14138732 cycles:ppp: 
+	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911808997:   14138684 cycles:ppp: 
+	            3b44 teste::execute+0xfffe01bc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911819098:   14138710 cycles:ppp: 
+	            389c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911829199:   14138684 cycles:ppp: 
+	            38c0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0104 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911839300:   14138717 cycles:ppp: 
+	           c24fc malloc+0xffff0048 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911849401:   14138683 cycles:ppp: 
+	            3bcc teste::execute+0xfffe0244 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911859502:   14138692 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+
+vant2lqrFP  1772  6209.1911869604:   14138671 cycles:ppp: 
+	            3b04 teste::execute+0xfffe017c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911879705:   14138681 cycles:ppp: 
+	            395c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe01a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911889806:   14138678 cycles:ppp: 
+	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911899907:   14138679 cycles:ppp: 
+	            3c58 teste::execute+0xfffe02d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911910008:   14138652 cycles:ppp: 
+	           c24f8 malloc+0xffff0044 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911920109:   14138663 cycles:ppp: 
+	            38c8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911930210:   14138621 cycles:ppp: 
+	            38b0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911940311:   14138692 cycles:ppp: 
+	           c2bb8 free+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911950412:   14138679 cycles:ppp: 
+	            39e4 teste::execute+0xfffe005c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911960513:   14138685 cycles:ppp: 
+	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911970614:   14138669 cycles:ppp: 
+	            38c4 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1911980715:   14138728 cycles:ppp: 
+	            3bec teste::execute+0xfffe0264 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1911990816:   14138701 cycles:ppp: 
+	            3c58 teste::execute+0xfffe02d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912000917:   14138723 cycles:ppp: 
+	            39c0 teste::execute+0xfffe0038 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912011018:   14138706 cycles:ppp: 
+	            38ac Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1912021119:   14138701 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1912031220:   14138708 cycles:ppp: 
+	            389c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1912041334:   14138691 cycles:ppp: 
+	            3e3c teste::execute+0xfffe04b4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912051435:   14138680 cycles:ppp: 
+	            3d04 teste::execute+0xfffe037c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912061533:   14134638 cycles:ppp: 
+	            3a34 teste::execute+0xfffe00ac (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912071631:   14135011 cycles:ppp: 
+	            38bc Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1912081730:   14135901 cycles:ppp: 
+	           c2bac free+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1912091830:   14136702 cycles:ppp: 
+	            3c4c teste::execute+0xfffe02c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912101930:   14137228 cycles:ppp: 
+	            3c54 teste::execute+0xfffe02cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912112030:   14137651 cycles:ppp: 
+	           bf114 _int_free+0xffff0098 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1912122130:   14137937 cycles:ppp: 
+	            3ad8 teste::execute+0xfffe0150 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912132231:   14138163 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+
+vant2lqrFP  1772  6209.1912142332:   14138275 cycles:ppp: 
+	            3dc4 teste::execute+0xfffe043c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912152433:   14138441 cycles:ppp: 
+	           c2590 malloc+0xffff00dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912162533:   14138510 cycles:ppp: 
+	            3a34 teste::execute+0xfffe00ac (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912172634:   14138547 cycles:ppp: 
+	            3a8c teste::execute+0xfffe0104 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912182735:   14138573 cycles:ppp: 
+	           c5a04 memcpy+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912192836:   14138597 cycles:ppp: 
+	             680 main+0xfffe03b4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1912202937:   14138624 cycles:ppp: 
+	           c2bb4 free+0xffff0010 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912213050:   14138651 cycles:ppp: 
+	            3acc teste::execute+0xfffe0144 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912223151:   14138646 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1912233249:   14134923 cycles:ppp: 
+	           c24f8 malloc+0xffff0044 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6209.1912243348:   14135306 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6209.1912253447:   14136103 cycles:ppp: 
+	            3a9c teste::execute+0xfffe0114 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1772  6210.1911263547:   14136795 cycles:ppp: 
+	            38b8 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6210.1911273647:   14137343 cycles:ppp: 
+	            389c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6210.1911283747:   14137722 cycles:ppp: 
+	            38a0 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1772  6210.1911293848:   14138013 cycles:ppp: 
+	            3e28 teste::execute+0xfffe04a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
 
