@@ -1,0 +1,545 @@
+perf_4.9  1705  5834.1538451076:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768c14bc [unknown] ([unknown])
+
+perf_4.9  1705  5834.1538451106:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768c14bc [unknown] ([unknown])
+
+perf_4.9  1705  5834.1538451115:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768c14bc [unknown] ([unknown])
+
+perf_4.9  1705  5834.1538451123:         42 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768c14bc [unknown] ([unknown])
+
+perf_4.9  1705  5834.1538451132:       5601 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768c14bc [unknown] ([unknown])
+
+nopre  1705  5834.1538451718:     822848 cycles:ppp: 
+	        8078d6dc copy_page+0x3c ([kernel.kallsyms])
+	           1b8b0 memset+0x12072030 (/lib/arm-linux-gnueabihf/ld-2.24.so)
+	        76ff5488 [unknown] (/tmp/perf-1705.map)
+	        7e8b2680 [unknown] ([unknown])
+
+nopre  1705  5834.1538542477:  126974640 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537631804:  124997069 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537665752:   47466335 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537689814:   33669361 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537710605:   29090114 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537728891:   25584332 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537745257:   22900252 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537759452:   19864982 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537772542:   18316726 cycles:ppp: 
+	             480 main+0xfffe00ac (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537784847:   17216045 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537796367:   16117697 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537807482:   15553907 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537818321:   15166500 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537828959:   14886063 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537839451:   14681303 cycles:ppp: 
+	             480 main+0xfffe00ac (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537849836:   14531920 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537860147:   14422926 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537870396:   14343671 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537880605:   14285093 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537890784:   14243607 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537900941:   14213578 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537911084:   14191508 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537921215:   14175766 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537931337:   14164532 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537941454:   14155713 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537951566:   14149878 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537961675:   14145815 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537971782:   14142441 cycles:ppp: 
+	             468 main+0xfffe0094 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537981887:   14140152 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1537991990:   14138918 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538002093:   14137288 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538012195:   14136666 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538022297:   14136353 cycles:ppp: 
+	             480 main+0xfffe00ac (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538032399:   14136034 cycles:ppp: 
+	             474 main+0xfffe00a0 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538042500:   14135512 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538052601:   14135629 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538062703:   14135297 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538072806:   14135206 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538082910:   14135502 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538093010:   14134968 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538103112:   14134711 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538113213:   14134423 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538123314:   14134225 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538133415:   14134154 cycles:ppp: 
+	             470 main+0xfffe009c (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538143517:   14134204 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538153619:   14134296 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538163719:   14133632 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538173821:   14133787 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538183920:   14133763 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538194022:   14133699 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538204124:   14134193 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538214225:   14134018 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538224327:   14133728 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538234429:   14133748 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538244530:   14134084 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538254630:   14133431 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538264730:   14133373 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538274830:   14133774 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538284932:   14134073 cycles:ppp: 
+	             478 main+0xfffe00a4 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538295033:   14133960 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538305136:   14134169 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538315236:   14133648 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538325337:   14133140 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538335437:   14133391 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538345538:   14133512 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538355638:   14133739 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538365739:   14134157 cycles:ppp: 
+	             468 main+0xfffe0094 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538375841:   14133936 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538385942:   14134065 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538396043:   14134205 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538406143:   14133856 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538416243:   14134053 cycles:ppp: 
+	             480 main+0xfffe00ac (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538426345:   14134299 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538436446:   14134240 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538446547:   14134305 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538456647:   14134255 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538466749:   14134190 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538476851:   14134287 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538486952:   14134125 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538497055:   14133823 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538507157:   14134052 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538517257:   14133097 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538527357:   14133118 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538537484:   14133857 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538547582:   14133423 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538557678:   14125916 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538567775:   14126891 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538577871:   14128448 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538587969:   14129699 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5835.1538598068:   14131350 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537608167:   14131679 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537618266:   14132175 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537628366:   14133148 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537638467:   14133518 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537648567:   14133747 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537658668:   14134041 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537668769:   14133978 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537678872:   14134082 cycles:ppp: 
+	             478 main+0xfffe00a4 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537688972:   14134120 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537699073:   14133655 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537709174:   14133850 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537719275:   14134152 cycles:ppp: 
+	             480 main+0xfffe00ac (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537729376:   14133755 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537739477:   14133874 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537749578:   14134132 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537759678:   14133755 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537769779:   14134109 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537779879:   14134206 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537789980:   14133947 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537800082:   14134278 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537810183:   14134382 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537820285:   14134090 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537830385:   14134137 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537840484:   14134184 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537850587:   14134298 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537860688:   14134565 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537870789:   14133817 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537880890:   14134004 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537890991:   14133972 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537901092:   14133898 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537911194:   14133995 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537921295:   14133937 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537931394:   14133638 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537941495:   14133995 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537951596:   14134400 cycles:ppp: 
+	             468 main+0xfffe0094 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537961696:   14134247 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537971796:   14134393 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537981897:   14134661 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1537991998:   14134643 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538002100:   14134820 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538012200:   14134937 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538022302:   14134629 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538032403:   14135008 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538042503:   14134598 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538052604:   14134393 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538062704:   14134757 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538072806:   14135147 cycles:ppp: 
+	             478 main+0xfffe00a4 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538082908:   14135528 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538093011:   14135509 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538103114:   14134970 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538113214:   14134674 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538123316:   14134445 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538133419:   14134130 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538143520:   14134061 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538153620:   14133664 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538163723:   14133600 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538173822:   14133781 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538183923:   14133253 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538194025:   14133602 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538204126:   14133757 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538214227:   14133435 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538224326:   14133483 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538234427:   14133639 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538244528:   14134111 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538254629:   14134117 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538264731:   14134407 cycles:ppp: 
+	             480 main+0xfffe00ac (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538274834:   14134242 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538284936:   14134189 cycles:ppp: 
+	             46c main+0xfffe0098 (/home/pi/Navio2gem5/C++/Examples/preTest/nopre)
+
+nopre  1705  5836.1538295040:   14133683 cycles:ppp: 
+	        802322b8 free_hot_cold_page+0x188 ([kernel.kallsyms])
+	        802327a0 free_hot_cold_page_list+0x68 ([kernel.kallsyms])
+	        8023c460 release_pages+0x2a4 ([kernel.kallsyms])
+	        80277b54 free_pages_and_swap_cache+0xb8 ([kernel.kallsyms])
+	        80263328 unmap_page_range+0x4d8 ([kernel.kallsyms])
+	        80263530 unmap_single_vma+0x8c ([kernel.kallsyms])
+	        802637e4 unmap_vmas+0x64 ([kernel.kallsyms])
+	        80267ea4 unmap_region+0x88 ([kernel.kallsyms])
+	        80269a3c do_munmap+0x208 ([kernel.kallsyms])
+	        80269c0c vm_munmap+0x68 ([kernel.kallsyms])
+	        80269c58 sys_munmap+0x2c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           cdbfc __GI___munmap+0x1234200c (/lib/arm-linux-gnueabihf/libc-2.24.so)
+
