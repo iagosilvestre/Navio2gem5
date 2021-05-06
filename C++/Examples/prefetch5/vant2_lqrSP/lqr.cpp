@@ -86,9 +86,9 @@ class teste : public Icontroller
 		double yaw_atual = (notrandom) - Xref(5);
 		yawint = yawint + (T/2)*(yaw_atual + yaw_ant);
 		yaw_ant = yaw_atual;
-		__builtin_prefetch (&Xref, 0, 1);
+		//__builtin_prefetch (&Xref, 0, 1);
 		X << (notrandom),(notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom),xint,yint,zint,yawint;
-		__builtin_prefetch (&K, 0, 1);
+		__builtin_prefetch (&K, 0, 3);
 		Erro = X-Xref;
 		Input = -K*Erro;
 		// Feedforward
