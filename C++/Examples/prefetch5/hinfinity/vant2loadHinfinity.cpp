@@ -46,13 +46,13 @@ int main()
 //		msgstates = arraymsg.values.at(0);
 
 		while(k<10000){
-		auto start = std::chrono::high_resolution_clock::now();
+		//auto start = std::chrono::high_resolution_clock::now();
 //		m5_reset_stats(0,0);
 
 		out=control->execute(arraymsg);
-		auto elapsed = std::chrono::high_resolution_clock::now() - start;
-		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-		controlData.push_back(microseconds);
+		//auto elapsed = std::chrono::high_resolution_clock::now() - start;
+		//long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+		//controlData.push_back(microseconds);
 //		m5_dump_stats(0,0);
 		k++;
 		}
