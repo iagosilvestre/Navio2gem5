@@ -1,7 +1,7 @@
-#include <control_strategies_base/icontroller.hpp>
+#include "Icontroller.hpp"
 #include <Eigen/Eigen>
 #include <iostream>
-#include "simulator_msgs/Sensor.h"
+#include "include/Sensor.h"
 #include <cmath>
 
 
@@ -16,6 +16,7 @@ class vant3_adaptiveMixCtrl2 : public Icontroller
 
 	//integrators
 	private: double T;
+	private: double notrandom;
 
 	//Mapeamento
 	private: Eigen::MatrixXd RI_B;
@@ -78,7 +79,7 @@ class vant3_adaptiveMixCtrl2 : public Icontroller
 
 
 	public: vant3_adaptiveMixCtrl2(): Xref(18,1),        X(18,1),          Erro(18,1),           Input(6,1),      Trajectory(20,1),
-   									    K(6,18),      center(6),           cutoff(6),              psii(6),       mii(6),           RI_B(3,3),  
+   									    K(6,18),      center(6),           cutoff(6),              psii(6),       mii(6),           RI_B(3,3),
 							            Wn(3,3),        Kk(3,3),             Xk(3,1),              Uk(3,1),      Dk(3,1),           Uref(6,1),
 								 SaveData(20,1),   SaveDataRef(20,1),  SaveDataError(20,1),     Kki(3,3),            Xki(3,1),
  								     Q111(18,18),     Q112(18,18),          Q121(18,18),           Q122(18,18),
@@ -86,11 +87,12 @@ class vant3_adaptiveMixCtrl2 : public Icontroller
  								     Q311(18,18),     Q312(18,18),          Q321(18,18),           Q322(18,18),
       								     Y111(6,18),      Y112(6,18),           Y121(6,18),            Y122(6,18),
  								     Y211(6,18),      Y212(6,18),           Y221(6,18),            Y222(6,18),
- 								     Y311(6,18),      Y312(6,18),           Y321(6,18),            Y322(6,18), 
+ 								     Y311(6,18),      Y312(6,18),           Y321(6,18),            Y322(6,18),
  								      Qu(18,18),      Yu(6,18)
 	{	e = 2.718281828459046;
 		pi = 3.141592653589793;
 		T = 0.012;
+		notrandom=1;
 		//T = 0.0012;
 //		Uref << 8.8,   8.8,  -5.2*pow(10,-4), -5.2*pow(10,-4), 0, 0;
 		Uref << 8.46,   8.46,  -1.74*pow(10,-5), -1.74*pow(10,-5), 0, 0;
@@ -413,22 +415,22 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 
 
 }
-		
+
 	public: ~vant3_adaptiveMixCtrl2()
 	{
-	
+
 	}
-		
+
 	public: void config()
 	{
-			
+
 	}
-	
+
 
 	private: Double322  BumpFunction3dim(double Ub, double Ar, double Al, double DivUb[3][2], double DivAr[2][2], double DivAl[2][2],
 								 	 double CenterUb[3], double CenterAr[2], double CenterAl[2], double CutOffUb[3], double CutOffAr[2], double CutOffAl[2])
 	{
-		
+
 		double BumpSetsUb[3];
 		double BumpSetsAr[2];
 		double BumpSetsAl[2];
@@ -454,7 +456,7 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 				}
 			}
 		}
-	
+
 		Double322 n;
 		for(int i=0; i<=2; i++){
 			for(int j=0; j<=1; j++){
@@ -470,12 +472,12 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 	private: double xii(double u, double center, double cutoff)
 	{
 		double w = ( u - center ) / cutoff;
-		
+
 		if(abs(w) < 1){
-			return pow(e, ( -1.0 / ( 1.0 - pow(w,2.0) )));	
+			return pow(e, ( -1.0 / ( 1.0 - pow(w,2.0) )));
 		}
 		else{
-			return 0.0;	
+			return 0.0;
 		}
 	}
 
@@ -510,7 +512,7 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		}
 		else if(Tempo >= 20.0 && Tempo < 20.0 + 19.2)
 		{
-			Tempo = Tempo - 20.0;    
+			Tempo = Tempo - 20.0;
 			X = (0.7813/2)*pow(Tempo,2.0);
 			Y = 0.0;
 			Z = 11.0;
@@ -518,10 +520,10 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 			Xp = (0.7813)*Tempo;
 			Yp = 0.0;
 			Zp = 0.0;
-			Psip = 0.0;    
+			Psip = 0.0;
 		}
 		else if((Tempo >= 20.0 + 19.2) && (Tempo < 20.0 + 19.2 + 45.2389))
-		{		
+		{
 			Tempo = Tempo - 20.0 - 19.2;
 
 			X = RT*cos(((15.0/144.0)*Tempo)-(pi/2.0)) + RT;
@@ -538,7 +540,7 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		else if(Tempo >= 20.0 + 19.2 + 45.2389 && Tempo < 20.0 + 19.2 + 45.2389 + 19.2)
 		{
 			//std::cout << "Entrei2" << std::endl;
-			Tempo = Tempo - 20.0 - 19.2 - 45.2389;    
+			Tempo = Tempo - 20.0 - 19.2 - 45.2389;
 			X = 0.0;
 			Y = RT+(0.7826/2.0)*pow(Tempo,2) - 15.0*Tempo;
 			Z = 11.0;
@@ -546,7 +548,7 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 			Xp = 0.0;
 			Yp = -15.0+(0.7826)*Tempo;
 			Zp = 0.0;
-			Psip = 0.0;  
+			Psip = 0.0;
 		}
 		else if(Tempo >= 20.0 + 19.2 + 45.2389 + 19.2 && Tempo <= 20 + 19.2 + 45.2389 + 19.2 + 20.0){
 			Tempo = Tempo - (20 + 19.2 + 45.2389 + 19.2);
@@ -582,7 +584,7 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 //			Zp = 0.0;
 //			Psip = -2*pi/40;
 //		}
-//		else{  
+//		else{
 //			X = 0.0;
 //			Y = 0.0;
 //			Z = 1.0;
@@ -590,7 +592,7 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 //			Xp = 0.0;
 //			Yp = 0.0;
 //			Zp = 0.0;
-//			Psip = 0.0;   
+//			Psip = 0.0;
 //		}
 
 
@@ -607,21 +609,21 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		PhipThetapPsip << Phip, Thetap, Psip;
 
 		RIB <<  (cos(Psi)*cos(Theta)), (cos(Psi)*sin(Phi)*sin(Theta) - cos(Phi)*sin(Psi)), (sin(Phi)*sin(Psi) + cos(Phi)*cos(Psi)*sin(Theta)),
-				(cos(Theta)*sin(Psi)), (cos(Phi)*cos(Psi) + sin(Phi)*sin(Psi)*sin(Theta)), (cos(Phi)*sin(Psi)*sin(Theta) - cos(Psi)*sin(Phi)), 
+				(cos(Theta)*sin(Psi)), (cos(Phi)*cos(Psi) + sin(Phi)*sin(Psi)*sin(Theta)), (cos(Phi)*sin(Psi)*sin(Theta) - cos(Psi)*sin(Phi)),
                         (-sin(Theta)),                              (cos(Theta)*sin(Phi)),                              (cos(Phi)*cos(Theta));
-		W_n << 1.0,         0.0,          -sin(Theta), 
+		W_n << 1.0,         0.0,          -sin(Theta),
 		       0.0,  cos(Phi),  cos(Theta)*sin(Phi),
                0.0, -sin(Phi),  cos(Phi)*cos(Theta);
-		
+
 		UVW = RIB.transpose() * XpYpZp;
 		PQR = W_n * PhipThetapPsip;
 
 		Traj << UVW(0), UVW(1), UVW(2),
                 PQR(0), PQR(1), PQR(2),
-	               Arp,    Alp, 
+	               Arp,    Alp,
    		             X,      Y,      Z,
                    Phi,  Theta,    Psi,
-					Ar,     Al, 
+					Ar,     Al,
                    0.0,    0.0,    0.0,     0.0;
 
 		//simple reference
@@ -642,30 +644,30 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		Trajectory(16), Trajectory(17), Trajectory(18), Trajectory(19); // integrators
 		return xRef;
 	}
-	
+
 	public: std::vector<double> execute(simulator_msgs::SensorArray arraymsg)
 	{
 		//read data from sensors
 		simulator_msgs::Sensor msg;
-		msg = arraymsg.values.at(0);			 			
-		//msg: x y z phi theta psi alphar alphal xp yp zp phip thetap psip alpharp alphalp		
+		//msg = arraymsg.values.at(0);
+		//msg: x y z phi theta psi alphar alphal xp yp zp phip thetap psip alpharp alphalp
 		static double PsiAnt = 0;
 
 		//Map inertial velocity to body velocity
-		double phi = msg.values.at(3);
-		double theta = msg.values.at(4);
-		double psi = msg.values.at(5);
+		double phi = (notrandom);
+		double theta = (notrandom);
+		double psi = (notrandom);
 		RI_B << (cos(psi)*cos(theta)), (cos(psi)*sin(phi)*sin(theta) - cos(phi)*sin(psi)), (sin(phi)*sin(psi) + cos(phi)*cos(psi)*sin(theta)),
-				(cos(theta)*sin(psi)), (cos(phi)*cos(psi) + sin(phi)*sin(psi)*sin(theta)), (cos(phi)*sin(psi)*sin(theta) - cos(psi)*sin(phi)), 
+				(cos(theta)*sin(psi)), (cos(phi)*cos(psi) + sin(phi)*sin(psi)*sin(theta)), (cos(phi)*sin(psi)*sin(theta) - cos(psi)*sin(phi)),
                 (-sin(theta)), (cos(theta)*sin(phi)), (cos(phi)*cos(theta));
-		
+
 		Eigen::MatrixXd XpYpZp(3,1);
 		Eigen::MatrixXd PhipThetapPsip(3,1);
 		Eigen::MatrixXd WIIB(3,1);
 		Eigen::MatrixXd uvw(3,1);
 		Eigen::MatrixXd pqr(3,1);
-		XpYpZp << msg.values.at(8), msg.values.at(9), msg.values.at(10);
-		WIIB << msg.values.at(11), msg.values.at(12), msg.values.at(13);
+		XpYpZp << (notrandom), (notrandom), (notrandom);
+		WIIB << (notrandom), (notrandom), (notrandom);
 		uvw = RI_B.transpose()*XpYpZp;
 		pqr = RI_B.transpose()*WIIB;
 
@@ -675,19 +677,19 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		Tempo = Tempo + T;
 		Xref =  MakeXref(Trajectory);
 
-		
+
 
 		// State vector: u v w p q r alpharp alphalp z phi theta psi alphar alphal intz intu intv intpsi
 		X << uvw(0), uvw(1), uvw(2),
 			 pqr(0), pqr(1), pqr(2),
-			 msg.values.at(14),
-             		 msg.values.at(15),
-             		 msg.values.at(2),
-             		 msg.values.at(3),
-             		 msg.values.at(4), 
-             		 msg.values.at(5), 
-             		 msg.values.at(6),
-             		 msg.values.at(7), 
+			 (notrandom),
+             		 (notrandom),
+             		 (notrandom),
+             		 (notrandom),
+             		 (notrandom),
+             		 (notrandom),
+             		 (notrandom),
+             		 (notrandom),
 			 0, 0, 0, 0;
 		//Deal's with Psi Discontinuity at 180 degree
 		if(X(11) - Xref(11) < -pi)
@@ -701,7 +703,7 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 
 		//kinematic controller
 		//proportional
-		Xk << Trajectory(8)-msg.values.at(0), Trajectory(9)-msg.values.at(1), 0; // x-xr, y-yr
+		Xk << Trajectory(8)-(notrandom), Trajectory(9)-(notrandom), 0; // x-xr, y-yr
 		Uk << Trajectory(0), Trajectory(1), Trajectory(2);
 		Kk <<  1,    0,   0,
                  0,  0.5,   0,
@@ -713,11 +715,11 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		static double xint, x_ant = 0;
 		static double yint, y_ant = 0;
 
-		double x_atual = Trajectory(8)-msg.values.at(0);
+		double x_atual = Trajectory(8)-(notrandom);
 		xint = xint + (T/2)*(x_atual + x_ant);
 		x_ant = x_atual;
 
-		double y_atual = Trajectory(9)-msg.values.at(1);
+		double y_atual = Trajectory(9)-(notrandom);
 		yint = yint + (T/2)*(y_atual + y_ant);
 		y_ant = y_atual;
 
@@ -738,15 +740,15 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		double ub_atual = X(0) - Xref(0);
 		ubint = ubint + (T/2)*(ub_atual + ub_ant);
 		ub_ant = ub_atual;
-		
+
 		double vb_atual = X(1) - Xref(1);
 		vbint = vbint + (T/2)*(vb_atual + vb_ant);
 		vb_ant = vb_atual;
-		
+
 		double z_atual = X(8) - Xref(8);
 		zint = zint + (T/2)*(z_atual + z_ant);
 		z_ant = z_atual;
-		
+
 		double yaw_atual = X(11) - Xref(11);
 		yawint = yawint + (T/2)*(yaw_atual + yaw_ant);
 		yaw_ant = yaw_atual;
@@ -765,13 +767,13 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 	 	static double CenterUb[3] = {4, 9.5, 14};
 	 	static double CenterAr[2] = {-0.0750, 0.0750};
 	 	static double CenterAl[2] = {-0.0750, 0.0750};
-	 	static double CutOffUb[3] = {4.0, 2.5, 3}; 
+	 	static double CutOffUb[3] = {4.0, 2.5, 3};
 	 	static double CutOffAr[2] = {0.1250, 0.1250};
 	 	static double CutOffAl[2] = {0.1250, 0.1250};
 	 	double Ub = uvw(0);
-	 	double Ar = msg.values.at(6);
-	 	double Al = msg.values.at(7);
-		
+	 	double Ar = (notrandom);
+	 	double Al = (notrandom);
+
 		// Saturation values
 		if(Ub < 0.1)
 		{
@@ -779,7 +781,7 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		}
 		else if(Ub > 16.99){
 			Ub = 16.99;
-		}	
+		}
 
 		if(Ar < -0.19)
 		{
@@ -802,21 +804,21 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
         	Psi = BumpFunction3dim(Ub,Ar,Al,DivUb,DivAr,DivAl,CenterUb,CenterAr,CenterAl,CutOffUb,CutOffAr,CutOffAl);
 		//std::cout << std::endl;
 		//std::cout << Ub << Ar << Al;
-		
+
 		Yu =    Psi.Val[0][0][0]*Y111 +  Psi.Val[0][0][1]*Y112 +   Psi.Val[0][1][0]*Y121  +  Psi.Val[0][1][1]*Y122 +  Psi.Val[1][0][0]*Y211 +
                 Psi.Val[1][0][1]*Y212 +  Psi.Val[1][1][0]*Y221 +   Psi.Val[1][1][1]*Y222  +  Psi.Val[2][0][0]*Y311 +  Psi.Val[2][0][1]*Y312 +
                 Psi.Val[2][1][0]*Y321 +  Psi.Val[2][1][1]*Y322;
-		
+
 		Qu =    Psi.Val[0][0][0]*Q111 +  Psi.Val[0][0][1]*Q112 +   Psi.Val[0][1][0]*Q121  +  Psi.Val[0][1][1]*Q122 +  Psi.Val[1][0][0]*Q211 +
                 Psi.Val[1][0][1]*Q212 +  Psi.Val[1][1][0]*Q221 +   Psi.Val[1][1][1]*Q222  +  Psi.Val[2][0][0]*Q311 +  Psi.Val[2][0][1]*Q312 +
                 Psi.Val[2][1][0]*Q321 +  Psi.Val[2][1][1]*Q322;
-                
+
                 K = Yu*Qu.inverse();
-                
+
 		//Control law
 		Erro = (X-Xref);
 		Input = K*Erro + Uref;
-		
+
 		if(Input(0) > 12){ Input(0) = 12; }
 		if(Input(1) > 12){ Input(1) = 12; }
 		if(Input(2) >  1){ Input(2) =  1; }
@@ -827,7 +829,7 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		if(Input(4) < -pi/9){ Input(4) = -pi/9; }
 		if(Input(5) >  pi/9){ Input(5) =  pi/9; }
 		if(Input(5) < -pi/9){ Input(5) = -pi/9; }
-		
+
 		//data to be saved
 		SaveData(0) = uvw(0);
 		SaveData(1) = uvw(1);
@@ -835,16 +837,16 @@ Q322 << 0.35078,-0.00062318,-0.34058,0.013327,0.016599,0.060007,-0.29354,-0.3938
 		SaveData(3) = pqr(0);
 		SaveData(4) = pqr(1);
 		SaveData(5) = pqr(2);
-		SaveData(6) = msg.values.at(14);
-		SaveData(7) = msg.values.at(15);
-		SaveData(8) = msg.values.at(0);
-		SaveData(9) = msg.values.at(1);
-		SaveData(10) = msg.values.at(2);
-		SaveData(11) = msg.values.at(3);
-		SaveData(12) = msg.values.at(4);
+		SaveData(6) = (notrandom);
+		SaveData(7) = (notrandom);
+		SaveData(8) = (notrandom);
+		SaveData(9) = (notrandom);
+		SaveData(10) = (notrandom);
+		SaveData(11) = (notrandom);
+		SaveData(12) = (notrandom);
 		SaveData(13) = X(11);
-		SaveData(14) = msg.values.at(6);
-		SaveData(15) = msg.values.at(7);
+		SaveData(14) = (notrandom);
+		SaveData(15) = (notrandom);
 		SaveData(16) = Tempo;
 
 		SaveDataRef(0) = Xref(0);
