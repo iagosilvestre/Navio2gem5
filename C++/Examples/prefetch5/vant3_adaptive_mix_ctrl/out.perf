@@ -1,0 +1,438 @@
+perf_4.9  3325 16865.3978096894:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768524bc [unknown] ([unknown])
+
+perf_4.9  3325 16865.3978096924:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768524bc [unknown] ([unknown])
+
+perf_4.9  3325 16865.3978096933:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768524bc [unknown] ([unknown])
+
+perf_4.9  3325 16865.3978096941:         42 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768524bc [unknown] ([unknown])
+
+perf_4.9  3325 16865.3978096949:       5396 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768524bc [unknown] ([unknown])
+
+vant3adap  3325 16865.3978097511:     788020 cycles:ppp: 
+	        80264ca0 alloc_set_pte+0x17c ([kernel.kallsyms])
+	        802297ac filemap_map_pages+0x3a4 ([kernel.kallsyms])
+	        802654a0 handle_mm_fault+0x5c8 ([kernel.kallsyms])
+	        807adb60 do_page_fault+0x358 ([kernel.kallsyms])
+	        801011f8 do_DataAbort+0x48 ([kernel.kallsyms])
+	        807ad384 __dabt_usr+0x44 ([kernel.kallsyms])
+	          11504c memcpy+0xffff009c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	          1a73c4 [unknown] (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977185501:  123147948 cycles:ppp: 
+	           2ec34 Eigen::internal::outer_product_selector_run<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, -1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, 1, true>, -1, 1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, 1, -1, false>, 1, -1, false>, Eigen::internal::generic_product_impl<Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, 1, true>, -1, 1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, 1, -1, false>, 1, -1, false>, Eigen::DenseShape, Eigen::DenseShape, 5>::sub>+0xffff0098 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977274930:  125146137 cycles:ppp: 
+	           2a8d4 Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977308874:   47510176 cycles:ppp: 
+	            25ac Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe06d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3ff00000 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977332950:   33700133 cycles:ppp: 
+	            206c Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0194 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977353752:   29115266 cycles:ppp: 
+	           2da5c Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff0334 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               8 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977372046:   25604987 cycles:ppp: 
+	           ec348 __exp1+0xffff0384 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977388418:   22917430 cycles:ppp: 
+	            41d4 Eigen::CommaInitializer<Eigen::Matrix<double, -1, 1, 0, -1, 1> >::operator,+0xfffe0040 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977403207:   20697402 cycles:ppp: 
+	          10e650 _int_free+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977416353:   18401352 cycles:ppp: 
+	           2a8d4 Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977428665:   17230461 cycles:ppp: 
+	           30750 Eigen::internal::triangular_solve_matrix<double, int, 1, 2, false, 0, 0>::run+0xffff0378 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977440185:   16123710 cycles:ppp: 
+	            237c Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe04a4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977451301:   15558802 cycles:ppp: 
+	           2f730 Eigen::internal::partial_lu_impl<double, 0, int>::blocked_lu+0xffff0370 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977462140:   15171637 cycles:ppp: 
+	           ee3d8 __aeabi_dmul+0xffff004c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977472779:   14890873 cycles:ppp: 
+	           ee0cc __aeabi_dsub+0xffff00f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977483271:   14685838 cycles:ppp: 
+	            2a80 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0ba8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3f92ec69 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977493657:   14536046 cycles:ppp: 
+	           2da50 Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff0328 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977503964:   14426996 cycles:ppp: 
+	           32ac0 vant3_adaptiveMixCtrl2::execute+0xffff1298 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3f20ede3 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977514215:   14347702 cycles:ppp: 
+	            25ac Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe06d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977524425:   14289963 cycles:ppp: 
+	           2a8c4 Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977534605:   14248125 cycles:ppp: 
+	            14f8 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe01a4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3f66447d [unknown] ([unknown])
+
+vant3adap  3325 16866.3977544763:   14217765 cycles:ppp: 
+	          110108 _int_malloc+0xffff06c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977554905:   14195783 cycles:ppp: 
+	           ee068 __aeabi_dsub+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	           cf0ec std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977565036:   14179870 cycles:ppp: 
+	           2aa40 Eigen::internal::generic_product_impl<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::DenseShape, Eigen::DenseShape, 3>::evalTo<Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff00c8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977575159:   14168359 cycles:ppp: 
+	           2ec34 Eigen::internal::outer_product_selector_run<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, -1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, 1, true>, -1, 1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, 1, -1, false>, 1, -1, false>, Eigen::internal::generic_product_impl<Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, 1, true>, -1, 1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, 1, -1, false>, 1, -1, false>, Eigen::DenseShape, Eigen::DenseShape, 5>::sub>+0xffff0098 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977585276:   14159934 cycles:ppp: 
+	           2d2f4 Eigen::DenseBase<Eigen::PartialReduxExpr<Eigen::CwiseUnaryOp<Eigen::internal::scalar_abs_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::internal::member_sum<double>, 0> >::redux<Eigen::internal::scalar_max_op<double, double> >+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977595388:   14153882 cycles:ppp: 
+	           dcbe8 __sincosl+0xffff402c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977605497:   14149435 cycles:ppp: 
+	           ee3e8 __aeabi_dmul+0xffff005c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	           cf0ec std::ios_base::failure::what+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977615604:   14146259 cycles:ppp: 
+	            23ac Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe04d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977625709:   14143908 cycles:ppp: 
+	          10e818 _int_free+0xffff01dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977635814:   14142280 cycles:ppp: 
+	           ee108 __aeabi_dsub+0xffff0134 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977645917:   14141073 cycles:ppp: 
+	            2a70 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0b98 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fe8bd89 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977656020:   14140208 cycles:ppp: 
+	           2f288 Eigen::internal::partial_lu_impl<double, 0, int>::unblocked_lu+0xffff05a8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977666122:   14139538 cycles:ppp: 
+	           2a8c4 Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977676224:   14139069 cycles:ppp: 
+	           2a8d4 Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977686325:   14138769 cycles:ppp: 
+	           2a8c8 Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01e8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977696427:   14138469 cycles:ppp: 
+	           2acd8 Eigen::internal::gemm_blocking_space<0, double, double, -1, -1, -1, 1, false>::~gemm_blocking_space+0xffff0030 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977706528:   14138335 cycles:ppp: 
+	           3364c vant3_adaptiveMixCtrl2::execute+0xffff1e24 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977716629:   14138216 cycles:ppp: 
+	           30730 Eigen::internal::triangular_solve_matrix<double, int, 1, 2, false, 0, 0>::run+0xffff0358 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977726730:   14138176 cycles:ppp: 
+	            1884 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0530 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977736832:   14138057 cycles:ppp: 
+	           2ab1c Eigen::internal::generic_product_impl<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::DenseShape, Eigen::DenseShape, 3>::evalTo<Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff01a4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fdd18f6 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977746933:   14138022 cycles:ppp: 
+	           ee068 __aeabi_dsub+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977757034:   14137989 cycles:ppp: 
+	           2a874 Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff0194 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977767135:   14137962 cycles:ppp: 
+	            165c Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0308 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977777236:   14137953 cycles:ppp: 
+	           2ef60 Eigen::internal::partial_lu_impl<double, 0, int>::unblocked_lu+0xffff0280 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977787337:   14137956 cycles:ppp: 
+	           2ef50 Eigen::internal::partial_lu_impl<double, 0, int>::unblocked_lu+0xffff0270 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977797438:   14137940 cycles:ppp: 
+	           de9a0 __sincosl+0xffff5de4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977807539:   14137953 cycles:ppp: 
+	           2d2f4 Eigen::DenseBase<Eigen::PartialReduxExpr<Eigen::CwiseUnaryOp<Eigen::internal::scalar_abs_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::internal::member_sum<double>, 0> >::redux<Eigen::internal::scalar_max_op<double, double> >+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977817640:   14137923 cycles:ppp: 
+	           e7a80 __ieee754_pow+0xffff0600 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977827741:   14137903 cycles:ppp: 
+	           ee840 __ltdf2+0xffff003c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977837842:   14137913 cycles:ppp: 
+	           2a8bc Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977847943:   14137922 cycles:ppp: 
+	           2da54 Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff032c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977858044:   14137924 cycles:ppp: 
+	           32974 vant3_adaptiveMixCtrl2::execute+0xffff114c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977868145:   14137900 cycles:ppp: 
+	           2da64 Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff033c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977878246:   14137949 cycles:ppp: 
+	           2a8b0 Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977888347:   14137947 cycles:ppp: 
+	            12a4 Eigen::internal::gemm_pack_rhs<double, int, Eigen::internal::const_blas_data_mapper<double, int, 0>, 4, 0, false, false>::operator()+0xfffe007c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977898448:   14137937 cycles:ppp: 
+	           2a8ac Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977908549:   14137901 cycles:ppp: 
+	           2da98 Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff0370 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977918652:   14137875 cycles:ppp: 
+	           ec190 __exp1+0xffff01cc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977928753:   14137944 cycles:ppp: 
+	            1724 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe03d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977938854:   14137663 cycles:ppp: 
+	            1a80 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe072c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3f955a47 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977948955:   14137672 cycles:ppp: 
+	           2da60 Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff0338 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16866.3977959056:   14137718 cycles:ppp: 
+	           2ec34 Eigen::internal::outer_product_selector_run<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, -1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, 1, true>, -1, 1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, 1, -1, false>, 1, -1, false>, Eigen::internal::generic_product_impl<Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, 1, true>, -1, 1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, 1, -1, false>, 1, -1, false>, Eigen::DenseShape, Eigen::DenseShape, 5>::sub>+0xffff0098 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977969157:   14137741 cycles:ppp: 
+	           2ef40 Eigen::internal::partial_lu_impl<double, 0, int>::unblocked_lu+0xffff0260 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977979258:   14137795 cycles:ppp: 
+	           2f3d4 Eigen::internal::partial_lu_impl<double, 0, int>::blocked_lu+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977989359:   14137836 cycles:ppp: 
+	           2ef50 Eigen::internal::partial_lu_impl<double, 0, int>::unblocked_lu+0xffff0270 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3977999460:   14137887 cycles:ppp: 
+	           2a890 Eigen::internal::call_dense_assignment_loop<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_sum_op<double, double>, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const> const, Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const>, Eigen::internal::assign_op<double, double> >+0xffff01b0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3fa1c9f7 [unknown] ([unknown])
+
+vant3adap  3325 16866.3978009561:   14137874 cycles:ppp: 
+	            23c4 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe04ec (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3978019662:   14137865 cycles:ppp: 
+	            1148 Eigen::internal::gemm_pack_rhs<double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 4, 0, false, true>::operator()+0xfffe00d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3978029763:   14137879 cycles:ppp: 
+	            2388 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe04b0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3978039864:   14137877 cycles:ppp: 
+	          1121a4 free+0xffff0040 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16866.3978049965:   14137882 cycles:ppp: 
+	           2cac4 Eigen::internal::call_assignment<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Product<Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0>, Eigen::internal::assign_op<double, double> >+0xffff0190 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16866.3978060066:   14137896 cycles:ppp: 
+	           ee21c __aeabi_dsub+0xffff0248 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3978070166:   14137901 cycles:ppp: 
+	           edfe4 __aeabi_dsub+0xffff0010 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3978080267:   14137925 cycles:ppp: 
+	           ee420 __aeabi_dmul+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3978090369:   14137943 cycles:ppp: 
+	           ee130 __aeabi_dsub+0xffff015c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3978100470:   14137943 cycles:ppp: 
+	          111abc malloc+0xffff0048 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16866.3978110571:   14137924 cycles:ppp: 
+	           2ae24 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, 1, false, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, false, 0>::run+0xffff0144 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3ff00000 [unknown] ([unknown])
+	        7ed3b1a8 [unknown] ([unknown])
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16866.3978120671:   14137929 cycles:ppp: 
+	           2d508 Eigen::internal::generic_product_impl<Eigen::Matrix<double, -1, -1, 0, -1, -1>, Eigen::Transpose<Eigen::Matrix<double, -1, -1, 0, -1, -1> >, Eigen::DenseShape, Eigen::DenseShape, 3>::evalTo<Eigen::Matrix<double, -1, -1, 0, -1, -1> >+0xffff0178 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16866.3978130772:   14137934 cycles:ppp: 
+	           e2bb4 __dubsin+0xffff05f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981435861:   14137940 cycles:ppp: 
+	           ee148 __aeabi_dsub+0xffff0174 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981445962:   14137951 cycles:ppp: 
+	           ee038 __aeabi_dsub+0xffff0064 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981456058:   14131468 cycles:ppp: 
+	           ee3e8 __aeabi_dmul+0xffff005c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981466155:   14132244 cycles:ppp: 
+	           e1044 __sincosl+0xffff8488 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        40080000 [unknown] ([unknown])
+
+vant3adap  3325 16867.3981476253:   14133633 cycles:ppp: 
+	           e1120 __sincosl+0xffff8564 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981486352:   14134819 cycles:ppp: 
+	           ee02c __aeabi_dsub+0xffff0058 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981496451:   14135672 cycles:ppp: 
+	           ee07c __aeabi_dsub+0xffff00a8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981506551:   14136289 cycles:ppp: 
+	           ee084 __aeabi_dsub+0xffff00b0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981516651:   14136744 cycles:ppp: 
+	           ee02c __aeabi_dsub+0xffff0058 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981526751:   14137090 cycles:ppp: 
+	           ee010 __aeabi_dsub+0xffff003c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981536852:   14137299 cycles:ppp: 
+	           ee38c __aeabi_dmul+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981546953:   14137489 cycles:ppp: 
+	           ee0c4 __aeabi_dsub+0xffff00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981557053:   14137583 cycles:ppp: 
+	           ee438 __aeabi_dmul+0xffff00ac (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981567154:   14137646 cycles:ppp: 
+	           edff8 __aeabi_dsub+0xffff0024 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981577255:   14137771 cycles:ppp: 
+	           ee094 __aeabi_dsub+0xffff00c0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981587356:   14137808 cycles:ppp: 
+	           edfd4 __aeabi_dsub+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981597457:   14137812 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	              12 [unknown] ([unknown])
+
+vant3adap  3325 16867.3981607558:   14137832 cycles:ppp: 
+	            1710 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe03bc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981617659:   14137825 cycles:ppp: 
+	            1718 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe03c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981627760:   14137863 cycles:ppp: 
+	           307c0 Eigen::internal::triangular_solve_matrix<double, int, 1, 2, false, 0, 0>::run+0xffff03e8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16867.3981637861:   14137865 cycles:ppp: 
+	            25ac Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe06d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        c00709f7 __initramfs_size+0x3f4f6f0f ([kernel.kallsyms])
+
+vant3adap  3325 16867.3981647962:   14137889 cycles:ppp: 
+	            2074 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe019c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981658063:   14137897 cycles:ppp: 
+	            2380 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe04a8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981668164:   14137907 cycles:ppp: 
+	            2a68 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0b90 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	        3f92ec69 [unknown] ([unknown])
+
+vant3adap  3325 16867.3981678265:   14137910 cycles:ppp: 
+	            2440 Eigen::internal::gebp_kernel<double, double, int, Eigen::internal::blas_data_mapper<double, int, 0, 0>, 2, 4, false, false>::operator()+0xfffe0568 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981688366:   14137917 cycles:ppp: 
+	           2dbb4 Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff048c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               8 [unknown] ([unknown])
+
+vant3adap  3325 16867.3981698467:   14137920 cycles:ppp: 
+	           2ef50 Eigen::internal::partial_lu_impl<double, 0, int>::unblocked_lu+0xffff0270 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981708568:   14137936 cycles:ppp: 
+	           2da6c Eigen::internal::triangular_solve_matrix<double, int, 1, 5, false, 0, 0>::run+0xffff0344 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+	               0 [unknown] ([unknown])
+
+vant3adap  3325 16867.3981718669:   14137908 cycles:ppp: 
+	           2ef50 Eigen::internal::partial_lu_impl<double, 0, int>::unblocked_lu+0xffff0270 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981728770:   14137910 cycles:ppp: 
+	           2ec34 Eigen::internal::outer_product_selector_run<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, -1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, 1, true>, -1, 1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, 1, -1, false>, 1, -1, false>, Eigen::internal::generic_product_impl<Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, -1, 1, true>, -1, 1, false>, Eigen::Block<Eigen::Block<Eigen::Block<Eigen::Map<Eigen::Matrix<double, -1, -1, 0, -1, -1>, 0, Eigen::Stride<0, 0> >, -1, -1, false>, 1, -1, false>, 1, -1, false>, Eigen::DenseShape, Eigen::DenseShape, 5>::sub>+0xffff0098 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
+vant3adap  3325 16867.3981738871:   14137901 cycles:ppp: 
+	           2d2fc Eigen::DenseBase<Eigen::PartialReduxExpr<Eigen::CwiseUnaryOp<Eigen::internal::scalar_abs_op<double>, Eigen::Matrix<double, -1, -1, 0, -1, -1> const> const, Eigen::internal::member_sum<double>, 0> >::redux<Eigen::internal::scalar_max_op<double, double> >+0xffff009c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant3_adaptive_mix_ctrl/vant3adap)
+
