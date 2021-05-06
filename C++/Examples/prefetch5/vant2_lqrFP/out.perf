@@ -1,0 +1,927 @@
+perf_4.9  1008  1082.1078490334:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768b74bc [unknown] ([unknown])
+
+perf_4.9  1008  1082.1078490363:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768b74bc [unknown] ([unknown])
+
+perf_4.9  1008  1082.1078490372:          1 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768b74bc [unknown] ([unknown])
+
+perf_4.9  1008  1082.1078490381:         44 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768b74bc [unknown] ([unknown])
+
+perf_4.9  1008  1082.1078490389:       5594 cycles:ppp: 
+	        8021d9bc perf_event_exec+0x1bc ([kernel.kallsyms])
+	        802a0050 setup_new_exec+0xac ([kernel.kallsyms])
+	        802f3698 load_elf_binary+0x364 ([kernel.kallsyms])
+	        8029ea38 search_binary_handler+0x98 ([kernel.kallsyms])
+	        8029fc48 do_execveat_common+0x474 ([kernel.kallsyms])
+	        802a0158 sys_execve+0x40 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	        768b74bc [unknown] ([unknown])
+
+vant2lqrFP  1008  1082.1078490954:     788729 cycles:ppp: 
+	        8027648c memblock_is_map_memory+0x7c ([kernel.kallsyms])
+	        801154d8 pfn_valid+0x1c ([kernel.kallsyms])
+	        80117354 __sync_icache_dcache+0x40 ([kernel.kallsyms])
+	        80264c48 alloc_set_pte+0x124 ([kernel.kallsyms])
+	        802297ac filemap_map_pages+0x3a4 ([kernel.kallsyms])
+	        802654a0 handle_mm_fault+0x5c8 ([kernel.kallsyms])
+	        807adb60 do_page_fault+0x358 ([kernel.kallsyms])
+	        801012b8 do_PrefetchAbort+0x44 ([kernel.kallsyms])
+	        807ad5e4 ret_from_exception+0x0 ([kernel.kallsyms])
+	           be62c ptmalloc_init.part.0+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078567103:  106584304 cycles:ppp: 
+	           9f910 __aeabi_ldivmod+0xffff0050 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078666284:  138795566 cycles:ppp: 
+	           d64a0 __clock_gettime+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078699809:   46930353 cycles:ppp: 
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078725606:   36106374 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1082.1078746221:   28855185 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078764373:   25405877 cycles:ppp: 
+	            3b8c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078780636:   22765028 cycles:ppp: 
+	        8078d7c0 __copy_to_user_std+0xb0 ([kernel.kallsyms])
+	        804a39bc arm_copy_to_user+0x28 ([kernel.kallsyms])
+	        80189fec put_timespec64+0x68 ([kernel.kallsyms])
+	        801980f8 sys_clock_gettime+0x74 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078795342:   20582379 cycles:ppp: 
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078808444:   18325739 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1082.1078820710:   17174618 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078832405:   16367324 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078843526:   15565304 cycles:ppp: 
+	        8018ee2c __getnstimeofday64+0x8 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078854353:   15154852 cycles:ppp: 
+	            3b64 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00d8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078864981:   14875890 cycles:ppp: 
+	           c5f14 memcpy+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1082.1078875465:   14674367 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078885845:   14527757 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078896148:   14421025 cycles:ppp: 
+	        8018ee90 __getnstimeofday64+0x6c ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078906395:   14343369 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078916603:   14286958 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078926781:   14246102 cycles:ppp: 
+	           6d344 std::chrono::_V2::system_clock::now+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078936938:   14216155 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078947079:   14194575 cycles:ppp: 
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078957209:   14179020 cycles:ppp: 
+	        801980f4 sys_clock_gettime+0x70 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078967332:   14167750 cycles:ppp: 
+	            3b60 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078977448:   14159602 cycles:ppp: 
+	             3c0 main+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078987560:   14153758 cycles:ppp: 
+	            3b8c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1078997669:   14149440 cycles:ppp: 
+	        8018ee88 __getnstimeofday64+0x64 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1079007776:   14146330 cycles:ppp: 
+	            409c teste::execute+0xfffe0444 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1082.1079017881:   14144104 cycles:ppp: 
+	           bf5c4 _int_free+0xffff00b8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1082.1079027986:   14142469 cycles:ppp: 
+	            40dc teste::execute+0xfffe0484 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082333056:   14141191 cycles:ppp: 
+	           c2a70 malloc+0xffff012c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082343158:   14140274 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082353261:   14139745 cycles:ppp: 
+	            3b28 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe009c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082363362:   14139350 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082373464:   14139015 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082383589:   14138785 cycles:ppp: 
+	        80197288 posix_clock_realtime_get+0x20 ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082393690:   14138637 cycles:ppp: 
+	            3b8c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082403786:   14131013 cycles:ppp: 
+	        8078d7b8 __copy_to_user_std+0xa8 ([kernel.kallsyms])
+	        804a39bc arm_copy_to_user+0x28 ([kernel.kallsyms])
+	        80189fec put_timespec64+0x68 ([kernel.kallsyms])
+	        801980f8 sys_clock_gettime+0x74 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082413883:   14131775 cycles:ppp: 
+	           c5eb4 memcpy+0xffff0034 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	        e3a0102d __initramfs_size+0x62e87545 ([kernel.kallsyms])
+
+vant2lqrFP  1008  1083.1082423997:   14133281 cycles:ppp: 
+	             690 main+0xfffe03c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082434094:   14137453 cycles:ppp: 
+	            3cec teste::execute+0xfffe0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082444191:   14132347 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082454287:   14131719 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082464384:   14133093 cycles:ppp: 
+	        8018eea4 __getnstimeofday64+0x80 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082474483:   14134536 cycles:ppp: 
+	        8078d7e4 __copy_to_user_std+0xd4 ([kernel.kallsyms])
+	        804a39bc arm_copy_to_user+0x28 ([kernel.kallsyms])
+	        80189fec put_timespec64+0x68 ([kernel.kallsyms])
+	        801980f8 sys_clock_gettime+0x74 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082484582:   14135533 cycles:ppp: 
+	            3f30 teste::execute+0xfffe02d8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082494682:   14136248 cycles:ppp: 
+	            3f28 teste::execute+0xfffe02d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082504781:   14136735 cycles:ppp: 
+	            402c teste::execute+0xfffe03d4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082514882:   14137063 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082524982:   14137445 cycles:ppp: 
+	        8018ee60 __getnstimeofday64+0x3c ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082535083:   14137653 cycles:ppp: 
+	            3b7c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082545184:   14137965 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082555285:   14137724 cycles:ppp: 
+	            3b78 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00ec (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082565386:   14137873 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082575486:   14137929 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082585587:   14137956 cycles:ppp: 
+	            3b78 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00ec (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082595688:   14138049 cycles:ppp: 
+	            3b8c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082605791:   14138164 cycles:ppp: 
+	        80101638 __softirqentry_text_start+0xf8 ([kernel.kallsyms])
+	        80125648 irq_exit+0xec ([kernel.kallsyms])
+	        80176290 __handle_domain_irq+0x90 ([kernel.kallsyms])
+	        8010153c bcm2836_arm_irqchip_handle_irq+0xa0 ([kernel.kallsyms])
+	        807ad3ec __irq_usr+0x4c ([kernel.kallsyms])
+	            3b7c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082615892:   14138331 cycles:ppp: 
+	        8018ee4c __getnstimeofday64+0x28 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082625992:   14138026 cycles:ppp: 
+	           c5ea4 memcpy+0xffff0024 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082636094:   14138063 cycles:ppp: 
+	        806421a8 arch_counter_read+0x18 ([kernel.kallsyms])
+	        8018ee6c __getnstimeofday64+0x48 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082646195:   14138068 cycles:ppp: 
+	           c2948 malloc+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082656295:   14138021 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082666396:   14138049 cycles:ppp: 
+	            3b7c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082676497:   14138108 cycles:ppp: 
+	        8078d718 __copy_to_user_std+0x8 ([kernel.kallsyms])
+	        804a39bc arm_copy_to_user+0x28 ([kernel.kallsyms])
+	        80189fec put_timespec64+0x68 ([kernel.kallsyms])
+	        801980f8 sys_clock_gettime+0x74 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082686598:   14138112 cycles:ppp: 
+	        8078d7f4 __copy_to_user_std+0xe4 ([kernel.kallsyms])
+	        804a39bc arm_copy_to_user+0x28 ([kernel.kallsyms])
+	        80189fec put_timespec64+0x68 ([kernel.kallsyms])
+	        801980f8 sys_clock_gettime+0x74 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082696699:   14138094 cycles:ppp: 
+	           6d344 std::chrono::_V2::system_clock::now+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082706801:   14138156 cycles:ppp: 
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082716902:   14138118 cycles:ppp: 
+	            3d1c teste::execute+0xfffe00c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082727003:   14138058 cycles:ppp: 
+	        8018ee3c __getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082737104:   14138072 cycles:ppp: 
+	            4030 teste::execute+0xfffe03d8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082747204:   14138102 cycles:ppp: 
+	            3b7c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082757305:   14138115 cycles:ppp: 
+	            3d1c teste::execute+0xfffe00c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082767406:   14138166 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082777508:   14138183 cycles:ppp: 
+	            3b94 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082787609:   14138161 cycles:ppp: 
+	            3b6c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082797710:   14138115 cycles:ppp: 
+	           6d350 std::chrono::_V2::system_clock::now+0xffff0010 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082807811:   14138115 cycles:ppp: 
+	        8018eea0 __getnstimeofday64+0x7c ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082817912:   14138118 cycles:ppp: 
+	            3db0 teste::execute+0xfffe0158 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082828013:   14138157 cycles:ppp: 
+	             3a8 main+0xfffe00dc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082838114:   14138142 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082848215:   14138133 cycles:ppp: 
+	            3b90 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0104 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082858316:   14138153 cycles:ppp: 
+	             410 main+0xfffe0144 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082868417:   14138122 cycles:ppp: 
+	        8018ee2c __getnstimeofday64+0x8 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082878520:   14138128 cycles:ppp: 
+	        8018ef20 __getnstimeofday64+0xfc ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082888621:   14138222 cycles:ppp: 
+	            3b6c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082898721:   14137560 cycles:ppp: 
+	        8018ee88 __getnstimeofday64+0x64 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082908822:   14137663 cycles:ppp: 
+	           6d370 std::chrono::_V2::system_clock::now+0xffff0030 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082918923:   14137771 cycles:ppp: 
+	            3b84 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082929024:   14137838 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082939125:   14137956 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082949225:   14138025 cycles:ppp: 
+	           6d378 std::chrono::_V2::system_clock::now+0xffff0038 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082959327:   14138037 cycles:ppp: 
+	           c303c free+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082969427:   14138076 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082979528:   14138111 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1082989629:   14138093 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1082999730:   14138121 cycles:ppp: 
+	           c3070 free+0xffff003c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083009831:   14138125 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083019932:   14138132 cycles:ppp: 
+	        801980d0 sys_clock_gettime+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083030033:   14138106 cycles:ppp: 
+	           c3044 free+0xffff0010 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083040135:   14138139 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083050255:   14138094 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083060354:   14141801 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083070452:   14134609 cycles:ppp: 
+	            4050 teste::execute+0xfffe03f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1083080549:   14133159 cycles:ppp: 
+	        8018ee4c __getnstimeofday64+0x28 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083090647:   14133959 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083100746:   14135064 cycles:ppp: 
+	        80190b70 getnstimeofday64+0x0 ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083110846:   14135871 cycles:ppp: 
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083120946:   14136471 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083131046:   14136902 cycles:ppp: 
+	        80197288 posix_clock_realtime_get+0x20 ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083141146:   14137261 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083151247:   14137511 cycles:ppp: 
+	        801980d0 sys_clock_gettime+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083161347:   14137671 cycles:ppp: 
+	             760 main+0xfffe0494 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083171448:   14137810 cycles:ppp: 
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083181549:   14137891 cycles:ppp: 
+	           c2988 malloc+0xffff0044 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1083191650:   14137990 cycles:ppp: 
+	            40d4 teste::execute+0xfffe047c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1083201751:   14138011 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083211852:   14138068 cycles:ppp: 
+	            3f1c teste::execute+0xfffe02c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1083.1083221953:   14138097 cycles:ppp: 
+	           bf55c _int_free+0xffff0050 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083232054:   14138131 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083242155:   14138065 cycles:ppp: 
+	           6d3a8 std::chrono::_V2::system_clock::now+0xffff0068 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083252256:   14138117 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083262357:   14138150 cycles:ppp: 
+	            3b74 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083272458:   14138150 cycles:ppp: 
+	           bf570 _int_free+0xffff0064 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083282559:   14138132 cycles:ppp: 
+	           c3044 free+0xffff0010 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083292660:   14138113 cycles:ppp: 
+	            3b88 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00fc (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083302761:   14138109 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083312862:   14138126 cycles:ppp: 
+	           6d3a8 std::chrono::_V2::system_clock::now+0xffff0068 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1083.1083322963:   14138136 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082333064:   14138156 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082343197:   14138171 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082353298:   14138138 cycles:ppp: 
+	            3b54 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00c8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082363391:   14127700 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082373486:   14128956 cycles:ppp: 
+	        8018ee90 __getnstimeofday64+0x6c ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082383582:   14131217 cycles:ppp: 
+	            3b8c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082393679:   14133129 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082403778:   14134516 cycles:ppp: 
+	           bf5b0 _int_free+0xffff00a4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082413877:   14135489 cycles:ppp: 
+	        8078d800 __copy_to_user_std+0xf0 ([kernel.kallsyms])
+	        804a39bc arm_copy_to_user+0x28 ([kernel.kallsyms])
+	        80189fec put_timespec64+0x68 ([kernel.kallsyms])
+	        801980f8 sys_clock_gettime+0x74 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082423977:   14136239 cycles:ppp: 
+	            408c teste::execute+0xfffe0434 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082434077:   14136790 cycles:ppp: 
+	           6d344 std::chrono::_V2::system_clock::now+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082444177:   14137149 cycles:ppp: 
+	           bf510 _int_free+0xffff0004 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082454277:   14137367 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082464378:   14137617 cycles:ppp: 
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082474478:   14137745 cycles:ppp: 
+	            3b94 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082484579:   14137929 cycles:ppp: 
+	            3b78 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00ec (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082494680:   14138039 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082504781:   14138232 cycles:ppp: 
+	            408c teste::execute+0xfffe0434 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082514882:   14138225 cycles:ppp: 
+	        8019808c sys_clock_gettime+0x8 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082524983:   14138233 cycles:ppp: 
+	            3b8c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082535084:   14138204 cycles:ppp: 
+	        8018ef28 __getnstimeofday64+0x104 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082545185:   14138161 cycles:ppp: 
+	            3f1c teste::execute+0xfffe02c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082555286:   14138153 cycles:ppp: 
+	        8018ee98 __getnstimeofday64+0x74 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082565387:   14138247 cycles:ppp: 
+	            3b90 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0104 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082575488:   14138405 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082585589:   14138031 cycles:ppp: 
+	           6d380 std::chrono::_V2::system_clock::now+0xffff0040 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082595690:   14138075 cycles:ppp: 
+	            3b94 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0108 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082615893:   14138313 cycles:ppp: 
+	            3cf8 teste::execute+0xfffe00a0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082625995:   14138321 cycles:ppp: 
+	            3d80 teste::execute+0xfffe0128 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082636096:   14138293 cycles:ppp: 
+	           9fa74 __udivmoddi4+0xffff0094 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082646197:   14138259 cycles:ppp: 
+	             740 main+0xfffe0474 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082656298:   14138225 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082666400:   14138226 cycles:ppp: 
+	            4058 teste::execute+0xfffe0400 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082676501:   14138199 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082686601:   14138139 cycles:ppp: 
+	           c5f2c memcpy+0xffff00ac (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082696703:   14138200 cycles:ppp: 
+	        80108a64 local_restart+0x10 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082706803:   14138216 cycles:ppp: 
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082716904:   14138097 cycles:ppp: 
+	            3fb8 teste::execute+0xfffe0360 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082727006:   14138148 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082737107:   14138134 cycles:ppp: 
+	        80198088 sys_clock_gettime+0x4 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082747208:   14138072 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082757309:   14138109 cycles:ppp: 
+	           bf50c _int_free+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082767410:   14138090 cycles:ppp: 
+	        8018ef3c __getnstimeofday64+0x118 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082777511:   14138090 cycles:ppp: 
+	        80190b78 getnstimeofday64+0x8 ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082787612:   14138130 cycles:ppp: 
+	           c3074 free+0xffff0040 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082797713:   14138147 cycles:ppp: 
+	             3c0 main+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082807814:   14138149 cycles:ppp: 
+	            3b8c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082817915:   14138081 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082828016:   14138068 cycles:ppp: 
+	            3e84 teste::execute+0xfffe022c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082838117:   14138073 cycles:ppp: 
+	            3b7c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082848218:   14138069 cycles:ppp: 
+	        8018ee90 __getnstimeofday64+0x6c ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082858319:   14138091 cycles:ppp: 
+	        ffff0fe0 __initramfs_size+0x7f4774f8 ([kernel.kallsyms])
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082868420:   14138112 cycles:ppp: 
+	            3b84 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f8 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082878521:   14138165 cycles:ppp: 
+	            40b4 teste::execute+0xfffe045c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082888622:   14138103 cycles:ppp: 
+	            3b6c Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082898723:   14138100 cycles:ppp: 
+	            3ddc teste::execute+0xfffe0184 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082908824:   14138133 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082918925:   14138150 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082929026:   14138115 cycles:ppp: 
+	            3b80 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00f4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082939127:   14138129 cycles:ppp: 
+	           d64b0 __clock_gettime+0xffff0018 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082949228:   14138124 cycles:ppp: 
+	           c298c malloc+0xffff0048 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1082959329:   14138138 cycles:ppp: 
+	        8018ee34 __getnstimeofday64+0x10 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082969430:   14138117 cycles:ppp: 
+	             738 main+0xfffe046c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082979532:   14138113 cycles:ppp: 
+	        8018ee58 __getnstimeofday64+0x34 ([kernel.kallsyms])
+	        80190b88 getnstimeofday64+0x18 ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082989632:   14138149 cycles:ppp: 
+	        80108a44 vector_swi+0x44 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1082999734:   14138113 cycles:ppp: 
+	             3cc main+0xfffe0100 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083009834:   14138124 cycles:ppp: 
+	            3b70 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe00e4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083019936:   14138102 cycles:ppp: 
+	           c2980 malloc+0xffff003c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1083030037:   14138084 cycles:ppp: 
+	            40d4 teste::execute+0xfffe047c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1083040138:   14138123 cycles:ppp: 
+	           c294c malloc+0xffff0008 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1083050239:   14138121 cycles:ppp: 
+	        8078d7b8 __copy_to_user_std+0xa8 ([kernel.kallsyms])
+	        804a39bc arm_copy_to_user+0x28 ([kernel.kallsyms])
+	        80189fec put_timespec64+0x68 ([kernel.kallsyms])
+	        801980f8 sys_clock_gettime+0x74 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083060340:   14138134 cycles:ppp: 
+	            3fa8 teste::execute+0xfffe0350 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1083070441:   14138131 cycles:ppp: 
+	            3f28 teste::execute+0xfffe02d0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1083080542:   14138129 cycles:ppp: 
+	           d6498 __clock_gettime+0xffff0000 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083090643:   14138082 cycles:ppp: 
+	            3b98 Eigen::internal::general_matrix_vector_product<int, double, Eigen::internal::const_blas_data_mapper<double, int, 0>, 0, false, double, Eigen::internal::const_blas_data_mapper<double, int, 1>, false, 0>::run+0xfffe010c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083100744:   14138073 cycles:ppp: 
+	        801980d0 sys_clock_gettime+0x4c ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083110845:   14138085 cycles:ppp: 
+	           6d370 std::chrono::_V2::system_clock::now+0xffff0030 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083120946:   14138084 cycles:ppp: 
+	           c3048 free+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083131047:   14138105 cycles:ppp: 
+	            3e6c teste::execute+0xfffe0214 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1083141148:   14138155 cycles:ppp: 
+	             690 main+0xfffe03c4 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083151249:   14138148 cycles:ppp: 
+	            3fd4 teste::execute+0xfffe037c (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+	               0 [unknown] ([unknown])
+
+vant2lqrFP  1008  1084.1083161350:   14138135 cycles:ppp: 
+	        80190b8c getnstimeofday64+0x1c ([kernel.kallsyms])
+	        80197284 posix_clock_realtime_get+0x1c ([kernel.kallsyms])
+	        801980e4 sys_clock_gettime+0x60 ([kernel.kallsyms])
+	        80108940 ret_fast_syscall+0x0 ([kernel.kallsyms])
+	           d64ac __clock_gettime+0xffff0014 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
+vant2lqrFP  1008  1084.1083171451:   14138089 cycles:ppp: 
+	           9fa90 __udivmoddi4+0xffff00b0 (/home/pi/Navio2gem5/C++/Examples/prefetch5/vant2_lqrFP/vant2lqrFP)
+
