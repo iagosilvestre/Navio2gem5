@@ -13,15 +13,15 @@
 //#include "m5op.h"
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
-#include <time.h>  
+#include <time.h>
 
 
 
 int main()
 	{
 	std::vector<int> controlData;
-	unsigned long int auxCount=0;	
-	
+	unsigned long int auxCount=0;
+
 	simulator_msgs::SensorArray arraymsg;
 	std::vector<double> out;
 	std::vector<double> xref;
@@ -33,7 +33,7 @@ int main()
 //		Foo* foo1 = new Foo ();
 //		std::cout << "test if main works" << std::endl;;
 		teste* control = new teste();
-	
+
 
 
 		control->config();
@@ -42,20 +42,20 @@ int main()
 //		simulator_msgs::Sensor msgstates;
 //		arraymsg.header;
 //		msgstates = arraymsg.values.at(0);
-		auto all = std::chrono::high_resolution_clock::now();
-		while(k<1000000){
-		auto start = std::chrono::high_resolution_clock::now();
-		
+		//auto all = std::chrono::high_resolution_clock::now();
+		while(k<10000000){
+		//auto start = std::chrono::high_resolution_clock::now();
+
 		out=control->execute(arraymsg);
 
-		auto elapsed = std::chrono::high_resolution_clock::now() - start;
-		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-		controlData.push_back(microseconds);
+		//auto elapsed = std::chrono::high_resolution_clock::now() - start;
+		//long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+		//controlData.push_back(microseconds);
 		k++;
 		}
-		auto elapsed = std::chrono::high_resolution_clock::now() - all;
-		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-		controlData.push_back(microseconds);
+		//auto elapsed = std::chrono::high_resolution_clock::now() - all;
+		//long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+		//controlData.push_back(microseconds);
 			//FILE *fCON = fopen("control.txt", "w");
 			//	fprintf(fCON, "count;dtCon\n");
 			//	fclose(fCON);
