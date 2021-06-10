@@ -43,7 +43,7 @@ int main()
 //		arraymsg.header;
 //		msgstates = arraymsg.values.at(0);
 	 //auto all = std::chrono::high_resolution_clock::now();
-		while(k<10000){
+		while(k<100000000){
 		//auto start = std::chrono::high_resolution_clock::now();
 
 		out=control->execute(arraymsg);
