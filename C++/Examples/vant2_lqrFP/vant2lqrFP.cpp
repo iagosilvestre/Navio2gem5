@@ -34,8 +34,8 @@ int main()
 		control->config();
 
 		while(k<100){
-		std::cout << " Out:";		
 		out=control->execute(arraymsg);
+		std::cout << " Out:";	
 		for (auto i = out.begin(); i != out.end(); ++i)
     	std::cout << *i << ' ';
 		k++;
