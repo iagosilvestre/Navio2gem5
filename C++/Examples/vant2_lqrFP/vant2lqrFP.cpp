@@ -19,7 +19,6 @@
 
 int main()
 	{
-	//	auto all = std::chrono::high_resolution_clock::now();
 	std::vector<int> controlData;
 	unsigned long int auxCount=0;
 
@@ -30,41 +29,17 @@ int main()
 	std::vector<double> x;
 	int k=0;
 
-
-//		Foo* foo1 = new Foo ();
-//		std::cout << "test if main works" << std::endl;;
 		teste* control = new teste();
-
-
 
 		control->config();
 
-
-//		simulator_msgs::Sensor msgstates;
-//		arraymsg.header;
-//		msgstates = arraymsg.values.at(0);
-
 		while(k<100){
-		//auto start = std::chrono::high_resolution_clock::now();
 
 		out=control->execute(arraymsg);
-
-		//auto elapsed = std::chrono::high_resolution_clock::now() - start;
-		//long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-		//controlData.push_back(microseconds);
+		for (auto i = out.begin(); i != out.end(); ++i)
+    	std::cout << *i << ' ';
 		k++;
 		}
-		//auto elapsed = std::chrono::high_resolution_clock::now() - all;
-		//long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-		//controlData.push_back(microseconds);
-		//	FILE *fCON = fopen("control.txt", "w");
-		//		fprintf(fCON, "count;dtCon\n");
-		//		fclose(fCON);
-		//		for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
-		//			auxCount++;
-		//			FILE *fCON = fopen("control.txt", "a");
-		//			fprintf(fCON, "%d;%lu\n",auxCount,*it);
-		//			fclose(fCON);
-		//		}
+
 		return 0;
 	}
