@@ -3,7 +3,7 @@
 #include <Eigen/Eigen>
 #include "include/Sensor.h"
 
-class teste : public Icontroller 
+class teste : public Icontroller
 {
 	private: Eigen::VectorXd Xref;
 	private: Eigen::VectorXd Erro;
@@ -11,18 +11,20 @@ class teste : public Icontroller
 	private: Eigen::MatrixXd K;
 	private: Eigen::VectorXd X;
 	private: double T;
+	private: double notrandom;
 
 	public: teste(): Xref(20), K(4,20), X(20), Erro(20), Input(4)
-	{ 
+	{
 		T = 0.012;
+		notrandom=1;
 	}
 	public: ~teste()
 	{
-		
+
 	}
 	public: void config()
 	{
-		
+
 		K << -0.000509474023994 ,  1.381002006541810 ,  2.044930990723325 , -4.098388643419657 ,  0.002544968427177 ,  0.065243786421189, -0.011997162152724 ,  0.012231188237446 , -0.000191109567030 ,  0.977046060078436  , 2.067519443836474 , -1.069820095142832,
 0.003981280957280 ,  0.048837474399233 , -0.000157117358773  , 0.000160465562387 , -0.000324184653490 ,  0.932396154093819,
 0.987708499654750 ,  0.029590812630684,
@@ -50,7 +52,7 @@ class teste : public Icontroller
 		static double yint, y_ant = 0;
 		static double zint, z_ant = 0;
 		static double yawint, yaw_ant = 0;
-	
+
 		// selecionando dados
 		int i = 0;
 		simulator_msgs::Sensor msg;
@@ -62,26 +64,34 @@ class teste : public Icontroller
 //			}
 //			i++;
 //		}
-	
+
 		// Integrador Trapezoidal
-		double x_atual = (rand() % 10) - Xref(0);
+		//__builtin_prefetch (&Xref, 0, 1);
+		//__builtin_prefetch (&K, 0, 1);
+		//__builtin_prefetch (&Erro, 0, 1);
+		//__builtin_prefetch (&notrandom, 0, 1);
+
+		double x_atual = (notrandom) - Xref(0);
 		xint = xint + (T/2)*(x_atual + x_ant);
 		x_ant = x_atual;
-		double y_atual = (rand() % 10) - Xref(1);
+
+		double y_atual = (notrandom) - Xref(1);
 		yint = yint + (T/2)*(y_atual + y_ant);
 		y_ant = y_atual;
-		double z_atual = (rand() % 10) - Xref(2);
+
+		double z_atual = (notrandom) - Xref(2);
 		zint = zint + (T/2)*(z_atual + z_ant);
 		z_ant = z_atual;
-		double yaw_atual = (rand() % 10) - Xref(5);
+
+		double yaw_atual = (notrandom) - Xref(5);
 		yawint = yawint + (T/2)*(yaw_atual + yaw_ant);
 		yaw_ant = yaw_atual;
-		
-		X << (rand() % 10),(rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10), (rand() % 10),xint,yint,zint,yawint;
+		__builtin_prefetch (&K, 0, 2);
+		//__builtin_prefetch (&Xref, 0, 1);
+		X << (notrandom),(notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom), (notrandom),xint,yint,zint,yawint;
 
 		Erro = X-Xref;
 		Input = -K*Erro;
-
 		// Feedforward
 		Input(0) = Input(0) + 10.2751;
 		Input(1) = Input(1) + 10.2799;
@@ -100,18 +110,18 @@ class teste : public Icontroller
 	{
 		std::vector<double> out(Erro.data(), Erro.data() + Erro.rows() * Erro.cols());
 		return out;
-	}	
+	}
 
 	public: std::vector<double> State()
 	{
 		std::vector<double> out(X.data(), X.data() + X.rows() * X.cols());
 		return out;
-	}	
-		
+	}
+
 };
 
 extern "C"
-{ 
+{
 	Icontroller *create(void) {
 		return new teste;
 	}

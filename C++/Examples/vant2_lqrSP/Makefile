@@ -3,10 +3,10 @@ CC = arm-linux-gnueabi-g++ -I /usr/include/eigen3/ -I /opt/ros/melodic/include
 # compiler flags:
 #  -g    adds debugging information to the executable file
 #  -Wall turns on most, but not all, compiler warnings
-CFLAGS  = -g -Wall -static -mcpu=cortex-a53 -mfloat-abi=softfp -mfpu=neon-fp-armv8 -mneon-for-64bits -mtune=cortex-a53
+CFLAGS  = -g -Wall -static -mcpu=cortex-a53 -mfloat-abi=softfp -mfpu=neon-fp-armv8 -mneon-for-64bits -mtune=cortex-a53 -O3
 
 # the build target executable:
-TARGET = vant2lqrFP
+TARGET = vant2lqrSP
 
 all: $(TARGET)
 
