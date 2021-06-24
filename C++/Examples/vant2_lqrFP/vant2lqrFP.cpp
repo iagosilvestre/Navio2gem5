@@ -39,7 +39,7 @@ int main()
 		for (auto i = out.begin(); i != out.end(); ++i)
     	std::cout << *i << ' ';
 		k++;
-		std::cout << "\n";	
+		std::cout << " \n";	
 		}
 
 		return 0;
