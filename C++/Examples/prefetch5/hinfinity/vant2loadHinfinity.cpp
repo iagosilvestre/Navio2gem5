@@ -45,7 +45,7 @@ int main()
 //		arraymsg.header;
 //		msgstates = arraymsg.values.at(0);
 
-		while(k<10000){
+		while(k<100){
 		//auto start = std::chrono::high_resolution_clock::now();
 //		m5_reset_stats(0,0);
 

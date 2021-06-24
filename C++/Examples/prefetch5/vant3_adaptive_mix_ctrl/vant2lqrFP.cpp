@@ -13,15 +13,15 @@
 //#include "m5op.h"
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
-#include <time.h>  
+#include <time.h>
 
 
 
 int main()
 	{
 	std::vector<int> controlData;
-	unsigned long int auxCount=0;	
-	
+	unsigned long int auxCount=0;
+
 	simulator_msgs::SensorArray arraymsg;
 	std::vector<double> out;
 	std::vector<double> xref;
@@ -33,7 +33,7 @@ int main()
 //		Foo* foo1 = new Foo ();
 //		std::cout << "test if main works" << std::endl;;
 		teste* control = new teste();
-	
+
 
 
 		control->config();
@@ -43,9 +43,9 @@ int main()
 //		arraymsg.header;
 //		msgstates = arraymsg.values.at(0);
 		auto all = std::chrono::high_resolution_clock::now();
-		while(k<1000000){
+		while(k<100){
 		auto start = std::chrono::high_resolution_clock::now();
-		
+
 		out=control->execute(arraymsg);
 
 		auto elapsed = std::chrono::high_resolution_clock::now() - start;
