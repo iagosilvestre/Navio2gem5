@@ -16,7 +16,7 @@ class teste : public Icontroller
 	public: teste(): Xref(20), K(4,20), X(20), Erro(20), Input(4)
 	{
 		T = 0.012;
-		notrandom=10;
+		notrandom=100;
 	}
 	public: ~teste()
 	{
