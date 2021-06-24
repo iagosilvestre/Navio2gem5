@@ -19,6 +19,7 @@
 
 int main()
 	{
+	auto all = std::chrono::high_resolution_clock::now();
 	std::vector<int> controlData;
 	unsigned long int auxCount=0;
 
@@ -42,7 +43,7 @@ int main()
 //		simulator_msgs::Sensor msgstates;
 //		arraymsg.header;
 //		msgstates = arraymsg.values.at(0);
-		auto all = std::chrono::high_resolution_clock::now();
+
 		while(k<100){
 		auto start = std::chrono::high_resolution_clock::now();
 
