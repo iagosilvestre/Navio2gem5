@@ -87,7 +87,7 @@ class teste : public Icontroller
 		// Feedforward
 		Input(0) = Input(0) + 10.2751;
 		Input(1) = Input(1) + 10.2799;
-		std::cout << " Input: "<< Input(0) << " , " <<Input(1)<< " \n";
+		std::cout << " Input: "<< Input(0) << " , " <<Input(1)<< " , " <<Input(2)<< " , " <<Input(3) <<" \n";
 		std::cout << " Input rows: " << Input.rows()<< " \n";
 		std::cout << " Input cols: " << Input.cols()<< " \n";
 
