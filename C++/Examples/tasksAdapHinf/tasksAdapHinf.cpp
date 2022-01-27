@@ -31,6 +31,21 @@ void *hinf( void *ptr );
 vant3_adaptiveMixCtrl2* controlA = new vant3_adaptiveMixCtrl2();
 hinfinity* controlH = new hinfinity();
 
+int stick_this_thread_to_core(int core_id) {
+   int num_cores = sysconf(_SC_NPROCESSORS_ONLN);
+   if (core_id < 0 || core_id >= num_cores)
+      return EINVAL;
+
+   cpu_set_t cpuset;
+   CPU_ZERO(&cpuset);
+   CPU_SET(core_id, &cpuset);
+
+   pthread_t current_thread = pthread_self();    
+   return pthread_setaffinity_np(current_thread, sizeof(cpu_set_t), &cpuset);
+}
+
+
+
 main()
 {
      
@@ -58,7 +73,8 @@ main()
 }
 
 void *adap( void *ptr )
-{
+{	
+	stick_this_thread_to_core(0);
 	std::vector<int> controlData;
 	unsigned long int auxCount=0;	
 
@@ -77,7 +93,7 @@ void *adap( void *ptr )
 				fclose(fCON);
 				for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
 					auxCount++;
-					FILE *fCON = fopen("control.txt", "a");
+					FILE *fCON = fopen("adap.txt", "a");
 					fprintf(fCON, "%d;%lu\n",auxCount,*it);
 					fclose(fCON);
 				}
@@ -86,6 +102,7 @@ void *adap( void *ptr )
 
 void *hinf( void *ptr )
 {
+		stick_this_thread_to_core(0);
 		std::vector<int> controlData;
 		unsigned long int auxCount=0;
 		while(count<100){
@@ -104,7 +121,7 @@ void *hinf( void *ptr )
 				fclose(fCON);
 				for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
 					auxCount++;
-					FILE *fCON = fopen("control.txt", "a");
+					FILE *fCON = fopen("hinf.txt", "a");
 					fprintf(fCON, "%d;%lu\n",auxCount,*it);
 					fclose(fCON);
 				}
