@@ -18,10 +18,12 @@
 #include <chrono>
 #include <algorithm>
 #include <pthread.h>
+#include <sys/resource.h>
 int countAdap=0;
 
 void* adapThread(void *)
 {
+	rusage ru_adap;
 	simulator_msgs::SensorArray arraymsg;
 	std::vector<double> outA;
 	std::vector<double> xref;
@@ -33,9 +35,12 @@ void* adapThread(void *)
 	controlA->config();
 
 	while(countAdap<100){
-	m5_reset_stats(0,0);
+	//m5_reset_stats(0,0);
 	outA=controlA->execute(arraymsg);
-	m5_dump_stats(0,0);
+	getrusage(RUSAGE_THREAD,&ru_adap);
+	printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
+	printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
+	//m5_dump_stats(0,0);
 	countAdap++;
 	//std::cout << k << " control executed" << std::endl;
 	}
@@ -43,6 +48,7 @@ void* adapThread(void *)
 }
 void* lqrThread(void *)
 {
+	rusage ru_lqr;
 	simulator_msgs::SensorArray arraymsg;
 	std::vector<double> outL;
 	std::vector<double> xref;
@@ -52,8 +58,6 @@ void* lqrThread(void *)
 	teste* controlL = new teste();
 
 	controlL->config();
-
-
 
 	while(countAdap<100){
 	//m5_reset_stats(0,0);
