@@ -16,6 +16,7 @@
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>
 #include <pthread.h>
+#include <sys/resource.h>
 
 int count=0;
 simulator_msgs::SensorArray arraymsg;
@@ -48,11 +49,11 @@ int stick_this_thread_to_core(int core_id) {
 
 main()
 {
-     
      pthread_t thread1, thread2;
      char *message1 = "Thread 1";
      char *message2 = "Thread 2";
      int  iret1, iret2;
+     
 
 		 controlA->config();
 		 controlH->config();
@@ -74,6 +75,7 @@ main()
 
 void *adap( void *ptr )
 {	
+	rusage ru_adap;
 	stick_this_thread_to_core(0);
 	std::vector<int> controlData;
 	unsigned long int auxCount=0;	
@@ -83,6 +85,8 @@ void *adap( void *ptr )
 	   	auto start = std::chrono::high_resolution_clock::now();	
 		outA=controlA->execute(arraymsg);
 		auto elapsed = std::chrono::high_resolution_clock::now() - start;
+		//printf("preempt count is %d\n",current_thread_info()->preempt_count);
+		getrusage(RUSAGE_THREAD,&ru_adap);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 		controlData.push_back(microseconds);
 		//m5_dump_stats(0,0);
@@ -110,6 +114,7 @@ void *hinf( void *ptr )
 		//m5_reset_stats(0,0);
 		outH=controlH->execute(arraymsg);
 		auto elapsed = std::chrono::high_resolution_clock::now() - start;
+		//printf("preempt count is %d\n",current_thread_info()->preempt_count);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 		controlData.push_back(microseconds);
 		//m5_dump_stats(0,0);
