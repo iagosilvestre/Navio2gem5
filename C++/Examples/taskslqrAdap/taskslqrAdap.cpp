@@ -76,7 +76,7 @@ void *adap( void *ptr )
 	rusage ru_adap2;
 	stick_this_thread_to_core(0);
 	std::vector<int> controlData;
-	std::vector<int> vincData;
+	std::vector<long> vincData;
 	unsigned long int auxCount=0;	
 	long vinc=0;
 	long invinc=0;
@@ -97,7 +97,7 @@ void *adap( void *ptr )
 		//printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
 		//printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-		printf("Vinc:%ld,Invinc:%ld,Completion:%ld\n",vinc,invinc,microseconds);
+		//printf("Vinc:%ld,Invinc:%ld,Completion:%ld\n",vinc,invinc,microseconds);
 		controlData.push_back(microseconds);
 		//m5_dump_stats(0,0);
    //m5_dump_stats(0,0);
@@ -108,7 +108,7 @@ void *adap( void *ptr )
 				for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
 					auxCount++;
 					FILE *fCON = fopen("adap.txt", "a");
-					fprintf(fCON, "%d;%lu\n",auxCount,*it);
+					fprintf(fCON, "%d;%lu;%lu\n",auxCount,*it,vincData[auxCount]);
 					fclose(fCON);
 				}
    pthread_exit(NULL);				/* terminate the thread */
