@@ -111,7 +111,7 @@ void *adap( void *ptr )
 				for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
 					auxCount++;
 					FILE *fCON = fopen("adap.txt", "a");
-					fprintf(fCON, "%d;%lu;%lu\n",auxCount,*it,invincData[auxCount]);
+					fprintf(fCON, "%d;%lu;%lu\n",auxCount,*it,invincData[auxCount-1]);
 					fclose(fCON);
 				}
    pthread_exit(NULL);				/* terminate the thread */
