@@ -97,7 +97,7 @@ void *adap( void *ptr )
 		//vincData.push_back(vinc);
 		invinc=ru_adap.ru_nivcsw-ru_adapO.ru_nivcsw;
 		invincData.push_back(invinc);
-		getrusage(RUSAGE_SELF,&ru_adapO);
+		getrusage(RUSAGE_THREAD,&ru_adapO);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 		controlData.push_back(microseconds);
 		//m5_dump_stats(0,0);
