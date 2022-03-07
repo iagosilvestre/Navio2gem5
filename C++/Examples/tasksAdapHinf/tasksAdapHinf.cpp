@@ -76,17 +76,27 @@ main()
 void *adap( void *ptr )
 {	
 	rusage ru_adap;
+	rusage ru_adap2;
 	stick_this_thread_to_core(0);
 	std::vector<int> controlData;
+	std::vector<long> vincData;
+	std::vector<long> invincData;
 	unsigned long int auxCount=0;	
+	long vinc=0;
+	long invinc=0;
 
 	while(count<100){
    //m5_reset_stats(0,0);
+		getrusage(RUSAGE_THREAD,&ru_adap);
 	   	auto start = std::chrono::high_resolution_clock::now();	
 		outA=controlA->execute(arraymsg);
 		auto elapsed = std::chrono::high_resolution_clock::now() - start;
 		//printf("preempt count is %d\n",current_thread_info()->preempt_count);
-		getrusage(RUSAGE_THREAD,&ru_adap);
+		getrusage(RUSAGE_THREAD,&ru_adap2);
+		//vinc=ru_adap2.ru_nvcsw-ru_adap.ru_nvcsw;
+		//vincData.push_back(vinc);
+		invinc=ru_adap2.ru_nivcsw-ru_adap.ru_nivcsw;
+		invincData.push_back(invinc);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 		controlData.push_back(microseconds);
 		//m5_dump_stats(0,0);
@@ -98,7 +108,7 @@ void *adap( void *ptr )
 				for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
 					auxCount++;
 					FILE *fCON = fopen("adap.txt", "a");
-					fprintf(fCON, "%d;%lu\n",auxCount,*it);
+					fprintf(fCON, "%d;%lu;%lu\n",auxCount,*it,invincData[auxCount]);
 					fclose(fCON);
 				}
    pthread_exit(NULL);				/* terminate the thread */
