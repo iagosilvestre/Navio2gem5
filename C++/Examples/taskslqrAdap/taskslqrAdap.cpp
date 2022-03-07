@@ -73,20 +73,30 @@ main()
 void *adap( void *ptr )
 {	
 	rusage ru_adap;
+	rusage ru_adap2;
 	stick_this_thread_to_core(0);
 	std::vector<int> controlData;
+	std::vector<int> vincData;
 	unsigned long int auxCount=0;	
+	long vinc=0;
+	long invinc=0;
 
-	while(count<100){
+
+	while(count<1000){
    //m5_reset_stats(0,0);
+		getrusage(RUSAGE_THREAD,&ru_adap);
 	   	auto start = std::chrono::high_resolution_clock::now();	
 		outA=controlA->execute(arraymsg);
 		auto elapsed = std::chrono::high_resolution_clock::now() - start;
 		//printf("preempt count is %d\n",current_thread_info()->preempt_count);
-		getrusage(RUSAGE_THREAD,&ru_adap);
-		printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
-		printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
+		getrusage(RUSAGE_THREAD,&ru_adap2);
+		vinc=ru_adap2.ru_nvcsw-ru_adap.ru_nvcsw;
+		vincData.push_back(vinc);
+		invinc=ru_adap2.ru_nivcsw-ru_adap.ru_nivcsw;
+		//printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
+		//printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+		printf("Vinc:%ld,Invinc:%ld,Completion:%ld\n",vinc,invinc,microseconds);
 		controlData.push_back(microseconds);
 		//m5_dump_stats(0,0);
    //m5_dump_stats(0,0);
