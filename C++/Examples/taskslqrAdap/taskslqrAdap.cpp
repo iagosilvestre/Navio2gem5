@@ -91,12 +91,12 @@ void *adap( void *ptr )
 		outA=controlA->execute(arraymsg);
 		auto elapsed = std::chrono::high_resolution_clock::now() - start;
 		//printf("preempt count is %d\n",current_thread_info()->preempt_count);
-		getrusage(RUSAGE_SELF,&ru_adap);
+		getrusage(RUSAGE_THREAD,&ru_adap);
 		//vinc=ru_adap2.ru_nvcsw-ru_adap.ru_nvcsw;
 		//vincData.push_back(vinc);
 		invinc=ru_adap.ru_nivcsw-ru_adapO.ru_nivcsw;
 		invincData.push_back(invinc);
-		getrusage(RUSAGE_SELF,&ru_adapO);
+		getrusage(RUSAGE_THREAD,&ru_adapO);
 		//printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
 		//printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
