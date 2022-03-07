@@ -38,8 +38,9 @@ void* adapThread(void *)
 	//m5_reset_stats(0,0);
 	outA=controlA->execute(arraymsg);
 	getrusage(RUSAGE_THREAD,&ru_adap);
-	printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
-	printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
+	printf("suco de maracuja\n");
+	//printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
+	//printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
 	//m5_dump_stats(0,0);
 	countAdap++;
 	//std::cout << k << " control executed" << std::endl;
