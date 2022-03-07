@@ -82,7 +82,8 @@ void *adap( void *ptr )
 	long invinc=0;
 
 
-	while(count<1000){
+	while(count<100){
+	count++;
    //m5_reset_stats(0,0);
 		getrusage(RUSAGE_THREAD,&ru_adap);
 	   	auto start = std::chrono::high_resolution_clock::now();	
@@ -127,7 +128,6 @@ void* lqr(void *)
 	long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 	controlData.push_back(microseconds);
 	//m5_dump_stats(0,0);
-	count++;
 	}
 
 	FILE *fCON = fopen("lqr.txt", "w");
