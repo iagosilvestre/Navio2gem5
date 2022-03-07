@@ -95,7 +95,7 @@ void *adap( void *ptr )
 		//vinc=ru_adap2.ru_nvcsw-ru_adap.ru_nvcsw;
 		//vincData.push_back(vinc);
 		invinc=ru_adap2.ru_nivcsw-ru_adap.ru_nivcsw;
-		invincData.push_back(invinc);
+		invincData.push_back(ru_adap2.ru_nivcsw);
 		//printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
 		//printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
