@@ -77,6 +77,7 @@ void *adap( void *ptr )
 	stick_this_thread_to_core(0);
 	std::vector<int> controlData;
 	std::vector<long> vincData;
+	std::vector<long> invincData;
 	unsigned long int auxCount=0;	
 	long vinc=0;
 	long invinc=0;
@@ -108,7 +109,7 @@ void *adap( void *ptr )
 				for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
 					auxCount++;
 					FILE *fCON = fopen("adap.txt", "a");
-					fprintf(fCON, "%d;%lu;%lu\n",auxCount,*it,vincData[auxCount]);
+					fprintf(fCON, "%d;%lu;%lu;%lu\n",auxCount,*it,vincData[auxCount],invincData[auxCount]);
 					fclose(fCON);
 				}
    pthread_exit(NULL);				/* terminate the thread */
