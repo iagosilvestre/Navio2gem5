@@ -73,7 +73,7 @@ main()
 void *adap( void *ptr )
 {	
 	rusage ru_adap;
-	rusage ru_adap2;
+	rusage ru_adapO;
 	stick_this_thread_to_core(0);
 	std::vector<int> controlData;
 	std::vector<long> vincData;
@@ -82,20 +82,21 @@ void *adap( void *ptr )
 	long vinc=0;
 	long invinc=0;
 
-
+	getrusage(RUSAGE_SELF,&ru_adapO);	
 	while(count<100){
 	count++;
    //m5_reset_stats(0,0);
-		getrusage(RUSAGE_SELF,&ru_adap);
+		
 	   	auto start = std::chrono::high_resolution_clock::now();	
 		outA=controlA->execute(arraymsg);
 		auto elapsed = std::chrono::high_resolution_clock::now() - start;
 		//printf("preempt count is %d\n",current_thread_info()->preempt_count);
-		getrusage(RUSAGE_SELF,&ru_adap2);
+		getrusage(RUSAGE_SELF,&ru_adap);
 		//vinc=ru_adap2.ru_nvcsw-ru_adap.ru_nvcsw;
 		//vincData.push_back(vinc);
-		invinc=ru_adap2.ru_nivcsw-ru_adap.ru_nivcsw;
-		invincData.push_back(ru_adap2.ru_nivcsw);
+		invinc=ru_adap.ru_nivcsw-ru_adapO.ru_nivcsw;
+		invincData.push_back(invinc);
+		getrusage(RUSAGE_SELF,&ru_adapO);
 		//printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
 		//printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
