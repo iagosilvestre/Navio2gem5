@@ -4,19 +4,17 @@
 #include "include/Sensor.h"
 #include "include/SensorArray.h"
 #include "math.h"
-//#include "hinfinity.cpp"
 #include "adap.cpp"
 #include "lqr.cpp"
-#include "m5op.h"
+#include <algorithm>
+#include <chrono>
+#include <vector>
+#include <memory>
+#include <string>
+//#include "m5op.h"
 #include <stdio.h>      /* printf, scanf, puts, NULL */
 #include <stdlib.h>     /* srand, rand */
-#include <time.h>       /* time */
-#include <unistd.h>
-#include <ios>
-#include <fstream>
-#include <string>
-#include <chrono>
-#include <algorithm>
+#include <time.h>
 #include <pthread.h>
 #include <sys/resource.h>
 int count=0;
