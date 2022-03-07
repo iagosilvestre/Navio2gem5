@@ -84,7 +84,8 @@ void *adap( void *ptr )
 		auto elapsed = std::chrono::high_resolution_clock::now() - start;
 		//printf("preempt count is %d\n",current_thread_info()->preempt_count);
 		getrusage(RUSAGE_THREAD,&ru_adap);
-		printf("suco de maracuja\n");
+		printf("Adaptive Thread voluntary context switches :%ld\n",ru_adap.ru_nvcsw);
+		printf("Adaptive Thread involuntary context switches :%ld\n",ru_adap.ru_nivcsw);
 		long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 		controlData.push_back(microseconds);
 		//m5_dump_stats(0,0);
