@@ -29,7 +29,7 @@ std::vector<double> error;
 std::vector<double> x;
 
 void *adap( void *ptr );
-void *lqr( void *ptr );
+void *hinf( void *ptr );
 vant3_adaptiveMixCtrl2* controlA = new vant3_adaptiveMixCtrl2();
 teste* controlL = new teste();
 
@@ -55,7 +55,7 @@ main()
      
 
 		 controlA->config();
-		 controlL->config();
+		 controlH->config();
     /* Create independent threads each of which will execute function */
 
      iret1 = pthread_create( &thread1, NULL, adap, (void*) message1);
@@ -103,7 +103,7 @@ void *adap( void *ptr )
 				}
    pthread_exit(NULL);				/* terminate the thread */
 }
-void* lqr(void *)
+void* lqrThread(void *)
 {
 	rusage ru_lqr;
 	stick_this_thread_to_core(0);
