@@ -119,14 +119,19 @@ void *hinf( void *ptr )
 {
 		rusage ru_adap;
 		rusage ru_adapO;
+	rusage ru_program;
+	rusage ru_programStart;
 		stick_this_thread_to_core(0);
 		std::vector<int> controlData;
 		std::vector<long> vincData;
 		std::vector<long> invincData;
+	std::vector<long> secData;
+	std::vector<long> usecData;
 		unsigned long int auxCount=0;	
 		long vinc=0;
 		long invinc=0;
-		getrusage(RUSAGE_SELF,&ru_adapO);
+	getrusage(RUSAGE_SELF,&ru_programStart);	
+	getrusage(RUSAGE_THREAD,&ru_adapO);
 		while(count<100){
 			auto start = std::chrono::high_resolution_clock::now();
 			//m5_reset_stats(0,0);
@@ -136,6 +141,9 @@ void *hinf( void *ptr )
 			invinc=ru_adap.ru_nivcsw-ru_adapO.ru_nivcsw;
 			invincData.push_back(invinc);
 			getrusage(RUSAGE_THREAD,&ru_adapO);
+	getrusage(RUSAGE_SELF,&ru_program);
+	secData.push_back(ru_program.ru_utime.tv_sec);
+	usecData.push_back(ru_program.ru_utime.tv_usec);
 			//printf("preempt count is %d\n",current_thread_info()->preempt_count);
 			long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 			controlData.push_back(microseconds);
@@ -144,12 +152,12 @@ void *hinf( void *ptr )
 		}
 
 		FILE *fCON = fopen("hinf.txt", "w");
-				fprintf(fCON, "count;dtCon\n");
+				fprintf(fCON, "count;dtCon;%lu;%lu\n",ru_programStart.ru_utime.tv_usec,ru_programStart.ru_utime.tv_usec);
 				fclose(fCON);
 				for (std::vector<int>::iterator it = controlData.begin() ; it != controlData.end(); ++it){
 					auxCount++;
 					FILE *fCON = fopen("hinf.txt", "a");
-					fprintf(fCON, "%d;%lu;%lu\n",auxCount,*it,invincData[auxCount-1]);
+					fprintf(fCON, "%d;%lu;%lu;%lu;%lu\n",auxCount,*it,invincData[auxCount-1],secData[auxCount-1],usecData[auxCount-1]);
 					fclose(fCON);
 				}
 		pthread_exit(NULL);	/* terminate the thread */
