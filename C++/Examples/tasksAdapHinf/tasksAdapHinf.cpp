@@ -141,7 +141,7 @@ void *hinf( void *ptr )
 			invinc=ru_adap.ru_nivcsw-ru_adapO.ru_nivcsw;
 			invincData.push_back(invinc);
 			getrusage(RUSAGE_THREAD,&ru_adapO);
-	getrusage(RUSAGE_SELF,&ru_program);
+	getrusage(RUSAGE_THREAD,&ru_program);
 	secData.push_back(ru_program.ru_utime.tv_sec);
 	usecData.push_back(ru_program.ru_utime.tv_usec);
 			//printf("preempt count is %d\n",current_thread_info()->preempt_count);
